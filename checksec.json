@@ -1,0 +1,1218 @@
+[
+  {
+    "checklist_name": "Applicability of the Act",
+    "checklist_category": "Scope & Applicability",
+    "checklist_ai_description": "Chapter I – Preliminary: the Act applies to every company incorporated in India unless a sector-specific statute overrides an inconsistent provision. Quick-check → confirm the listed entity is registered under the Companies Act and that any claimed sector exemption is supported by a Gazette notification. Flag-if → unsupported carve-outs or unresolved conflicts with the special law."
+  },
+  {
+    "checklist_name": "Listed-Company Status",
+    "checklist_category": "Listing & Securities",
+    "checklist_ai_description": "Chapter I – Preliminary: a company is treated as ‘listed’ once any security is admitted to trading on a recognised stock exchange. Quick-check → match each ISIN to NSE/BSE records and review SEBI-notified class-based exemptions. Flag-if → security is delisted, privately placed, or exempt yet the company still presents itself as listed."
+  },
+  {
+    "checklist_name": "Securities Classification",
+    "checklist_category": "Listing & Securities",
+    "checklist_ai_description": "Chapter I – Preliminary: ‘securities’ take the meaning given in the Securities Contracts (Regulation) Act. Quick-check → verify each instrument (shares, debentures, hybrids) qualifies before listing or disclosure. Flag-if → an instrument is labelled a security without meeting SCRA criteria."
+  },
+  {
+    "checklist_name": "Debenture Identification",
+    "checklist_category": "Listing & Securities",
+    "checklist_ai_description": "Chapter I – Preliminary: ‘debenture’ covers bonds or other debt instruments except those RBI specifically excludes. Quick-check → confirm issued instruments comply with debenture rules (trust-deed, DRR). Flag-if → debt labelled otherwise to avoid debenture-specific compliances."
+  },
+  {
+    "checklist_name": "Depository & Demat Readiness",
+    "checklist_category": "Listing & Securities",
+    "checklist_ai_description": "Chapter I – Preliminary: a ‘depository’ is as defined under the Depositories Act 1996. Quick-check → ensure tripartite agreements with NSDL/CDSL exist and all listed securities are fully dematerialised. Flag-if → physical share certificates remain or agreements are missing."
+  },
+  {
+    "checklist_name": "Key Managerial Personnel (KMP)",
+    "checklist_category": "Governance Roles & Board Composition",
+    "checklist_ai_description": "Chapter I – Preliminary: KMPs include CEO/MD/Manager, Company Secretary, Whole-time Director, CFO, and any officer one level below the Board designated as KMP. Quick-check → verify DIR-12/MGT-14 filings list every KMP and no mandated position (e.g., Company Secretary) is vacant. Flag-if → discrepancies between MCA filings and stock-exchange disclosures."
+  },
+  {
+    "checklist_name": "Independent-Director Independence",
+    "checklist_category": "Governance Roles & Board Composition",
+    "checklist_ai_description": "Chapter I – Preliminary: an independent director must meet integrity, financial-interest, relationship and tenure conditions. Quick-check → cross-check self-declarations, employment history and pecuniary relationships. Flag-if → criteria breached or tenure exceeds two five-year terms without special shareholder approval."
+  },
+  {
+    "checklist_name": "Promoter Tagging",
+    "checklist_category": "Governance Roles & Board Composition",
+    "checklist_ai_description": "Chapter I – Preliminary: a ‘promoter’ is one who is named as such in the prospectus/annual return or controls the company’s affairs. Quick-check → reconcile shareholding patterns, control rights and annual-return disclosures. Flag-if → an undisclosed control person is omitted from promoter filings."
+  },
+  {
+    "checklist_name": "Officer-in-Default Matrix",
+    "checklist_category": "Governance Roles & Board Composition",
+    "checklist_ai_description": "Chapter I – Preliminary: the Act lists those liable for contraventions (whole-time directors, KMPs, designated directors, etc.). Quick-check → ensure Board resolutions clearly assign responsibility for each compliance area. Flag-if → no officer is tagged for a statutory obligation or filings contradict Board minutes."
+  },
+  {
+    "checklist_name": "Subsidiary & Holding-Company Tests",
+    "checklist_category": "Corporate Structure",
+    "checklist_ai_description": "Chapter I – Preliminary: a subsidiary exists when the holding company controls the Board or holds more than 50 % voting power, direct or indirect. Quick-check → reconcile share tables and shareholder agreements; confirm compliance with the one-extra-layer cap for subsidiaries. Flag-if → unreported cross-holdings or excess layering."
+  },
+  {
+    "checklist_name": "Associate-Company Identification",
+    "checklist_category": "Corporate Structure",
+    "checklist_ai_description": "Chapter I – Preliminary: an associate company is one in which another entity exercises ‘significant influence’ (≥ 20 % voting power or participation in decisions) and includes joint ventures. Quick-check → map shareholdings and JV agreements. Flag-if → an entity meets influence thresholds but is treated as unrelated."
+  },
+  {
+    "checklist_name": "Control Determination",
+    "checklist_category": "Corporate Structure",
+    "checklist_ai_description": "Chapter I – Preliminary: ‘control’ includes the ability to appoint a majority of directors or influence decisions via shareholding, agreements or otherwise. Quick-check → review shareholder agreements and special rights for hidden control features. Flag-if → control person or group is undisclosed."
+  },
+  {
+    "checklist_name": "Related-Party & Relative Mapping",
+    "checklist_category": "Transactions & Disclosures",
+    "checklist_ai_description": "Chapter I – Preliminary: ‘related party’ covers specified relatives, entities and control relationships, and a ‘relative’ includes HUF members, spouse and prescribed relations. Quick-check → keep an updated register that maps every contract counter-party against both related-party and relative definitions; monitor audit-committee approvals. Flag-if → an undeclared related party/relative enters a transaction without the requisite approvals."
+  },
+  {
+    "checklist_name": "Financial-Year Alignment",
+    "checklist_category": "Financial Reporting & Metrics",
+    "checklist_ai_description": "Chapter I – Preliminary: every company must end its financial year on 31 March unless Central-Government approval allows otherwise for foreign-parent consolidation. Quick-check → ensure audited statements close 31 March or CG approval letter exists. Flag-if → calendar-year accounts persist without approval."
+  },
+  {
+    "checklist_name": "Net-Worth Computation",
+    "checklist_category": "Financial Reporting & Metrics",
+    "checklist_ai_description": "Chapter I – Preliminary: net worth excludes revaluation reserves, write-back of depreciation and amalgamation reserves. Quick-check → reconcile balance-sheet net-worth before applying thresholds (CSR, secretarial audit, etc.). Flag-if → disallowed reserves inflate net worth."
+  },
+  {
+    "checklist_name": "Paid-Up Share-Capital Accuracy",
+    "checklist_category": "Dividend & Capital Management",
+    "checklist_ai_description": "Chapter I – Preliminary: paid-up capital equals the amount actually received plus any credited allotments. Quick-check → match PAS-3 filings to cash receipts and ledger postings. Flag-if → unpaid calls or forfeitures are treated as paid-up, or share-premium is mis-classified."
+  },
+  {
+    "checklist_name": "Free-Reserve Purity",
+    "checklist_category": "Dividend & Capital Management",
+    "checklist_ai_description": "Chapter I – Preliminary: unrealised or notional gains, revaluation surplus and fair-value adjustments cannot be treated as free reserves. Quick-check → confirm only realised profits fund dividends and buy-backs. Flag-if → OCI fair-value gains or revaluation surplus are counted as distributable reserves."
+  },
+  {
+    "checklist_name": "Minimum Subscribers Verification",
+    "checklist_category": "Incorporation & Formation",
+    "checklist_ai_description": "Chapter II – Incorporation: confirm that at least seven subscribers signed the memorandum for a public company, two for a private company, and one for a One Person Company (OPC). Quick-check → compare subscriber list on MoA to statutory minima. Flag-if → fewer subscribers filed or an OPC lists more than one member."
+  },
+  {
+    "checklist_name": "Member Liability on Reduced Membership",
+    "checklist_category": "Incorporation & Formation",
+    "checklist_ai_description": "Chapter II – Incorporation (§3A): if a public company carries on business > 6 months with < 7 members (or a private company with < 2), those members become severally liable for debts contracted in that period. Quick-check → track head-count dips in statutory registers. Flag-if → business continues past six months without restoring minimum membership."
+  },
+  {
+    "checklist_name": "Memorandum Statutory Contents",
+    "checklist_category": "Constitutional Documents",
+    "checklist_ai_description": "Chapter II – Memorandum (§4): ensure MoA states the company name with the correct suffix, State of registered office, objects, member liability, share-capital details and (for OPC) nominee. Quick-check → match filed MoA against §4 checklist. Flag-if → missing liability clause, incorrect name suffix or objects too broad/ultra vires."
+  },
+  {
+    "checklist_name": "Name Availability, Reservation & Restrictions",
+    "checklist_category": "Name & Branding",
+    "checklist_ai_description": "Chapter II – (§§4 & 16): obtain RUN/SPICe+ approval, use the reserved name within its validity, and ensure it is neither undesirable nor deceptively similar to an existing company or trademark unless Central-Government clearance is secured. Quick-check → compare reservation date vs. incorporation, run phonetic/trademark searches. Flag-if → reservation lapses or restricted words used without approval."
+  },
+  {
+    "checklist_name": "Articles – Mandatory Matters & Entrenchment",
+    "checklist_category": "Constitutional Documents",
+    "checklist_ai_description": "Chapter II – Articles (§5): ensure AoA contains prescribed matters and any entrenchment provisions were adopted on formation or via unanimous consent (private) / special resolution (public). Quick-check → inspect AoA clauses and MGT-14 filings for entrenchment notice to RoC. Flag-if → entrenchment inserted without following §5(4) process."
+  },
+  {
+    "checklist_name": "Adoption of Model Articles",
+    "checklist_category": "Constitutional Documents",
+    "checklist_ai_description": "Chapter II – Articles (§5 & Schedule I): if bespoke articles omit a regulation, the corresponding model Article automatically applies. Quick-check → identify gaps between filed AoA and the applicable model set. Flag-if → company operates contrary to a model regulation inadvertently in force."
+  },
+  {
+    "checklist_name": "Act Override Clause Awareness",
+    "checklist_category": "Constitutional Documents",
+    "checklist_ai_description": "Chapter II – Statutory Override (§6): any clause in MoA/AoA, agreement or resolution repugnant to the Act is void. Quick-check → review side letters, shareholder agreements and special rights. Flag-if → contract grants powers that contravene Act provisions (e.g., transfer restrictions beyond §58)."
+  },
+  {
+    "checklist_name": "Incorporation Filing Pack Accuracy",
+    "checklist_category": "Incorporation & Formation",
+    "checklist_ai_description": "Chapter II – Incorporation (§7): verify SPICe+/e-forms include MoA, AoA, professional declaration, affidavits/declarations of subscribers & first directors, correspondence address, ID proofs, interest in other entities and consent to act. Quick-check → reconcile filed data with Board minutes and KYC records. Flag-if → missing professional declaration or incorrect DIN details."
+  },
+  {
+    "checklist_name": "Certificate of Incorporation & CIN Usage",
+    "checklist_category": "Incorporation & Formation",
+    "checklist_ai_description": "Chapter II – (§§7 & 9): confirm the COI and Corporate Identity Number are issued, displayed on official documents and preserved at the registered office. Quick-check → spot-check letterheads, invoices and website footer. Flag-if → CIN absent or COI not on record."
+  },
+  {
+    "checklist_name": "Commencement of Business Declaration",
+    "checklist_category": "Registered Office & Commencement",
+    "checklist_ai_description": "Chapter II – (§10A): a share-capital company must file INC-20A within 180 days of incorporation declaring that every subscriber has paid for shares and registered-office verification is filed. Quick-check → check MCA portal for INC-20A SRN. Flag-if → declaration overdue; penalties accrue and RoC may strike off."
+  },
+  {
+    "checklist_name": "Registered-Office Establishment & Display",
+    "checklist_category": "Registered Office & Commencement",
+    "checklist_ai_description": "Chapter II – Registered Office (§12): office must be set up within 30 days, verified with RoC, and company name/CIN displayed on signage, stationery, website, seal and negotiable instruments. Quick-check → physical verification or photo evidence; confirm INC-22 filing. Flag-if → signage missing or office incapable of receiving notices."
+  },
+  {
+    "checklist_name": "Change of Registered Office Approval Process",
+    "checklist_category": "Registered Office & Commencement",
+    "checklist_ai_description": "Chapter II – (§§12 & 13): shifting outside local limits needs special resolution; inter-RoC moves within a State need RD approval; inter-State moves need CG approval. Quick-check → track GNL-2 petitions and approval orders. Flag-if → office shifted prior to approval or filings exceed statutory timelines."
+  },
+  {
+    "checklist_name": "Alteration of Memorandum – Special Resolution & CG Nod",
+    "checklist_category": "Constitutional Documents",
+    "checklist_ai_description": "Chapter II – (§13): any change (name, registered office across States, objects, capital) requires a special resolution plus CG/RoC filings; name change needs CG approval unless only adding/dropping “Private”. Quick-check → scrutinise MGT-14 and altered MoA uploads. Flag-if → filings missing CG order or late beyond 30 days."
+  },
+  {
+    "checklist_name": "Object Change & Unutilised Public Funds Disclosure",
+    "checklist_category": "Constitutional Documents",
+    "checklist_ai_description": "Chapter II – (§13(8)): if public-issue proceeds remain unutilised, object change demands newspaper notice, website disclosure and exit opportunity to dissenting shareholders. Quick-check → compare utilisation certificate with proposed object shift. Flag-if → disclosures absent or exit offer not provided."
+  },
+  {
+    "checklist_name": "Alteration of Articles – Private/Public Conversion",
+    "checklist_category": "Constitutional Documents",
+    "checklist_ai_description": "Chapter II – (§14): converting public→private now needs Central-Government order; private→public via special resolution. Quick-check → inspect approval order, altered AoA and MGT-14. Flag-if → ROC filings lack CG order for public→private conversion."
+  },
+  {
+    "checklist_name": "Noting of Alterations in Every Copy",
+    "checklist_category": "Constitutional Documents",
+    "checklist_ai_description": "Chapter II – (§15): every copy of MoA/AoA must carry all certified alterations. Quick-check → verify PDFs on website/intranet and hard copies issued after alteration. Flag-if → circulating outdated constitutional documents (penalty ₹ 1 000 per copy)."
+  },
+  {
+    "checklist_name": "Rectification-of-Name Direction Compliance",
+    "checklist_category": "Name & Branding",
+    "checklist_ai_description": "Chapter II – (§16): company must change its name within three months when directed by CG (duplicate company/trademark). CG will allot a new name if default continues. Quick-check → track CG order dates and MGT-14 for name-change resolution. Flag-if → no action within three months or use of old name on stationery."
+  },
+  {
+    "checklist_name": "Subsidiary Not to Hold Shares in Holding Company",
+    "checklist_category": "Corporate Structure",
+    "checklist_ai_description": "Chapter II – (§19): a subsidiary cannot hold shares in its holding company, barring legal-representative, trustee or pre-existing holdings. Voting rights limited to trustee/legal-representative shares. Quick-check → review share-register cross-holdings. Flag-if → new allotment/transfer of parent shares to subsidiary."
+  },
+  {
+    "checklist_name": "Service of Documents – Modes & Member Choice",
+    "checklist_category": "Documentation & Service",
+    "checklist_ai_description": "Chapter II – (§20): notices may be sent by post, courier, hand-delivery, or prescribed electronic means; members can request a specific mode on payment of fees. Quick-check → verify AGM/Board notice logs, e-mail consents and proof-of-delivery. Flag-if → mode used contradicts member preference or no proof retained."
+  },
+  {
+    "checklist_name": "Permissible Modes of Raising Capital",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "Chapter III (§23): a public company may raise funds by public offer, private placement, rights or bonus issue; a private company is limited to rights, bonus or private placement. Quick-check → confirm the chosen route matches §23 and, for listed issuers, complies with SEBI ICDR/LDD regulations. Flag-if → a private company launches an IPO or a public company uses an unpermitted route."
+  },
+  {
+    "checklist_name": "SEBI Jurisdiction over Listed Issues",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "Chapter III (§24): for listed (or listing-intended) companies, SEBI administers sections on issue/transfer of securities and non-payment of dividend. Quick-check → ensure every draft prospectus, offer document or transfer-related compliance is filed with SEBI, not just MCA. Flag-if → relying solely on RoC approval for capital-market matters."
+  },
+  {
+    "checklist_name": "Deemed Prospectus (Offer for Sale)",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "Chapter III (§25): any document offering allotted shares for sale to the public within six months is a ‘deemed prospectus’. Quick-check → test secondary sale documents against §25; ensure prospectus-level disclosures. Flag-if → omission of SEBI/MCA filings because the offer is labelled ‘sale by shareholder’."
+  },
+  {
+    "checklist_name": "Mandatory Prospectus Disclosures",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "Chapter III (§26): every prospectus must contain SEBI-specified financial information, compliance declaration and expert consents, be dated, signed and filed with RoC before publication. Quick-check → cross-check draft red-herring against SEBI ICDR Part A. Flag-if → missing SEBI tables or RoC filing occurs after marketing launch."
+  },
+  {
+    "checklist_name": "Variation of Objects / Contracts",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "Chapter III (§27): changing prospectus objects or contract terms needs a special resolution, dual-language newspaper notice, website disclosure and no use of IPO proceeds to trade in listed shares; dissenters must get an exit offer. Quick-check → verify SR notice, newspaper ads and exit-offer pricing. Flag-if → utilisation of unspent funds before shareholder nod."
+  },
+  {
+    "checklist_name": "Advertisement Content Requirements",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "Chapter III (§30): any prospectus advertisement must reproduce memorandum objects, liability clause, capital structure and subscriber details. Quick-check → compare print/digital ads to §30 checklist. Flag-if → teaser ads omit liability or capital synopsis."
+  },
+  {
+    "checklist_name": "Shelf Prospectus & Information Memorandum",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "Chapter III (§31): shelf prospectus valid up to one year; each subsequent offer needs an information memorandum with material changes and refund option for prior applicants. Quick-check → check IM filing before tranche launch; validate refund timelines. Flag-if → tranche issue without updated IM on MCA/SEBI portals."
+  },
+  {
+    "checklist_name": "Red Herring Prospectus Filing Gap",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "Chapter III (§32): a red herring prospectus must be filed with RoC at least three days before issue opening and any variation from the final prospectus must be highlighted. Quick-check → verify three-day gap and variation markings. Flag-if → RH filed late or changes not flagged."
+  },
+  {
+    "checklist_name": "Abridged Prospectus with Application Forms",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "Chapter III (§33): every share/debenture application form must carry an abridged prospectus unless exempt (underwriting invite or non-public offer). Quick-check → sample application forms in issue stationery. Flag-if → forms distributed without abridged prospectus or exemption basis undocumented."
+  },
+  {
+    "checklist_name": "Mis-statement Liability Matrix",
+    "checklist_category": "Investor Protection & Liability",
+    "checklist_ai_description": "Chapter III (§§34-37): untrue or misleading prospectus statements attract criminal liability (§34), civil compensation (§35), fraud penalties (§36) and class actions (§37). Quick-check → ensure due-diligence sign-offs and experts’ consents; maintain working-papers. Flag-if → disclaimers attempt to waive statutory liability."
+  },
+  {
+    "checklist_name": "Personation & Multiple Applications Ban",
+    "checklist_category": "Investor Protection & Liability",
+    "checklist_ai_description": "Chapter III (§38): fictitious or multiple applications constitute fraud punishable under §447; prospectus and application forms must reproduce the warning. Quick-check → confirm warning statement appears conspicuously. Flag-if → anti-personation legend missing or duplicate PANs detected in application data."
+  },
+  {
+    "checklist_name": "Minimum Subscription & Application Money",
+    "checklist_category": "Allotment & Post-Issue Compliance",
+    "checklist_ai_description": "Chapter III (§39): no allotment until minimum subscription stated in prospectus is achieved; application money ≥ 5 % of face value (or SEBI-specified amount) must be received within 30 days or refunded. Quick-check → compare escrow certificates to minimum-subscription table; track refund timelines. Flag-if → allotment before threshold or refund delays."
+  },
+  {
+    "checklist_name": "Return of Allotment Filing",
+    "checklist_category": "Allotment & Post-Issue Compliance",
+    "checklist_ai_description": "Chapter III (§39(4)): every allotment of share capital must be reported to RoC via PAS-3 within the prescribed time (currently 15 days). Quick-check → verify PAS-3 SRN and MCA upload date. Flag-if → late or incorrect return of allotment."
+  },
+  {
+    "checklist_name": "Stock-Exchange Permission & Escrow",
+    "checklist_category": "Allotment & Post-Issue Compliance",
+    "checklist_ai_description": "Chapter III (§40): before a public offer, the company must obtain in-principle approval from recognised stock exchanges; application monies must stay in a separate bank account until allotment or refund. Quick-check → inspect approval letters and escrow bank statements. Flag-if → funds utilised before listing permission."
+  },
+  {
+    "checklist_name": "Public Offer Securities in Demat Form",
+    "checklist_category": "Listing & Securities",
+    "checklist_ai_description": "Chapter III (§29): every company making a public offer—and other prescribed classes—must issue securities only in dematerialised form, complying with the Depositories Act and SEBI regulations. Quick-check → verify tripartite agreements with NSDL/CDSL and allotment through demat. Flag-if → physical certificates issued in a public offer."
+  },
+  {
+    "checklist_name": "Commission on Subscription",
+    "checklist_category": "Allotment & Post-Issue Compliance",
+    "checklist_ai_description": "Chapter III (§40(6)): payment of commission on subscription is permitted only under prescribed SEBI conditions. Quick-check → match commission agreements to SEBI ICDR limits and Board approval. Flag-if → excess commission or undocumented broker payments."
+  },
+  {
+    "checklist_name": "Global Depository Receipt Issuance",
+    "checklist_category": "International Offerings & Depository Receipts",
+    "checklist_ai_description": "Chapter III (§41): GDRs/FCCBs require a special resolution and must comply with Ministry of Finance & RBI guidelines. Quick-check → check shareholder-meeting minutes, special-resolution text and FEMA filings. Flag-if → GDR programme launched without SR or regulatory compliance."
+  },
+  {
+    "checklist_name": "Private Placement Rule-Book",
+    "checklist_category": "Private Placement",
+    "checklist_ai_description": "Chapter III (§42): a private placement is limited to ≤ 50 identified persons per issue (excluding QIBs & ESOPs) and ≤ 200 per FY; offer-cum-application form (PAS-4) must be serially numbered, money received only via banking channels, allotment within 60 days and PAS-3 filed within 15 days, with no further offer until the prior one completes. Quick-check → validate investor-list count, instrument serial numbers and PAS-3 timeline. Flag-if → cash subscriptions, overshoot of 200 investors or funds used before allotment."
+  },
+  {
+    "checklist_name": "Share-Capital Structure & Shareholder Rights",
+    "checklist_category": "Share Capital & Securities",
+    "checklist_ai_description": "Chapter IV (§§43-49): confirm equity is only ‘ordinary’ or carries SEBI-permitted differential rights; preference shares match statutory definitions; every share bears a distinctive number unless dematerialised; voting follows paid-up equity proportion, and class-right variations get ¾-holder consent or special resolution plus Tribunal safeguards. Quick-check → review MoA/AoA classes, SEBI approval for DVR and minutes of separate class meetings. Flag-if → unauthorised differential rights, class variation without consent or unequal call money."
+  },
+  {
+    "checklist_name": "Share Certificates, Demat Records & Personation Safeguards",
+    "checklist_category": "Share Capital & Securities",
+    "checklist_ai_description": "Chapter IV (§§44-47, 57): certificates must be signed by two directors (or director + CS); duplicates only on proof of loss; depository records are prima-facie title; anti-personation warnings mandatory. Quick-check → sample certificates, NSDL/CDSL records and application-form legends. Flag-if → duplicate certificates without affidavit or missing endorsements."
+  },
+  {
+    "checklist_name": "Issue Price, Premium, Discount & Bonus-Share Controls",
+    "checklist_category": "Dividend & Capital Management",
+    "checklist_ai_description": "Chapter IV (§§52-55 & 63): premiums must flow to a securities-premium account; shares at discount void (except debt-restructuring conversions); sweat-equity needs SR and SEBI rules; bonus issues can capitalise free reserves, securities premium or CRR (not revaluation reserves). Quick-check → trace premium transfers, verify no discounted issues except as allowed, review SR/valuation for sweat equity and bonus-issue ‎eligibility. Flag-if → premium diverted for expenses, discount without basis or bonus funded from revaluation surplus."
+  },
+  {
+    "checklist_name": "Preference-Share Issue, Redemption & Overdue Remedies",
+    "checklist_category": "Dividend & Capital Management",
+    "checklist_ai_description": "Chapter IV (§55): only redeemable preference shares (≤ 20 years, longer for infrastructure with staged redemption) are allowed; redemption must use profits/fresh issue plus CRR transfer; Tribunal route exists for unredeemed shares with ¾-holder consent. Quick-check → inspect terms, redemption schedules and CRR transfers. Flag-if → irredeemable preferences post-2013 or redemption without profit/issue."
+  },
+  {
+    "checklist_name": "Capital Alteration, Consolidation/Sub-division & Reduction",
+    "checklist_category": "Capital Alteration & Disclosure",
+    "checklist_ai_description": "Chapter IV (§§61, 64-66): GM resolution (plus Tribunal order for reduction) needed to alter authorised capital, consolidate/divide affecting voting %, sub-divide, cancel un-issued shares or reduce capital; every change must reach RoC within 30 days (SH-7) and comply with accounting-standard certificate for reductions. Quick-check → verify SH-7 filings, Tribunal orders and updated MoA. Flag-if → old capital figures used or consolidation changes voting ratio without clearance."
+  },
+  {
+    "checklist_name": "Rights/ESOP/Preferential Offers & Convertible Instruments",
+    "checklist_category": "Fund-Raising & Convertible Instruments",
+    "checklist_ai_description": "Chapter IV (§62 & rules): further capital must first be offered pro-rata (15-30 days); ESOPs require SR and Rule 12 conditions; any preferential issue needs SR and valuer price report; conversion of debt requires SR. Quick-check → inspect offer letters, valuation reports and SR extracts. Flag-if → renunciation right missing, ESOP grant without SR or overlapping preferential issues."
+  },
+  {
+    "checklist_name": "Allotment, Transfer, Transmission & Capital Publication",
+    "checklist_category": "Transfer & Transmission",
+    "checklist_ai_description": "Chapter IV (§§56-60): transfers need duly-stamped instruments filed within 60 days; certificates/credits dispatched within statutory windows; refusal notices within 30 days; every public document quoting authorised capital must also show subscribed & paid-up. Quick-check → sample PAS-3, transfer deeds, dispatch logs and letterheads. Flag-if → late certificate delivery or authorised capital shown alone."
+  },
+  {
+    "checklist_name": "Buy-Back & Financial-Assistance Prohibitions",
+    "checklist_category": "Buy-Back & Financial Assistance",
+    "checklist_ai_description": "Chapter IV (§§67-70): company cannot fund purchase of its own shares (except employee loans ≤ 6 months’ salary); buy-backs need articles authority, SR/Board limits (≤ 25 % paid-up + free reserves; debt-equity ≤ 2:1), solvency declaration and SEBI compliance. Quick-check → verify Board/SR minutes, debt-equity ratio, solvency affidavit and SEBI filings. Flag-if → assistance to directors, repeat buy-back inside 12 months or statutory-dues default."
+  },
+  {
+    "checklist_name": "Debenture Issue, Trustees & Redemption Reserve",
+    "checklist_category": "Debentures & Debt Securities",
+    "checklist_ai_description": "Chapter IV (§71): convertible debentures need SR; secured debentures must follow Rule 18, appoint trustees for > 500 invitees, create DRR from profits and ensure timely redemption; trustees can seek NCLT relief. Quick-check → prospectus/term-sheet, trust-deed registration and DRR ledger. Flag-if → voting-right debentures, missing DRR or default on schedule."
+  },
+  {
+    "checklist_name": "Deposit-Raising Eligibility, Limits & Approvals",
+    "checklist_category": "Deposits & Borrowings",
+    "checklist_ai_description": "Chapter V (§§73, 76): only eligible public companies (net-worth ≥ ₹ 500 cr or turnover ≥ ₹ 1 000 cr) may accept public deposits; other companies limited to member-deposits within indexed caps. Board and shareholder resolution plus credit rating mandatory. Quick-check → verify class, caps and valid rating. Flag-if → private company solicits public deposits or caps exceeded."
+  },
+  {
+    "checklist_name": "Pre-Acceptance Disclosure Pack & RoC Filing Calendar",
+    "checklist_category": "Deposits & Borrowings",
+    "checklist_ai_description": "Chapter V (§73(2)(a)(b) & rules): file DPT-1 at least 30 days before issue, publish/ circulate the circular, register a deposit trust-deed (secured), and issue serial-numbered application forms. Quick-check → match DPT-1 SRN to issue window, inspect newspaper clippings and trust-deed. Flag-if → late circular, trust-deed omitted or unsecured deposits mis-labelled."
+  },
+  {
+    "checklist_name": "Deposit Repayment Reserve, Security & Insurance Controls",
+    "checklist_category": "Deposits & Borrowings",
+    "checklist_ai_description": "Chapter V (§73(2)(c)(f)): park ≥ 20 % of deposits maturing next FY in a scheduled-bank reserve by 30 April; create security for secured deposits; maintain deposit insurance if notified. Quick-check → review bank statements, charge filings and insurance documents. Flag-if → reserve shortfall, misuse or unsecured deposits described as secured."
+  },
+  {
+    "checklist_name": "Receipt, Register, Interest & Utilisation Discipline",
+    "checklist_category": "Deposits & Borrowings",
+    "checklist_ai_description": "Chapter V & rules: issue deposit receipts within 21 days, keep an updated register, accept money only via banking channels, pay interest/principal per schedule and spend deposits only on stated objects. Quick-check → sample receipts, bank trace and register. Flag-if → cash acceptance, delayed receipts or diversion of funds."
+  },
+  {
+    "checklist_name": "Legacy Deposit Regularisation & Renewal Safeguard",
+    "checklist_category": "Deposits & Borrowings",
+    "checklist_ai_description": "Chapter V (§74): deposits taken before the Act must be reported within three months and repaid within three years (or original maturity) unless Tribunal extends. Quick-check → locate RoC filing and repayment proof. Flag-if → no filing or breach of three-year limit."
+  },
+  {
+    "checklist_name": "Default, Fraud & Personal-Liability Exposure",
+    "checklist_category": "Deposits & Borrowings",
+    "checklist_ai_description": "Chapter V (§§74-76A): defaulting companies/officers face heavy fines, imprisonment and personal liability if fraud proved; depositors or trustees may petition NCLT. Quick-check → check MCA/SEBI for default status and Board action plans. Flag-if → continuing default or reserve funds misapplied."
+  },
+  {
+    "checklist_name": "Charge Creation, Registration, Certificate & Constructive Notice",
+    "checklist_category": "Charges – Creation & Registration",
+    "checklist_ai_description": "Chapter VI (§§77-80): whenever a company creates or modifies a charge, file CHG-1 within 30 days (60 days with fee) and obtain the RoC certificate; defaulting company may see the charge-holder register it. From the certificate date, third parties have constructive notice. Quick-check → match loan documents to CHG-1 SRNs and certificates; ensure modifications are also filed. Flag-if → charge missing, filing late without condonation or certificate absent."
+  },
+  {
+    "checklist_name": "Company & Registrar Registers of Charges – Accessibility & Accuracy",
+    "checklist_category": "Charges – Registers & Governance",
+    "checklist_ai_description": "Chapter VI (§§81, 85): Registrar keeps a public register; company must maintain its own charge register with copies of instruments, open for inspection. Quick-check → inspect in-house register and cross-tally with MCA data. Flag-if → missing instruments or inspection refused."
+  },
+  {
+    "checklist_name": "Satisfaction, Partial Release & Memorandum Entry",
+    "checklist_category": "Charges – Satisfaction & Release",
+    "checklist_ai_description": "Chapter VI (§§82-83): file CHG-4 within 30 days of full satisfaction or partial release; Registrar enters memo after notice. Quick-check → trace repayments to CHG-4 filings and acknowledgements. Flag-if → charge appears outstanding after repayment."
+  },
+  {
+    "checklist_name": "Receiver / Manager Appointments & Notifications",
+    "checklist_category": "Charges – Enforcement & Insolvency",
+    "checklist_ai_description": "Chapter VI (§84): appointee of a receiver/manager over charged assets must notify the company and Registrar within 30 days and again on cessation. Quick-check → review notices and verify MCA entries. Flag-if → appointment undisclosed or cessation unreported."
+  },
+  {
+    "checklist_name": "Unregistered Charges & Liquidation Priority Risk",
+    "checklist_category": "Charges – Enforcement & Insolvency",
+    "checklist_ai_description": "Chapter VI (§77(3)): in liquidation/IBC, an unregistered charge is ignored for creditor ranking. Quick-check → ensure all security interests are MCA-registered during diligence. Flag-if → lenders rely on unregistered security."
+  },
+  {
+    "checklist_name": "Statutory Registers & Index Integrity",
+    "checklist_category": "Registers & Returns",
+    "checklist_ai_description": "Chapter VII: maintain up-to-date registers of members, debenture-holders and other security-holders with indices; foreign register only if authorised. Quick-check → reconcile MCA master data with registers. Flag-if → missing class or absent index."
+  },
+  {
+    "checklist_name": "Beneficial Interest & Significant Beneficial Owner Tracking",
+    "checklist_category": "Registers & Returns",
+    "checklist_ai_description": "Chapter VII: holders in name but not in interest must declare beneficiaries; SBOs (≥ 25 % or significant influence) must file; company must keep SBO register and pursue unidentified SBOs. Quick-check → match BEN-1/2 filings to share register. Flag-if → SBO entries or BEN-2 filing missing."
+  },
+  {
+    "checklist_name": "Annual Return Preparation, Certification & Timely Filing",
+    "checklist_category": "Registers & Returns",
+    "checklist_ai_description": "Chapter VII: annual return covering shareholding, KMP changes, meetings, penalties, etc. must be signed and filed within 60 days of AGM; listed/threshold companies need PCS certification. Quick-check → inspect MGT-7/7A and PCS report. Flag-if → late filing or certification missing."
+  },
+  {
+    "checklist_name": "General Meeting Calendar & Default Escalation",
+    "checklist_category": "Meetings & Resolutions",
+    "checklist_ai_description": "Chapter VII: AGM each year within six months of FY end and ≤ 15 months gap; Tribunal may order AGM/other meetings on default. Quick-check → verify AGM timing and any RoC extension. Flag-if → overdue AGM or Tribunal directions ignored."
+  },
+  {
+    "checklist_name": "Member Requisition & Extraordinary General Meeting Protocols",
+    "checklist_category": "Meetings & Resolutions",
+    "checklist_ai_description": "Chapter VII: Board must call EGM on requisition by ≥ 10 % members; if not, requisitionists may call meeting themselves. Quick-check → trace requisition letters and notice periods. Flag-if → Board ignores valid requisition."
+  },
+  {
+    "checklist_name": "Notice, Explanatory Statement & Special-Business Disclosure",
+    "checklist_category": "Meetings & Resolutions",
+    "checklist_ai_description": "Chapter VII: 21 days’ clear notice (or 95 % consent shorter) with material facts for special business, including ≥ 2 % KMP interests. Quick-check → sample packs for timing, delivery proofs and disclosures. Flag-if → late notice or disclosures missing."
+  },
+  {
+    "checklist_name": "Quorum, Voting Mechanics & Proxy Governance",
+    "checklist_category": "Meetings & Resolutions",
+    "checklist_ai_description": "Chapter VII: ensure statutory quorum, proxy rights (deposit ≥ 48 h, limit 50), e-voting for prescribed classes and poll/postal-ballot rules. Quick-check → attendance registers and e-voting reports. Flag-if → quorum breach or mandatory e-voting absent."
+  },
+  {
+    "checklist_name": "Special / Ordinary Resolutions & Mandatory RoC Filing",
+    "checklist_category": "Meetings & Resolutions",
+    "checklist_ai_description": "Chapter VII: classify resolutions correctly; file specified Board/member resolutions with RoC (MGT-14) in 30 days. Quick-check → track filings against minutes. Flag-if → special resolution mis-tagged or MGT-14 late."
+  },
+  {
+    "checklist_name": "Minutes, Secretarial Standards & Evidence Preservation",
+    "checklist_category": "Secretarial Records & Inspection",
+    "checklist_ai_description": "Chapter VII: minutes of all meetings entered within 30 days, consecutively numbered and SS-1/SS-2 compliant; tampering punishable. Quick-check → review minute books and time-stamps. Flag-if → minutes late or SS deviations."
+  },
+  {
+    "checklist_name": "Register & Minute-Book Inspection Rights",
+    "checklist_category": "Secretarial Records & Inspection",
+    "checklist_ai_description": "Chapter VII: registers/minutes to be kept at RO (or approved place) open for inspection; refusals invite penalties and Tribunal may order access. Quick-check → test walk-in request and response log. Flag-if → access denied or off-site without SR approval."
+  },
+  {
+    "checklist_name": "Dividend-Declaration Eligibility & Profit Computation",
+    "checklist_category": "Dividend & Capital Management",
+    "checklist_ai_description": "Chapter VIII (§123): dividends may be declared only from realised profits after depreciation; losses and past depreciation must be set off; draw from reserves only per Rule cap. Quick-check → reconcile P&L, depreciation and reserves before Board recommends dividend. Flag-if → revaluation gains used or losses ignored."
+  },
+  {
+    "checklist_name": "Interim Dividend, Deposit Timeline & Mode of Payment",
+    "checklist_category": "Dividend & Capital Management",
+    "checklist_ai_description": "Chapter VIII (§123(3)-(5)): interim dividend may use YTD profits but, if a loss, rate capped at three-year average; dividend sum must move to a separate bank a/c within five days and be paid in cash/e-mode. Quick-check → Board minutes and bank transfer dates. Flag-if → interim cap breached or bank transfer late."
+  },
+  {
+    "checklist_name": "Distribution Deadline, Penalties & Deposit Default Block",
+    "checklist_category": "Shareholder Rights & Liability",
+    "checklist_ai_description": "Chapter VIII (§§123(6) & 127): no dividend if deposit default exists; declared dividends must be distributed within 30 days or directors/officers face fines/imprisonment. Quick-check → confirm deposit compliance and monitor dispatch logs. Flag-if → dividend during default or payment delays."
+  },
+  {
+    "checklist_name": "Unpaid Dividend Account Workflow & IEPF Transfer",
+    "checklist_category": "Unpaid Dividend & Investor Protection Fund",
+    "checklist_ai_description": "Chapter VIII (§124): move unpaid dividend to a scheduled-bank ‘Unpaid Dividend A/c’ within seven days after 30-day payment window; publish name-wise list within 90 days; transfer amounts/shares to IEPF after seven years. Quick-check → ledger movements, website list and IEPF filings. Flag-if → transfer delays or list missing."
+  },
+  {
+    "checklist_name": "IEPF Credits, Utilisation & Refund Governance",
+    "checklist_category": "Unpaid Dividend & Investor Protection Fund",
+    "checklist_ai_description": "Chapter VIII (§125): credit all statutory inflows (unpaid dividends, matured deposits, redemption sums, disgorgement amounts, etc.) to IEPF; file statements and facilitate refunds via IEPF portal. Quick-check → reconcile transfers with IEPF acknowledgements. Flag-if → qualifying credit omitted or refunds handled off-portal."
+  },
+  {
+    "checklist_name": "Books of Account Integrity & Multi-location Storage",
+    "checklist_category": "Financial Reporting & Accounts",
+    "checklist_ai_description": "Chapter IX (§128): keep double-entry, accrual-basis books for each FY at RO (or Board-notified place); branch returns; eight-year retention; director inspection; electronic-mode rules apply. Quick-check → Board resolution/RoC notice and retention trail. Flag-if → accrual not used or inspection denied."
+  },
+  {
+    "checklist_name": "True & Fair Financial Statements, Consolidation & Periodical Results",
+    "checklist_category": "Financial Reporting & Accounts",
+    "checklist_ai_description": "Chapter IX (§§129, 129A): FS must follow Schedule III & AS, disclose deviations, include CFS and salient-feature sheet; certain unlisted classes must file audited/limited-reviewed periodical results. Quick-check → match standalone vs. CFS, AS compliance and filings. Flag-if → AS departures undisclosed or CFS absent."
+  },
+  {
+    "checklist_name": "Re-opening or Voluntary Revision of Accounts",
+    "checklist_category": "Financial Reporting & Accounts",
+    "checklist_ai_description": "Chapter IX (§§130-131): re-opening only by court/Tribunal order citing fraud; voluntary revision (≤ 3 preceding FYs) requires Tribunal approval and disclosure. Quick-check → order and revised AOC-4. Flag-if → revision without approval or multiple revisions in a FY."
+  },
+  {
+    "checklist_name": "NFRA Oversight, Audit Quality & Misconduct Penalties",
+    "checklist_category": "Audit & Assurance",
+    "checklist_ai_description": "Chapter IX (§132): comply with AS/SA vetted by NFRA; NFRA may investigate, fine and debar auditors; appeals to NCLAT. Quick-check → auditor work-papers and NFRA portal. Flag-if → debarred auditor engaged or standards breached."
+  },
+  {
+    "checklist_name": "Board’s Report Content & Directors’ Responsibility Statement",
+    "checklist_category": "Board Report & Governance Disclosures",
+    "checklist_ai_description": "Chapter IX (§134): Board must approve/sign FS, attach auditors’ report and an extensive Board’s report (web-linked annual return, meetings, DR statement, RPTs, CSR, risk, etc.). Quick-check → map each §134(3) item to draft report. Flag-if → DR omissions or unsigned report."
+  },
+  {
+    "checklist_name": "CSR Committee, Policy Disclosure & Unspent-Fund Handling",
+    "checklist_category": "Corporate Social Responsibility",
+    "checklist_ai_description": "Chapter IX (§135): companies meeting thresholds must form CSR committee (waived ≤ ₹ 50 lakh spend), adopt policy, spend ≥ 2 % average profits and transfer unspent funds as prescribed. Quick-check → CSR minutes, policy link and spend reconciliation. Flag-if → threshold met but no policy or unspent funds not transferred."
+  },
+  {
+    "checklist_name": "Circulation, Website Placement & Member Inspection of Financials",
+    "checklist_category": "Shareholder Communication",
+    "checklist_ai_description": "Chapter IX (§136): send FS and reports ≥ 21 days before AGM (or website link for listed cos.) and keep copies at RO; listed cos. must upload subsidiary accounts. Quick-check → dispatch logs, website links and inspection log. Flag-if → dispatch delay or subsidiary accounts missing."
+  },
+  {
+    "checklist_name": "Filing Financial Statements & XBRL Timeliness",
+    "checklist_category": "Regulatory Filings & Timelines",
+    "checklist_ai_description": "Chapter IX (§137): file adopted (or provisional) AOC-4/XBRL within 30 days of AGM (OPC: 180 days from FY end); replace provisional FS after adoption; late fees apply. Quick-check → SRN dates vs. AGM and taxonomy. Flag-if → late filing or provisional FS not replaced."
+  },
+  {
+    "checklist_name": "Auditor Appointment, Tenure & Rotation",
+    "checklist_category": "Audit Appointment & Rotation",
+    "checklist_ai_description": "Chapter X (§§139, 177): appoint auditor for five-year term, rotate individual after one term and firm after two (listed/prescribed cos.); C&AG appointment for Government companies. Quick-check → AGM minutes, DIR-12 filings and rotation matrix. Flag-if → term exceeded or notice not filed."
+  },
+  {
+    "checklist_name": "Eligibility, Disqualification & Independence Bar",
+    "checklist_category": "Audit Eligibility & Independence",
+    "checklist_ai_description": "Chapter X (§141): only a CA (or majority-CA firm) may act; disqualifications include indebtedness, business relations, > 20 audits, etc. Quick-check → auditor KYC and independence confirmations. Flag-if → disqualification thresholds crossed."
+  },
+  {
+    "checklist_name": "Removal, Resignation & Casual-Vacancy Protocols",
+    "checklist_category": "Audit Appointment & Rotation",
+    "checklist_ai_description": "Chapter X (§§139(8), 140): Board fills casual vacancy in 30 days; resignation needs auditor statement in 30 days; removal needs CG approval and SR. Quick-check → ADT-3 filings and CG orders. Flag-if → vacancy open > 30 days or removal sans approval."
+  },
+  {
+    "checklist_name": "Audit Powers, Duties & Standards Compliance",
+    "checklist_category": "Audit Oversight & Reporting",
+    "checklist_ai_description": "Chapter X (§§143, 132): auditor has full access, must report on true-and-fair view, AS compliance, IFC, etc.; auditing standards apply; NFRA may debar. Quick-check → engagement scope and sample work-papers. Flag-if → IFC opinion omitted or debarred auditor engaged."
+  },
+  {
+    "checklist_name": "Fraud Detection, Reporting & Safe-Harbour",
+    "checklist_category": "Fraud & Misconduct",
+    "checklist_ai_description": "Chapter X (§143(12)-(15)): fraud ≥ threshold to be reported to MCA; smaller frauds to Audit Committee/Board and disclosed in Board’s report; penalties for non-reporting. Quick-check → fraud log, MCA SRNs and Board disclosures. Flag-if → fraud ignored or MCA filing absent."
+  },
+  {
+    "checklist_name": "Prohibition of Non-Audit Services & Independence Safeguard",
+    "checklist_category": "Non-Audit Services & Independence",
+    "checklist_ai_description": "Chapter X (§144): auditor/network entities may not render specified services (accounting, IT systems, management, etc.) to company/group. Quick-check → engagement register and vendor payments. Flag-if → prohibited services or Board approval missing for permissible ones."
+  },
+  {
+    "checklist_name": "Meeting Attendance, Report Presentation & Member Rights",
+    "checklist_category": "Audit Oversight & Reporting",
+    "checklist_ai_description": "Chapter X (§§145-146): auditor signs reports, qualifications read at AGM and must receive meeting notices. Quick-check → AGM minutes and signed reports. Flag-if → remarks not read or auditor not notified."
+  },
+  {
+    "checklist_name": "Cost Audit Mandate & Auditor Separation",
+    "checklist_category": "Cost Audit & Special Audits",
+    "checklist_ai_description": "Chapter X (§148): specified sectors meeting thresholds must keep cost records and appoint a separate cost auditor; submit cost-audit report. Quick-check → CRA-2 filing and cost-audit report. Flag-if → statutory auditor also acts as cost auditor or report not considered by Board."
+  },
+    {
+      "checklist_name": "Board Composition, Diversity & Resident-Director Test",
+      "checklist_category": "Board Structure & Diversity",
+      "checklist_ai_description": "Chapter XI (§149 ¶1-3): public cos. ≥ 3 directors (private ≥ 2; OPC = 1) and ≤ 15 unless SR approves more; prescribed classes must have ≥ 1 woman director; every company needs ≥ 1 resident director (≥ 182 days in India during the FY, proportionately for first-year start-ups). Quick-check → board matrix vs. minima, woman-director status, resident-days log. Flag-if → head-count shortfall, mandatory woman seat vacant, or resident-days test failed."
+    },
+    {
+      "checklist_name": "Independent-Director Eligibility, Tenure & Databank Selection",
+      "checklist_category": "Independent Director Governance",
+      "checklist_ai_description": "Chapter XI (§149 ¶4-13 & §150): listed public cos. need ≥ ⅓ IDs; other public classes per rules. IDs must meet integrity, financial/relational thresholds, register in MCA databank, pass proficiency test (if required), receive no stock options and serve max two 5-year terms with 3-year cooling-off. Quick-check → independence declarations, databank ID, term tracker, remuneration ledger. Flag-if → criteria breached, databank not referenced, term > 2×5 yrs, or stock options granted."
+    },
+    {
+      "checklist_name": "Small-Shareholder & Woman-Director Representation",
+      "checklist_category": "Board Structure & Diversity",
+      "checklist_ai_description": "Chapter XI (§149 proviso & §151): listed cos. may elect one small-shareholder director (holders ≤ ₹20 k face value); certain classes must appoint a woman director. Quick-check → election notice, scrutineer report, Board-composition log. Flag-if → woman or small-shareholder seat vacant where mandated."
+    },
+    {
+      "checklist_name": "Director Appointment Process & DIN Compliance",
+      "checklist_category": "Appointment & DIN",
+      "checklist_ai_description": "Chapter XI (§§152-158): appointments via GM (except first directors); candidate must hold DIN, file consent (DIR-2) & non-disqualification (DIR-8); company files DIR-12 within 30 days. Quick-check → DIN letters, DIR-2/8, DIR-12 SRNs and GM minutes. Flag-if → duplicate DIN, consent missing, or DIR-12 late."
+    },
+    {
+      "checklist_name": "Disqualification, Vacation of Office & Casual-Vacancy Handling",
+      "checklist_category": "Disqualifications & Vacancy",
+      "checklist_ai_description": "Chapter XI (§§164-167): mental unsoundness, insolvency, conviction ≥ 6 m, call-arrears, RPT conviction, DIN default, financial-statement or deposit default trigger disqualification/vacation; Board seats vacate on all-seat vacancy; promoter/CG may step in. Quick-check → annual DIR-8, conviction logs, default trackers. Flag-if → disqualified director continues or vacancy unfilled."
+    },
+    {
+      "checklist_name": "Multiple Directorships Cap & Penalties",
+      "checklist_category": "Directorship Limits",
+      "checklist_ai_description": "Chapter XI (§165): cap 20 companies (max 10 public); dormant cos. excluded; SR can set lower cap; excess must cease within a year. Quick-check → DIN-wise list & public-co count. Flag-if → cap exceeded or penalties unpaid."
+    },
+    {
+      "checklist_name": "Additional, Alternate, Nominee & Casual Directors",
+      "checklist_category": "Special Board Appointments",
+      "checklist_ai_description": "Chapter XI (§161): Board (if authorised) may appoint additional (till next AGM), alternate (≥ 3-month absence), nominee (law/contract) and casual-vacancy directors (needs later member approval). Quick-check → article authority, Board resolutions, tenure tracker. Flag-if → alternate exceeds original term or Board fills vacancy without member ratification."
+    },
+    {
+      "checklist_name": "Individual Voting & Proportional Representation Options",
+      "checklist_category": "Director Election Mechanics",
+      "checklist_ai_description": "Chapter XI (§§160-163): non-retiring candidates need 14-day notice & ₹1 lakh deposit (waived for IDs/NRC-recommended); two or more directors can’t be appointed by one resolution unless the meeting agrees unanimously; articles may adopt proportional-representation elections every three years. Quick-check → notice/deposit receipts, ballot structure, article review. Flag-if → bundled resolution without unanimity or deposit refund mishandled."
+    },
+    {
+      "checklist_name": "Director Duties & Conflict-of-Interest Policy",
+      "checklist_category": "Director Duties & Ethics",
+      "checklist_ai_description": "Chapter XI (§166): directors owe fiduciary duties—act in good faith, due care, avoid conflicts, no undue gain; breach fines ₹1-5 lakh plus disgorgement. Quick-check → annual duty affirmations, conflict register, minutes showing abstention. Flag-if → conflicted director votes or discrepancy in register."
+    },
+    {
+      "checklist_name": "Resignation, Removal & Vacation Record-keeping",
+      "checklist_category": "Resignation & Removal",
+      "checklist_ai_description": "Chapter XI (§§168-169): resignations → DIR-12 (company) & optional DIR-11 (director); members may remove by OR (IDs need SR for 2nd term) after special notice; director entitled to be heard. Quick-check → resignation letters, DIR-12 SRNs, special-notice timeline. Flag-if → DIR-12 late, removal without representation or ID removed by OR."
+    },
+    {
+      "checklist_name": "Register of Directors & KMP and Member Inspection Rights",
+      "checklist_category": "Registers & Returns",
+      "checklist_ai_description": "Chapter XI (§§170-171): keep a register of directors/KMP with securities held in group entities; file return within 30 days of change; members may inspect free and take extracts. Quick-check → register completeness, timely DIR-12 updates, inspection log. Flag-if → register incomplete, inspection refused or return late."
+    },
+    {
+      "checklist_name": "Default-Penalty Sweep for Chapter XI",
+      "checklist_category": "Enforcement & Penalties",
+      "checklist_ai_description": "Chapter XI (§172): where no specific penalty exists, company & officers face ₹50 k plus ₹500/day (max ₹3 lakh company / ₹1 lakh officer). Quick-check → penalty tracker & compounding records. Flag-if → unpaid penalties or repeated defaults."
+    },
+    
+      {
+        "checklist_name": "Board-Meeting Frequency, Mode & Notice Discipline",
+        "checklist_category": "Board Meetings & Procedures",
+        "checklist_ai_description": "Chapter XII (§173): first Board meeting within 30 days of incorporation; thereafter ≥ 4 meetings a year with ≤ 120-day gap (OPC/small/dormant: one per half-year, ≥ 90-day gap). Seven-day written notice to every director (shorter only for urgent business with ID ratification); video-conference participation allowed and counted. Quick-check → calendar, notice proofs, VC logs. Flag-if → gap > 120 days, no ID ratification of short-notice decisions, or notice omissions."
+      },
+      {
+        "checklist_name": "Board-Meeting Quorum & Adjournment Logic",
+        "checklist_category": "Board Meetings & Procedures",
+        "checklist_ai_description": "Chapter XII (§174): quorum = one-third of total strength or two directors (higher) incl. VC participants; if interested directors ≥ ⅔, at least two dis-interested directors form quorum. Meeting adjourns automatically to same day/time next week for want of quorum. Quick-check → attendance register, interested-director chart. Flag-if → decisions taken without proper quorum or automatic adjournment rule ignored."
+      },
+      {
+        "checklist_name": "Resolution by Circulation & Majority-Call Override",
+        "checklist_category": "Board Meetings & Procedures",
+        "checklist_ai_description": "Chapter XII (§175): draft + papers must circulate to all directors at registered addresses/e-mode; deemed passed when majority entitled to vote approves, unless ≥ ⅓ directors demand meeting; must be noted in next minutes. Quick-check → circulation tracker, majority count, noting in minutes. Flag-if → papers missing, minority demand ignored, or noting skipped."
+      },
+      {
+        "checklist_name": "Validity of Acts Despite Defect in Appointment",
+        "checklist_category": "Board Meetings & Procedures",
+        "checklist_ai_description": "Chapter XII (§176): acts of a person acting as director remain valid until the company notices invalidity; afterwards acts are void. Quick-check → appointment-defect logs, cessation notices. Flag-if → business conducted post-awareness of invalid appointment."
+      },
+      {
+        "checklist_name": "Audit Committee & Vigil-Mechanism Compliance",
+        "checklist_category": "Board Committees",
+        "checklist_ai_description": "Chapter XII (§177): listed public and prescribed cos. need Audit Committee (≥ 3 directors, IDs majority); written terms include auditor appointment, RPT approval, IFC evaluation, fund-use monitoring; establish whistle-blower mechanism with direct access to chair. Quick-check → committee charter, minutes, vigil-mechanism web disclosure. Flag-if → composition breach or RPT omnibus approvals exceed limits."
+      },
+      {
+        "checklist_name": "Nomination-Remuneration & Stakeholders Committees",
+        "checklist_category": "Board Committees",
+        "checklist_ai_description": "Chapter XII (§178): listed public and prescribed cos. need NRC (≥ 3 NEDs, ≥ ½ IDs) to set fit-and-proper criteria, board/KMP evaluation and pay policy; > 1 000 security-holders → Stakeholders Relationship Committee chaired by NED to resolve grievances. Quick-check → NRC policy on website, evaluation records, SRC minutes. Flag-if → NRC chair same as company chair, policy not disclosed or grievances backlog."
+      },
+      {
+        "checklist_name": "Board-Reserved Matters & Delegation Register",
+        "checklist_category": "Board Powers & Delegations",
+        "checklist_ai_description": "Chapter XII (§179): 11 core powers (calls, buy-back, issue, borrow, invest, lend/guarantee, approve FS & report, diversify, M&A, takeovers, prescribed matters) need Board resolution at meeting; clauses (d-f) may be delegated by Board resolution. Quick-check → delegation register, resolution extracts. Flag-if → delegated borrowing/investment decisions without prior Board approval or terms."
+      },
+      {
+        "checklist_name": "Special-Resolution Locks on Board Powers",
+        "checklist_category": "Board Powers & Delegations",
+        "checklist_ai_description": "Chapter XII (§180): selling undertakings, investing compensation, borrowing beyond paid-up + free reserves + SP, and debt remission for directors need member SR. Quick-check → borrowing limits vs. debts, SR text specifies ceiling, charge documents. Flag-if → excess borrowing without SR or sale of undertaking below SR threshold definitions (~20 % net-worth/income)."
+      },
+      {
+        "checklist_name": "Charitable & Political Contributions Caps & Disclosure",
+        "checklist_category": "Board Powers & Delegations",
+        "checklist_ai_description": "Chapter XII (§§181-183): Board may donate to charities up to 5 % of three-year average profits without prior member consent; political contributions allowed (non-Govt co., ≥ 3 FY old) by Board resolution, paid via banking channel/instrument, amount disclosed in P&L. Quick-check → donation ledger, Board resolutions, P&L note. Flag-if → > 5 % charity without GM nod, political payment by cash or undisclosed."
+      },
+      {
+        "checklist_name": "Director Interest Disclosure & Participation Lock-Out",
+        "checklist_category": "Conflicts & Related Parties",
+        "checklist_ai_description": "Chapter XII (§184): annual and change-based MBP-1 disclosure; director with > 2 % shareholding/promoter/manager link must disclose contract interest and abstain. Contract voidable if disclosure/abstention missing. Quick-check → MBP-1 files, minutes showing abstention. Flag-if → voting by interested director or MBP-1 lapse."
+      },
+      {
+        "checklist_name": "Loans to Directors & Connected Persons Gatekeeper",
+        "checklist_category": "Conflicts & Related Parties",
+        "checklist_ai_description": "Chapter XII (§185): blanket ban on loans/guarantees/security to directors/relatives or partner firm; permitted to entities where directors interested only if SR passed and funds used for principal business; carve-outs for employee schemes, ordinary-course lenders, WOS. Quick-check → loan register vs. DIN map, SR disclosures. Flag-if → director-linked private-co loan without SR or utilisation proof."
+      },
+      {
+        "checklist_name": "Inter-corporate Loans, Investments & Guarantee Limits",
+        "checklist_category": "Treasury & Inter-corporate Deals",
+        "checklist_ai_description": "Chapter XII (§186): overall ceiling 60 % paid-up + free reserves + SP OR 100 % free reserves + SP (higher). Above ceiling → member SR; no > 2 layers of investment cos.; interest ≥ G-Sec yield; register & FS disclosure mandatory. Quick-check → loan-investment register, ceiling calc, SRs, board unanimity & PFI prior consent where term loans. Flag-if → defaulting company giving loan, interest below yield, or > 2-layer structure."
+      },
+      {
+        "checklist_name": "Investments Held in Company’s Own Name & Register",
+        "checklist_category": "Treasury & Inter-corporate Deals",
+        "checklist_ai_description": "Chapter XII (§187): investments to be held in company name (nominee shares in subsidiary allowed); exceptions for collection, security, depository form; maintain register for off-name holdings open to members. Quick-check → demat account BO list, off-name register. Flag-if → securities parked in third-party name beyond six-month grace or register inaccessible."
+      },
+      {
+        "checklist_name": "Related-Party Transactions Approval Matrix",
+        "checklist_category": "Conflicts & Related Parties",
+        "checklist_ai_description": "Chapter XII (§188): specified goods, property, service, agency, office-of-profit and underwriting deals need Board resolution; crossing paid-up/sum thresholds → member ordinary resolution with related parties abstaining (≥ 90 % RP shareholding carve-out). Ordinary-course on arm’s-length exempt. Quick-check → RPT tracker vs. thresholds, Board minutes, shareholder notice. Flag-if → RPT signed before approval or not ratified in three months."
+      },
+      {
+        "checklist_name": "Register of Contracts/Arrangements & Member Inspection",
+        "checklist_category": "Conflicts & Related Parties",
+        "checklist_ai_description": "Chapter XII (§189): keep register of §184(2)/§188 contracts signed by all directors present next Board meeting; produce at AGM; open for member inspection; ≤ ₹5 lakh small-value contracts exempt. Quick-check → register entries, AGM table log. Flag-if → unsigned register or inspection refusal."
+      },
+      {
+        "checklist_name": "Service Contract with MD/WTD Availability",
+        "checklist_category": "Management Contracts",
+        "checklist_ai_description": "Chapter XII (§190): keep copy or memorandum of MD/ WTD service contract at RO, open to members. Quick-check → contract file presence, member inspection log. Flag-if → copy absent or access denied."
+      },
+      {
+        "checklist_name": "Director Compensation on Loss of Office for Transfer Deals",
+        "checklist_category": "Management Contracts",
+        "checklist_ai_description": "Chapter XII (§191): payment for loss of office on undertaking or share transfer requires prior GM approval with full particulars; void if unpaid quorum. Quick-check → GM notice & resolution, payment vouchers. Flag-if → compensation paid without approval or beyond prescribed limits."
+      },
+      {
+        "checklist_name": "Non-Cash Asset Deals with Directors & Connected Persons",
+        "checklist_category": "Conflicts & Related Parties",
+        "checklist_ai_description": "Chapter XII (§192): company/director exchanging non-cash assets requires prior GM resolution(s), registered-valuer valuation, and parallel approval in holding-co GM if director sits there. Quick-check → valuation report, GM resolution, title transfer proof. Flag-if → asset swap before approval or undervaluation."
+      },
+      {
+        "checklist_name": "OPC Sole-Member Contracts Recording & Filing",
+        "checklist_category": "One Person Company",
+        "checklist_ai_description": "Chapter XII (§193): if OPC’s sole member-director contracts with company otherwise than in writing, terms must be in minutes of next Board meeting; file particulars with RoC within 15 days. Quick-check → minute book entry, RoC filing SRN. Flag-if → contract unrecorded or INC-12 filing late."
+      },
+      
+        {
+          "checklist_name": "MD/WTD/Manager Appointment & Tenure Controls",
+          "checklist_category": "Managerial Personnel – Appointment",
+          "checklist_ai_description": "Chapter XIII (§196): never appoint MD and manager simultaneously; each MD, WTD or manager may serve ≤ 5-year term (no re-appointment > 1 year before expiry); age floor 21 yrs, cap 70 yrs unless SR (or CG nod) justifies; disqualifications—insolvency, debt composition, > 6-month conviction. Board must approve terms, followed by member resolution (and CG nod if terms vary from Schedule V); file return within 60 days. Quick-check → offer letter vs. Schedule V, age/disqual list, Board & GM minutes, MR-1 SRN. Flag-if → twin MD+manager, term > 5 yrs, age > 70 without SR, or return late."
+        },
+        {
+          "checklist_name": "Overall & Individual Remuneration Caps, Profit-Link & Waiver Rules",
+          "checklist_category": "Managerial Remuneration – Limits",
+          "checklist_ai_description": "Chapter XIII (§197 & Schedule V): total managerial pay in a public company ≤ 11 % of net profits (unless SR permits more within Schedule V); single MD/WTD/manager ≤ 5 % (or 10 % aggregate for >1); other directors 1 % (with MD/WTD) or 3 % (without). If the company defaulted on secured dues, get creditor prior approval before SR. Excess sums must be refunded within two years, waiver needs SR (and creditor nod if default exists). Disclose each director-to-median pay ratio in Board’s report. Quick-check → profit calc under §198, creditor-consent file, Board report ratios. Flag-if → pay > caps without SR, refund not held in trust, or waiver sans SR."
+        },
+        {
+          "checklist_name": "No-/Inadequate-Profit Pay & Schedule V Compliance",
+          "checklist_category": "Managerial Remuneration – Limits",
+          "checklist_ai_description": "Chapter XIII (§197(3)-(11) & Schedule V): when profits are nil/inadequate, pay to directors (including IDs) only per Schedule V slabs unless SR authorises higher amounts; any clause purporting to raise pay above Schedule V is void unless compliant. Quick-check → profit situation vs. Schedule V table, SR text, remuneration register. Flag-if → excess pay without Schedule V conditions met or prior CG approval (where still required for older contracts)."
+        },
+        {
+          "checklist_name": "Profit Computation for Remuneration & Exclusion of Unrealised Gains",
+          "checklist_category": "Managerial Remuneration – Computation",
+          "checklist_ai_description": "Chapter XIII (§198): compute net profits for §197 after adding bounties/subsidies and deducting working charges, depreciation, taxes notified as excess-profit levy, etc.; exclude share-premium profits (non-investment cos.), capital gains, revaluation/unrealised or notional gains. Quick-check → reconciliation of §198 profit schedule to financials. Flag-if → unrealised gains or capital profits included in §197 remuneration base."
+        },
+        {
+          "checklist_name": "Remuneration Claw-Back on Restated Accounts",
+          "checklist_category": "Managerial Remuneration – Clawback",
+          "checklist_ai_description": "Chapter XIII (§199): if FS are restated for fraud or non-compliance, recover excess remuneration (incl. ESOP) from past/present MD/WTD/CEO/manager for the restated period. Quick-check → restatement board note, excess-pay calc, recovery demand letters. Flag-if → claw-back not initiated or Board waives without SR."
+        },
+        {
+          "checklist_name": "KMP Designation, One-Man Split & Multiple-Company Caps",
+          "checklist_category": "Key Managerial Personnel",
+          "checklist_ai_description": "Chapter XIII (§203): prescribed companies must have (i) MD/CEO/manager/WTD, (ii) CS, (iii) CFO—appointed by Board resolution; chairperson cannot be MD/CEO simultaneously unless AoA allow or the co. runs single-business; KMP may hold office in only one co. plus subsidiary; MD of 2nd co. allowed with unanimous Board consent & prior notice. Vacancies to be filled within six months. Penalty: co. ₹ 5 lakh, KMP ₹ 50 k + ₹ 1 k/day. Quick-check → DIR-12 for KMP, dual-role tracker, vacancy log. Flag-if → KMP missing, dual offices without consent or vacancy > 6 months."
+        },
+        {
+          "checklist_name": "Secretarial Audit & CS Statutory Functions",
+          "checklist_category": "Secretarial Audit & Compliance",
+          "checklist_ai_description": "Chapter XIII (§§204-205): every listed & prescribed co. must annex secretarial-audit report by PCS in Board’s report and explain qualifications; CS must report compliance to Board and ensure secretarial-standard adherence. Penalty for non-compliance: company/officer/PCS ₹ 2 lakh. Quick-check → MGT-8 form, Board reply to PCS remarks, SS-1/SS-2 checklist. Flag-if → secretarial audit omitted or PCS qualifications unaddressed."
+        },
+        {
+          "checklist_name": "Loss-of-Office Compensation & Insurance Premium Carve-Out",
+          "checklist_category": "Managerial Personnel – Exit Payments",
+          "checklist_ai_description": "Chapter XIII (§§202, 197 (13)): MD/WTD/manager may receive loss-of-office compensation ≤ remainder-of-term or three years’ average pay (whichever shorter) but nil if resignation (non-reconstruction), disqualification, winding-up due to their fault, fraud, etc.; co. cannot pay director insurance premium if director proved guilty—premium then counts as remuneration. Quick-check → exit-payment calc, GM approval, insurance policy ledger. Flag-if → compensation exceeds cap or paid when disqualified/fault, or guilty-director premium not clawed."
+        },
+        
+          {
+            "checklist_name": "Registrar Information Notice & Company Response",
+            "checklist_category": "Registrar Scrutiny & Notices",
+            "checklist_ai_description": "Chapter XIV – Inspection, Inquiry & Investigation (§206 (1)-(2)): on scrutiny or complaint, the Registrar may demand documents, information or explanation by written notice. Company and past officers must comply within the specified time (extensions possible). Quick-check → log of §206 notices, board delegation for response, delivery proofs. Flag-if → reply late/incomplete or past officers not contacted."
+          },
+          {
+            "checklist_name": "Inquiry / Inspection Cooperation & Civil-Court Powers",
+            "checklist_category": "Registrar Scrutiny & Notices",
+            "checklist_ai_description": "Chapter XIV – Inspection, Inquiry & Investigation (§207): during inquiry or inspection the Registrar/inspector can copy books, mark records and exercise civil-court powers (discovery, summons, inspection). Directors/officers must produce documents, answer questions and assist. Quick-check → attendance registers, marked-document log, oath transcripts. Flag-if → document withheld, summons ignored or powers resisted."
+          },
+          {
+            "checklist_name": "Emergency Search & Seizure Safeguards",
+            "checklist_category": "Registrar Scrutiny & Notices",
+            "checklist_ai_description": "Chapter XIV – Inspection, Inquiry & Investigation (§209): if books are at risk of destruction or concealment, Registrar/inspector may obtain Special-Court order to enter premises and seize for up to 180 days (renewable once). Company may copy seized records. Quick-check → Special-Court order copy, seizure inventory, return-schedule. Flag-if → seizure without order, retention > statutory limit, or copying denied."
+          },
+          {
+            "checklist_name": "Central-Government Investigation Order & Inspector Appointment",
+            "checklist_category": "Government Investigations",
+            "checklist_ai_description": "Chapter XIV – Inspection, Inquiry & Investigation (§§210, 213): CG or NCLT may order investigation on Registrar report, special resolution, public interest or member/creditor petition. CG appoints inspectors and defines scope. Quick-check → CG/NCLT order, inspector letter, scope memo. Flag-if → probe without valid order or security deposit mishandled."
+          },
+          {
+            "checklist_name": "Serious Fraud Investigation Office Mandate & Arrest Powers",
+            "checklist_category": "Serious Fraud Investigation Office",
+            "checklist_ai_description": "Chapter XIV – Inspection, Inquiry & Investigation (§§211-212): CG may assign cases to SFIO; other agencies must step back. SFIO inspectors can arrest for §447 fraud, produce before magistrate in 24 h; report deemed charge-sheet. Quick-check → SFIO order, arrest log, interim/final report SRNs. Flag-if → parallel investigation, arrest grounds unrecorded or report delayed."
+          },
+          {
+            "checklist_name": "Employee Protection During Investigation",
+            "checklist_category": "Employee Rights",
+            "checklist_ai_description": "Chapter XIV – Inspection, Inquiry & Investigation (§218): during investigation or §241 proceedings, any disciplinary action against an employee needs prior NCLT approval or 30-day deemed approval. Quick-check → HR action file, Tribunal application, 30-day clock. Flag-if → dismissal without nod or appeal period ignored."
+          },
+          {
+            "checklist_name": "Investigation of Ownership & Related Companies",
+            "checklist_category": "Inspector Scope & Reach",
+            "checklist_ai_description": "Chapter XIV – Inspection, Inquiry & Investigation (§§216, 219): CG/inspector may probe true beneficial owners and related bodies corporate with prior CG approval. Quick-check → scope order, BO findings, data-request log. Flag-if → approval missing or multi-layer links un-investigated."
+          },
+          {
+            "checklist_name": "Inspector Powers, Record Preservation & Examination",
+            "checklist_category": "Inspector Scope & Reach",
+            "checklist_ai_description": "Chapter XIV – Inspection, Inquiry & Investigation (§217): officers must preserve/produce books, furnish info and appear on oath; inspector may hold records ≤ 180 days (renewable) with civil-court powers. Quick-check → signed transcripts, custody log, renewal orders. Flag-if → records held beyond limit or notes unsigned."
+          },
+          {
+            "checklist_name": "Asset-Freezing & Securities Restriction Orders",
+            "checklist_category": "Asset & Stakeholder Protection",
+            "checklist_ai_description": "Chapter XIV – Inspection, Inquiry & Investigation (§§221-222): NCLT can freeze transfer/disposal of funds, assets or securities up to three years on CG reference or investigation. Quick-check → freeze order, compliance tracker. Flag-if → asset sale without Tribunal clearance or freeze expiry ignored."
+          },
+          {
+            "checklist_name": "Inspector Reports & Member Access",
+            "checklist_category": "Investigative Reports & Follow-Up",
+            "checklist_ai_description": "Chapter XIV – Inspection, Inquiry & Investigation (§223): inspector submits interim/final reports to CG; members/creditors may obtain copies; report is admissible evidence. Quick-check → report SRN, authentication seal, copy-request log. Flag-if → report not shared or uncertified."
+          },
+          {
+            "checklist_name": "Post-Report Prosecution, Winding-up & Disgorgement Actions",
+            "checklist_category": "Investigative Reports & Follow-Up",
+            "checklist_ai_description": "Chapter XIV – Inspection, Inquiry & Investigation (§224): CG may prosecute, seek winding-up, file oppression case or recover undue gains after inspector report. Costs recoverable from offenders. Quick-check → prosecution authorisation, cost-recovery ledger. Flag-if → action not initiated or reimbursement unpursued."
+          },
+          {
+            "checklist_name": "Investigation Expense Recovery & Security Deposit",
+            "checklist_category": "Investigative Reports & Follow-Up",
+            "checklist_ai_description": "Chapter XIV – Inspection, Inquiry & Investigation (§§214-215, 225): CG may demand security (≤ ₹25 k) before member-requested probe; expenses recoverable from convicted persons or applicants if no prosecution. Quick-check → security receipt, expense ledger, recovery orders. Flag-if → expenses unrecovered or security not refunded post-prosecution."
+          },
+          {
+            "checklist_name": "Legal Privilege & Banker Confidentiality Exceptions",
+            "checklist_category": "Investigation Boundaries",
+            "checklist_ai_description": "Chapter XIV – Inspection, Inquiry & Investigation (§227): legal advisers need not disclose privileged communication (client name/address excepted); bankers need not reveal other customers’ affairs. Quick-check → privilege log, inspector requests. Flag-if → privilege breached or banker forced to reveal third-party data."
+          },
+          {
+            "checklist_name": "Obstruction, False Statements & Document-Tampering Penalties",
+            "checklist_category": "Enforcement & Penalties",
+            "checklist_ai_description": "Chapter XIV – Inspection, Inquiry & Investigation (§§206(7), 207(4)(8), 229): non-compliance, obstruction, falsification or destruction of records and false statements attract fines/imprisonment; tampering treated as fraud (§447). Quick-check → penalty tracker, FIR files, prosecution status. Flag-if → penalties unpaid or tampering unreported."
+          },
+          
+          
+            {
+              "checklist_name": "Send NCLT-directed meeting notice with valuation report & explanatory statement to every creditor/member",
+              "checklist_category": "Scheme Documentation & Notices",
+              "checklist_ai_description": "Chapter XV – Compromises, Arrangements & Amalgamations (§230 (3)): individual notice must carry full scheme details, registered-valuer report and effect-on-stakeholders statement. Quick-check → proof of dispatch/email download, newspaper ad, SEBI/stock-exchange upload. Flag-if → valuation missing, notice not sent to debenture-holders, or newspaper ad omitted. :contentReference[oaicite:0]{index=0}"
+            },
+            {
+              "checklist_name": "Affidavit of material facts (latest financials, investigations, debt-restructuring) to accompany scheme application",
+              "checklist_category": "Tribunal Filings",
+              "checklist_ai_description": "Chapter XV (§230 (2)): the company must disclose audited statements, pendency of any inquiry, proposed share-capital reduction or RBI CDR scheme in a sworn affidavit. Quick-check → affidavit exhibits, balance-sheet date, inquiry docket nos. Flag-if → affidavit unsigned/undated or financials older than six months. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+              "checklist_name": "Serve scheme on CG, ITD, RBI, SEBI, OL, CCI, ROC etc. and wait 30 days for comments",
+              "checklist_category": "Regulatory Approvals",
+              "checklist_ai_description": "Chapter XV (§230 (5)): copies of notice + documents must reach every named regulator; silence for 30 days is deemed ‘no objection’. Quick-check → courier PODs / e-form SRNs, regulator comment tracker. Flag-if → any authority not served or comments ignored in petition. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "checklist_name": "Secure 3⁄4th in value vote (in person / proxy / postal ballot) and file NCLT order within 30 days",
+              "checklist_category": "Member & Creditor Consent",
+              "checklist_ai_description": "Chapter XV (§230 (6) & §230 (8)): resolution needs majority in number plus 75 % in value; certified order must reach ROC in 30 days else ₹20 k + ₹1 k-per-day penalty (§232 (8)). Quick-check → scrutineer report, e-form INC-28 SRN. Flag-if → order filed late or voting result < 75 %. :contentReference[oaicite:3]{index=3}"
+            },
+            {
+              "checklist_name": "Auditor’s certificate on accounting treatment must accompany scheme lodged with NCLT",
+              "checklist_category": "Scheme Documentation & Notices",
+              "checklist_ai_description": "Chapter XV – proviso to §230 (7) & §232 (3) – scheme cannot be sanctioned unless statutory auditor certifies Ind AS conformity. Quick-check → UDIN-bearing certificate, Ind AS references. Flag-if → certificate missing or issued by ineligible auditor. :contentReference[oaicite:4]{index=4}"
+            },
+            {
+              "checklist_name": "Waiver of creditor meeting requires 90 % in value consent by affidavit",
+              "checklist_category": "Member & Creditor Consent",
+              "checklist_ai_description": "Chapter XV (§230 (9)): Tribunal may dispense with the meeting if ≥ 90 % creditors (by value) file sworn consent. Quick-check → individual affidavits tally to 90 %+, valuation basis. Flag-if → consent shortfall or affidavits unsigned. :contentReference[oaicite:5]{index=5}"
+            },
+            {
+              "checklist_name": "Scheme must state an ‘appointed date’—effect is deemed from that date, not sanction date",
+              "checklist_category": "Scheme Documentation & Notices",
+              "checklist_ai_description": "Chapter XV (§232 (6)): operative date governs accounting and tax. Quick-check → clause in scheme, board minutes aligning books. Flag-if → appointed date left blank or retrospective beyond permissible limit. :contentReference[oaicite:6]{index=6}"
+            },
+            {
+              "checklist_name": "File annual statement on scheme compliance until fully implemented",
+              "checklist_category": "Post-Merger Monitoring",
+              "checklist_ai_description": "Chapter XV (§232 (7)): every company in the scheme files a Chartered Accountant/CS-certified statement with ROC each year. Quick-check → form MSC-1 equivalents, CA/CS certificate. Flag-if → statement overdue or non-filing. :contentReference[oaicite:7]{index=7}"
+            },
+            {
+              "checklist_name": "Fast-track merger eligibility: only small companies or holding-wholly-owned subsidiary with 90 % shareholder approval",
+              "checklist_category": "Fast-Track Merger",
+              "checklist_ai_description": "Chapter XV (§233): notice to ROC/OL, declaration of solvency and CG confirmation within 60 days. Quick-check → form CFT-1, solvency affidavit. Flag-if → objections un-addressed or nine-tenths shareholder vote absent. :contentReference[oaicite:8]{index=8}"
+            },
+            {
+              "checklist_name": "Cross-border merger needs prior RBI approval and CG-notified jurisdiction",
+              "checklist_category": "Cross-Border Transactions",
+              "checklist_ai_description": "Chapter XV (§234): foreign company must be from a country notified by CG; consideration may be cash or depository receipts. Quick-check → RBI NOC, FDI compliance file. Flag-if → non-notified jurisdiction or RBI nod pending. :contentReference[oaicite:9]{index=9}"
+            },
+            {
+              "checklist_name": "Acquire dissenting minority after 90 % approval—notice within 4 months & escrow the price",
+              "checklist_category": "Take-out of Minority",
+              "checklist_ai_description": "Chapter XV (§235 & §236): transferee deposits consideration; valuation by registered valuer. Quick-check → FC-5 bank proof, valuer report. Flag-if → escrow short-funded or valuation older than 60 days. :contentReference[oaicite:10]{index=10}"
+            },
+            {
+              "checklist_name": "Central Government amalgamation order in public interest—draft sent to companies, appeal window observed",
+              "checklist_category": "Government-Driven Amalgamation",
+              "checklist_ai_description": "Chapter XV (§237): CG may order merger by Gazette notification; compensation assessed by prescribed authority with right of appeal to NCLT. Quick-check → draft order served, compensation assessment. Flag-if → members not given two-month comment period. :contentReference[oaicite:11]{index=11}"
+            },
+            {
+              "checklist_name": "Transfer-offer circular must be registered with ROC before issue to shareholders",
+              "checklist_category": "Scheme Documentation & Notices",
+              "checklist_ai_description": "Chapter XV (§238): circular refused if information incomplete/misleading; director issuing un-registered circular faces ₹1 lakh penalty. Quick-check → ROC registration receipt. Flag-if → circular served before ROC approval. :contentReference[oaicite:12]{index=12}"
+            },
+            {
+              "checklist_name": "Books & papers of amalgamated company cannot be destroyed without CG leave",
+              "checklist_category": "Books & Records",
+              "checklist_ai_description": "Chapter XV (§239): CG may appoint examiner before permitting disposal. Quick-check → CG order, retention schedule. Flag-if → records shredded pre-approval. :contentReference[oaicite:13]{index=13}"
+            },
+          
+          
+            {
+              "checklist_name": "Oppression/Mismanagement petition—ensure eligibility thresholds or NCLT waiver",
+              "checklist_category": "Shareholder Remedies",
+              "checklist_ai_description": "Chapter XVI (§§241 & 244): minimum 100 members or 10 % share capital (paid-up) may file; Tribunal may waive. Quick-check → share register, waiver order. Flag-if → petition filed without requisite numbers or waiver. :contentReference[oaicite:14]{index=14}"
+            },
+            {
+              "checklist_name": "Tribunal order altering MoA/AoA to be filed within 30 days and future changes need leave",
+              "checklist_category": "Tribunal Orders & Filings",
+              "checklist_ai_description": "Chapter XVI (§242 (3)-(7)): certified copy to ROC in 30 days; company needs Tribunal leave for any inconsistent alteration. Quick-check → INC-28 SRN, amended charter. Flag-if → charter change without leave or filing delay. :contentReference[oaicite:15]{index=15}"
+            },
+            {
+              "checklist_name": "Director declared ‘not fit & proper’ barred from any company office for 5 years",
+              "checklist_category": "Director Disqualifications",
+              "checklist_ai_description": "Chapter XVI (§243 (1A)): Tribunal’s fit-and-proper finding triggers five-year ban (earlier under §242 (4A)). Quick-check → watch-list, MCA DIN status. Flag-if → appointment during ban period. :contentReference[oaicite:16]{index=16}"
+            },
+            {
+              "checklist_name": "Class-action suit—verify requisite numerosity & funding of notice costs by company",
+              "checklist_category": "Class Action",
+              "checklist_ai_description": "Chapter XVI (§245): at least 100 members or 5 % share capital; Tribunal may consolidate suits and appoint lead applicant. Quick-check → member count calc, cost-bearing order. Flag-if → duplicate class-actions or public notice not served. :contentReference[oaicite:17]{index=17}"
+            },
+            {
+              "checklist_name": "Non-compliance with class-action order—company faces ₹5–25 lakh fine; officers up to 3 years jail",
+              "checklist_category": "Penalties & Enforcement",
+              "checklist_ai_description": "Chapter XVI (§245 (6)-(7)): monitor implementation tracker. Quick-check → action-plan, proof of restitution. Flag-if → deadline passed without rectification. :contentReference[oaicite:18]{index=18}"
+            },
+          
+           {
+              "checklist_name": "Only a registered valuer (RVO member) may value assets/net-worth",
+              "checklist_category": "Registered Valuer Compliance",
+              "checklist_ai_description": "Chapter XVII (§247 (1)): appointment by Audit Committee/Board; check RVO certificate validity. Quick-check → RVIN, appointment resolution. Flag-if → valuation by un-registered person. :contentReference[oaicite:19]{index=19}"
+            },
+            {
+              "checklist_name": "Valuer must be independent—no direct/indirect interest for 3 years pre/post valuation",
+              "checklist_category": "Independence & Conflict",
+              "checklist_ai_description": "Chapter XVII (§247 (2)(d)): three-year cooling-off on interest in the asset valued. Quick-check → conflict-declaration form. Flag-if → valuer also shareholder/advisor. :contentReference[oaicite:20]{index=20}"
+            },
+            {
+              "checklist_name": "Penalty ₹50 000 for breach; intent to defraud → 1 year jail + ₹1-5 lakh fine",
+              "checklist_category": "Penalties & Enforcement",
+              "checklist_ai_description": "Chapter XVII (§247 (3)): monitor penalty register, DIN strikes. Quick-check → MCA adjudication orders. Flag-if → unpaid penalty or repeat offender. :contentReference[oaicite:21]{index=21}"
+            },
+            {
+              "checklist_name": "Convicted valuer must refund fees and pay damages for misleading report",
+              "checklist_category": "Restitution",
+              "checklist_ai_description": "Chapter XVII (§247 (4)): refund and civil damages mandatory. Quick-check → refund voucher, damage-claim ledger. Flag-if → refund outstanding. :contentReference[oaicite:22]{index=22}"
+            },
+          
+          
+            {
+              "checklist_name": "ROC strike-off notice—30 days to respond before name removed",
+              "checklist_category": "Strike-off Process",
+              "checklist_ai_description": "Chapter XVIII (§248 (1)): notice to company & directors when business not commenced or inactive 2 years, subscribers unpaid, etc. Quick-check → notice date vs reply, supporting documents. Flag-if → no board resolution responding. :contentReference[oaicite:23]{index=23}"
+            },
+            {
+              "checklist_name": "Voluntary strike-off—special resolution (75 % paid-up) and application in STK-2 after liabilities extinguished",
+              "checklist_category": "Strike-off Process",
+              "checklist_ai_description": "Chapter XVIII (§248 (2)): ROC issues public notice; section 8 companies ineligible. Quick-check → SRN of STK-2, indemnity bond, regulatory NOC if sector-regulated. Flag-if → liabilities outstanding or special-resolution missing. :contentReference[oaicite:24]{index=24}"
+            },
+            {
+              "checklist_name": "Three-month cooling-off—company cannot apply for strike-off if name changed, property disposed, etc.",
+              "checklist_category": "Strike-off Process",
+              "checklist_ai_description": "Chapter XVIII (§249): application barred within 3 months of specified actions. Quick-check → timeline worksheet, property sale deeds. Flag-if → STK-2 filed inside barred window. :contentReference[oaicite:25]{index=25}"
+            },
+            {
+              "checklist_name": "Liability of directors & members continues after dissolution",
+              "checklist_category": "Post-Dissolution Exposure",
+              "checklist_ai_description": "Chapter XVIII (§248 (7)): obligations enforceable as if company not dissolved. Quick-check → indemnity trackers, legal-hold notices. Flag-if → creditor claims ignored post strike-off. :contentReference[oaicite:26]{index=26}"
+            },
+            {
+              "checklist_name": "Fraudulent strike-off application → officers jointly liable and punishable for fraud (section 447)",
+              "checklist_category": "Offences & Misconduct",
+              "checklist_ai_description": "Chapter XVIII (§251): ROC may also prosecute. Quick-check → evidence of intent to evade debt, fraud report. Flag-if → unpaid creditors or false declarations. :contentReference[oaicite:27]{index=27}"
+            },
+            {
+              "checklist_name": "Restoration—appeal within 3 years or application up to 20 years if company carrying on business",
+              "checklist_category": "Restoration",
+              "checklist_ai_description": "Chapter XVIII (§252): Tribunal may order name restored; ROC must issue fresh COI. Quick-check → appeal diary no., ROC re-registration SRN. Flag-if → appeal filed late without condonation. :contentReference[oaicite:28]{index=28}"
+            },
+          
+            {
+              "checklist_name": "Revival & Rehabilitation now governed by Insolvency & Bankruptcy Code—confirm company uses IBC, not §§253-269",
+              "checklist_category": "Regulatory Mapping",
+              "checklist_ai_description": "Chapter XIX sections are omitted by IBC 2016 (Eleventh Schedule). Quick-check → board minutes referencing CIRP, no filings under defunct §§253-269. Flag-if → Form CFA or other obsolete revival forms used post-IBC. :contentReference[oaicite:29]{index=29}"
+            },
+          
+           
+            {
+              "checklist_name": "Grounds to petition for winding-up—fraud, default in filings 5 years, just & equitable, etc.",
+              "checklist_category": "Initiation of Winding-up",
+              "checklist_ai_description": "Chapter XX (§271): verify petition cites valid ground and is by eligible party under §272. Quick-check → petition copy, board SR, registrar authorisation. Flag-if → wrong ground or ineligible petitioner. :contentReference[oaicite:30]{index=30}"
+            },
+            {
+              "checklist_name": "Company Liquidator to submit preliminary report within 60 days",
+              "checklist_category": "Liquidator Reports",
+              "checklist_ai_description": "Chapter XX (§281): content includes asset valuation, liabilities, list of contributories, fraud observations. Quick-check → date-stamped report, registered-valuer annexures. Flag-if → report late or missing viability note. :contentReference[oaicite:31]{index=31}"
+            },
+            {
+              "checklist_name": "Tribunal sets overall time-limit and may order sale as going concern on consideration of report",
+              "checklist_category": "Tribunal Directions",
+              "checklist_ai_description": "Chapter XX (§282): Tribunal orders timeline, sale directions and fraud investigation. Quick-check → Tribunal order, revised timeline. Flag-if → timeline omitted or exceeded without extension. :contentReference[oaicite:32]{index=32}"
+            },
+            {
+              "checklist_name": "Constitute winding-up committee within 3 weeks of order to monitor liquidation",
+              "checklist_category": "Governance & Oversight",
+              "checklist_ai_description": "Chapter XX (proviso to §277 & §277(4-8)): committee = OL, secured-creditor nominee, professional. Quick-check → committee minutes, monthly report to Tribunal. Flag-if → committee not formed or reports missing. :contentReference[oaicite:33]{index=33}"
+            },
+            {
+              "checklist_name": "Promoters/directors must cooperate with Liquidator or face Tribunal direction",
+              "checklist_category": "Director Duties",
+              "checklist_ai_description": "Chapter XX (§284): Liquidator may seek Tribunal order compelling cooperation. Quick-check → cooperation letters, Tribunal directive. Flag-if → information or assets withheld. :contentReference[oaicite:34]{index=34}"
+            },
+            {
+              "checklist_name": "Settle list of contributories and rectification of register",
+              "checklist_category": "Contributories & Claims",
+              "checklist_ai_description": "Chapter XX (§285): distinction between direct and representative contributories; persons ceased >1 year generally exempt. Quick-check → settled list, notice proofs. Flag-if → list delayed or exclusions incorrect. :contentReference[oaicite:35]{index=35}"
+            },
+            {
+              "checklist_name": "Liquidator may call contributory monies (calls) to satisfy debts",
+              "checklist_category": "Contributories & Claims",
+              "checklist_ai_description": "Chapter XX (§296 & §295): Tribunal order specifies amount & schedule; set-off limited. Quick-check → call order, payment tracker. Flag-if → call unpaid or improper set-off allowed. :contentReference[oaicite:36]{index=36}"
+            },
+            {
+              "checklist_name": "Overriding preferential payments—workmen’s dues + secured-creditor shortfall to be paid first",
+              "checklist_category": "Preferential & Secured Claims",
+              "checklist_ai_description": "Chapter XX (§326): compute ‘workmen’s portion’ on security; pay within 30 days of asset sale. Quick-check → calculation sheet, bank proofs. Flag-if → priority mis-applied. :contentReference[oaicite:37]{index=37}"
+            },
+            {
+              "checklist_name": "Preferential payments—taxes, wages (≤ 4 months), PF/ESI etc. before unsecured creditors",
+              "checklist_category": "Preferential & Secured Claims",
+              "checklist_ai_description": "Chapter XX (§327): statutory cap on wage amount per employee. Quick-check → payroll statement, challans, tax demand note. Flag-if → cap exceeded or dues postponed. :contentReference[oaicite:38]{index=38}"
+            },
+            {
+              "checklist_name": "Floating charge created within 12 months invalid unless company solvent at creation",
+              "checklist_category": "Avoidance Transactions",
+              "checklist_ai_description": "Chapter XX (§332): only cash-advance plus 5 % interest protected. Quick-check → charge registration date vs winding-up petition, solvency affidavit. Flag-if → recent floating charge without solvency proof. :contentReference[oaicite:39]{index=39}"
+            },
+            {
+              "checklist_name": "Fraudulent preference (within 6 months) and bad-faith transfers (within 1 year) can be set aside",
+              "checklist_category": "Avoidance Transactions",
+              "checklist_ai_description": "Chapter XX (§§328-329): Tribunal may restore position. Quick-check → transaction timeline matrix, beneficiary list. Flag-if → suspect payments not reported. :contentReference[oaicite:40]{index=40}"
+            },
+            {
+              "checklist_name": "Liquidator may disclaim onerous property/unprofitable contracts within 12 months with Tribunal leave",
+              "checklist_category": "Liquidator Powers",
+              "checklist_ai_description": "Chapter XX (§333): disclaimer operates from date signed; creditors may prove as unsecured. Quick-check → leave order, notice to interested parties. Flag-if → disclaimer out-of-time or without notice. :contentReference[oaicite:41]{index=41}"
+            },
+            {
+              "checklist_name": "Maintain audited liquidation accounts and send half-yearly statement to Tribunal & ROC",
+              "checklist_category": "Books & Audit",
+              "checklist_ai_description": "Chapter XX (§294 & §348): twice-yearly account plus annual ‘pending liquidation’ statement. Quick-check → audit report, filing SRN, creditor circulation proof. Flag-if → accounts unaudited or statement overdue. :contentReference[oaicite:42]{index=42}"
+            },
+            {
+              "checklist_name": "Summary liquidation for small companies—Official Liquidator report to CG within 30 days; assets sold in 60 days",
+              "checklist_category": "Summary Procedure",
+              "checklist_ai_description": "Chapter XX (Part II – §§361-365): OL settles creditor claims and files final report for dissolution. Quick-check → OL appointment order, asset sale schedule, creditor list. Flag-if → 60-day sale window missed. :contentReference[oaicite:43]{index=43}"
+            },
+          
+            {
+              "checklist_name": "Foreign company must file charter, director list and authorised Indian representative within 30 days of establishing place of business",
+              "checklist_category": "Initial Registration",
+              "checklist_ai_description": "Chapter XXII (§380): include certified English translation if originals not in English. Quick-check → e-Form FC-1 SRN, POA of authorised rep. Flag-if → filing late or representative resigned not replaced. :contentReference[oaicite:44]{index=44}"
+            },
+            {
+              "checklist_name": "Annual balance-sheet, P&L and list of Indian establishments to ROC every calendar year",
+              "checklist_category": "Filings & Accounts",
+              "checklist_ai_description": "Chapter XXII (§381): non-English statements need certified translation. Quick-check → FC-3 filing receipt, translation certificate. Flag-if → calendar-year deadline missed. :contentReference[oaicite:45]{index=45}"
+            },
+            {
+              "checklist_name": "Display company name and country of incorporation outside every office and on letterheads",
+              "checklist_category": "Display & Stationery",
+              "checklist_ai_description": "Chapter XXII (§382): must also state limited liability where applicable. Quick-check → site photo, stationery sample. Flag-if → local-language signage absent. :contentReference[oaicite:46]{index=46}"
+            },
+            {
+              "checklist_name": "Service of process deemed sufficient if left at registered Indian office or posted to authorised representative",
+              "checklist_category": "Service of Process",
+              "checklist_ai_description": "Chapter XXII (§383): verify FC-1 address current. Quick-check → SOP log, authorised rep tenure. Flag-if → address outdated. :contentReference[oaicite:47]{index=47}"
+            },
+            {
+              "checklist_name": "Foreign company to register charge satisfaction, alterations in directors/charter/principal office within 30 days",
+              "checklist_category": "Filings & Changes",
+              "checklist_ai_description": "Chapter XXII (§384 read with §§77-79): use e-Form FC-2. Quick-check → FC-2 SRNs, updated charter copy. Flag-if → alteration filed late or charge satisfaction un-registered. :contentReference[oaicite:48]{index=48}"
+            },
+            {
+              "checklist_name": "Continuing default—daily fine ₹50 000 after first conviction; officers up to ₹5 lakh",
+              "checklist_category": "Penalties & Enforcement",
+              "checklist_ai_description": "Chapter XXII (§392 (2)): monitor conviction register. Quick-check → court order, payment receipt. Flag-if → continuing non-compliance post-conviction. :contentReference[oaicite:49]{index=49}"
+            },
+           
+              {
+                "checklist_name": "For every Government company where the Central Government is a member, draft the statutory annual report within 3 months of the AGM and lay it before both Houses of Parliament together with CAG’s audit report and comments",
+                "checklist_category": "Government-Company Reporting",
+                "checklist_ai_description": "Chapter XXIII (§394 (1)): the Board must ensure the annual report on working and affairs—complete with the Comptroller & Auditor-General’s report and any supplemental comments—is prepared no later than three months after the AGM at which those audit comments were tabled, and is promptly placed before Parliament. Quick-check → board calendar shows 3-month deadline, CAG letter attached, Lok Sabha/Rajya Sabha laying date proof. Flag-if → draft misses CAG comments, report laid after the statutory window, or no record of tabling in both Houses. :contentReference[oaicite:0]{index=0}"
+              },
+              {
+                "checklist_name": "Where the Central Government is not a member, ensure each State-member Government prepares the annual report within the same 3-month window and lays it before its Legislature with the CAG audit report",
+                "checklist_category": "Government-Company Reporting",
+                "checklist_ai_description": "Chapter XXIII (§395 (1)-(2)): if only State Government(s) hold shares, each such Government shoulders the reporting duty—time-line and content mirror §394; the obligation even survives liquidation. Quick-check → correspondence with Finance/Industries Department, Legislature-laying proof, liquidation tracker (if applicable). Flag-if → report prepared late, CAG comments omitted, or not tabled in every relevant House. :contentReference[oaicite:1]{index=1}"
+            
+              },
+            
+              {
+                "checklist_name": "File every statutory form, return or document in the prescribed electronic format and authentication mode once the MCA e-filing rule under §398 comes into force",
+                "checklist_category": "Electronic Filing & Authentication",
+                "checklist_ai_description": "Chapter XXIV (§398 (1)(a)-(c), §400): the Central Government may mandate e-filing for specified documents, electronic service of notices, and electronic inspection; electronic form may be exclusive or parallel to physical. Quick-check → verify latest MCA notification, e-form acknowledgements, DSC validity. Flag-if → paper submission where e-filing is compulsory or DSC expired. :contentReference[oaicite:2]{index=2}"
+              },
+              {
+                "checklist_name": "Track late-filing additional fee—₹100 per day (or higher for repeat defaults) for annual return/financial statements and other forms, and secure proof of fee payment to avoid compounding",
+                "checklist_category": "Fees & Additional Fees",
+                "checklist_ai_description": "Chapter XXIV (§403 (1) and provisos): documents under §§92 or 137 attract a minimum ₹100/day additional fee after due date; other filings pay graded additional fees, with a higher slab on second or subsequent defaults. Quick-check → Due-date dashboard, CFSS amnesty history, challan archive. Flag-if → unpaid additional fee, or default repeated without board escalation. :contentReference[oaicite:3]{index=3}"
+              },
+              {
+                "checklist_name": "Rely on Registrar-certified copies for legal evidence—ensure requested documents are issued under the MCA seal and kept in litigation files",
+                "checklist_category": "Certified Copies & Evidence",
+                "checklist_ai_description": "Chapter XXIV (§397 & §399): copies or extracts of filings, authenticated by the Registrar, are admissible in all proceedings; any court/Tribunal summons for original records requires leave. Quick-check → obtain electronically certified copies (ROC stamp/QR), store in DMS. Flag-if → uncertified downloads used in court or summons issued without leave noted on it. :contentReference[oaicite:4]{index=4}",
+              },
+            
+              {
+                "checklist_name": "When the Central Government issues a §405 order, furnish the requested information or statistics accurately within the specified deadline and be ready to produce supporting records for verification",
+                "checklist_category": "Government Information Orders",
+                "checklist_ai_description": "Chapter XXV (§405 (1)-(3)): CG may direct any (class of) company to supply data on constitution or working; CG can require production or inspection of underlying documents to check accuracy. Quick-check → diarise order date (Official Gazette or addressed notice), compile data pack, maintain evidence of completeness check. Flag-if → response late, incomplete, or records not produced for review. :contentReference[oaicite:5]{index=5}"
+              },
+              {
+                "checklist_name": "Monitor penalties for non-compliance with a §405 order—₹20,000 one-time plus ₹1,000 per day (capped at ₹3 lakh) for continuing failure or materially incorrect information",
+                "checklist_category": "Penalties & Enforcement",
+                "checklist_ai_description": "Chapter XXV (§405 (4)): both company and every defaulting officer are liable; penalties accrue daily after the first day of default. Quick-check → penalty register, director DIN alerts, proof of payment or appeal. Flag-if → daily accrual crosses ₹3 lakh cap or officers unaware of personal liability. :contentReference[oaicite:6]{index=6}",
+              },  
+              
+              {
+                "checklist_name": "Confirm the company’s status as a ‘Nidhi’—operate deposit-taking and loan business only after Central Government notification in the Official Gazette and ongoing compliance with Nidhi Rules",
+                "checklist_category": "Nidhi Classification & Operations",
+                "checklist_ai_description": "Chapter XXVI (§406 (1)): only a company expressly declared a ‘Nidhi’ or ‘Mutual Benefit Society’ by CG notification may use that status; ensure registration under Nidhi Rules 2014 (as amended) before accepting member deposits or making loans. Quick-check → Gazette notification copy, NDH-1/-2 forms filed, membership limit and NDH ratio tests. Flag-if → business commenced without notification or ratios breached. :contentReference[oaicite:7]{index=7}"
+              },
+              {
+                "checklist_name": "Track any CG notification exempting or modifying Companies Act provisions for Nidhis and verify that the draft notification was laid before Parliament for 30 sitting days",
+                "checklist_category": "Regulatory Exemptions & Monitoring",
+                "checklist_ai_description": "Chapter XXVI (§406 (2)-(5)): CG may relax or tweak Act provisions for Nidhis via notification; draft must be placed before both Houses for 30 days and final notification laid after issue. Quick-check → parliament-laying slip, company law library updated, compliance matrix adjusted. Flag-if → operating under lapsed draft notification or exemptions applied before parliamentary scrutiny completed. :contentReference[oaicite:8]{index=8}"
+              },
+              
+                {
+                  "checklist_name": "Respond to any §405 Central-Government information order with complete data and supporting records within the specified deadline",
+                  "checklist_category": "Government Information Orders",
+                  "checklist_ai_description": "Chapter XXV (§405 (1)-(3)): the CG may, by Gazette order, direct a company (or class of companies) to furnish particulars of its constitution or working and to produce underlying documents for verification. Quick-check → diary the order date, compile the data pack, verify accuracy, keep proof of dispatch/e-upload. Flag-if → reply late, incomplete, or records not produced when called. :contentReference[oaicite:0]{index=0}"
+                },
+                {
+                  "checklist_name": "Monitor penalties for non-compliance with a §405 order—₹20 000 one-time plus ₹1 000 per day (capped at ₹3 lakh) for continuing failure or materially incorrect information",
+                  "checklist_category": "Enforcement & Penalties",
+                  "checklist_ai_description": "Chapter XXV (§405 (4)): liability falls on both the company and every defaulting officer; accrual stops at ₹3 lakh. Quick-check → penalty register, DIN alerts, evidence of payment/appeal. Flag-if → daily fine keeps running or officers unaware of personal exposure. :contentReference[oaicite:1]{index=1}",
+                },
+              
+                
+                {
+                  "checklist_name": "File appeal to NCLAT within 45 days of receiving the NCLT order (extendable by a further 45 days for sufficient cause)",
+                  "checklist_category": "Tribunal Appeals",
+                  "checklist_ai_description": "Chapter XXVII (§421 (1)-(3)): aggrieved party must use prescribed form and fee; late appeal possible only up to another 45 days with reasoned order. Quick-check → maintain order-receipt log, appeal SRN, grounds of delay if any. Flag-if → appeal filed after 90 days or form/fee incorrect. :contentReference[oaicite:2]{index=2}"
+                },
+                {
+                  "checklist_name": "Track 60-day Supreme Court deadline for questions of law against an NCLAT order",
+                  "checklist_category": "Tribunal Appeals",
+                  "checklist_ai_description": "Chapter XXVII (§423): petition to Supreme Court must be lodged within 60 days of NCLAT order receipt (extendable another 60 days for sufficient cause). Quick-check → SC filing diary, vakalatnama. Flag-if → special-leave petition filed out-of-time without condonation motion. :contentReference[oaicite:3]{index=3}"
+                },
+                {
+                  "checklist_name": "Ensure NCLT/NCLAT orders are implemented promptly—orders enforceable as civil-court decrees and non-compliance may trigger contempt",
+                  "checklist_category": "Order Compliance",
+                  "checklist_ai_description": "Chapter XXVII (§424 (3) & §425): tribunal orders can be executed through civil-court machinery; both tribunals have High-Court contempt powers. Quick-check → compliance tracker, proof of execution, legal-team sign-off. Flag-if → deadlines missed or contempt notice received. :contentReference[oaicite:4]{index=4}"
+                },
+                {
+                  "checklist_name": "File NCLT order copies with ROC where any provision requires it—30-day timeline still applies despite appeal",
+                  "checklist_category": "Regulatory Filings",
+                  "checklist_ai_description": "Chapter XXVII read with underlying sections (e.g., §242, §232): tribunal orders altering charter/approvals must be e-filed on INC-28 within 30 days. Quick-check → SRN log, appeal status note. Flag-if → filing delayed pending appeal without stay. :contentReference[oaicite:5]{index=5}"
+                },
+              
+                
+                {
+                  "checklist_name": "Verify offence jurisdiction—crimes punishable ≥2 years tried by Special Court with Sessions-Judge; others by Magistrate-grade Special Court",
+                  "checklist_category": "Litigation Strategy",
+                  "checklist_ai_description": "Chapter XXVIII (§435 (2) & §436 (1)(a)): determine the correct Special-Court forum based on charge sheet and registered-office location. Quick-check → offence schedule, Special-Court notification, jurisdiction memo. Flag-if → complaint filed in wrong court. :contentReference[oaicite:6]{index=6}"
+                },
+                {
+                  "checklist_name": "Remember that (almost) all Companies-Act offences are non-cognisable—file private complaint through ROC, shareholder or CG authorised person",
+                  "checklist_category": "Complaint Filing",
+                  "checklist_ai_description": "Chapter XXVIII (§439 (1)-(3)): police cannot investigate without court order; Special Court takes cognisance only on written complaint by ROC/shareholder/CG nominee (SEBI for securities offences). Quick-check → verify authorisation letter, complaint format. Flag-if → FIR lodged directly by police or complaint without proper authorisation. :contentReference[oaicite:7]{index=7}"
+                },
+                {
+                  "checklist_name": "Use compounding route for offences punishable with fine (≤ ₹25 lakh) via RD; heavier or mixed-punishment offences via NCLT",
+                  "checklist_category": "Compounding & Settlements",
+                  "checklist_ai_description": "Chapter XXVIII (§441 (1)(a)-(b)): RD can compound where max fine ≤ ₹25 lakh; Tribunal compounds higher-fine offences; imprisonment-only or imprisonment-plus-fine offences are non-compoundable (§441 (6)). Quick-check → offence table, application on Form GNL-1, ROC comments. Flag-if → application filed for non-compoundable offence. :contentReference[oaicite:8]{index=8}"
+                },
+                {
+                  "checklist_name": "Consider Mediation & Conciliation Panel for live NCLT/NCLAT proceedings—dispose within 3 months",
+                  "checklist_category": "Dispute Resolution",
+                  "checklist_ai_description": "Chapter XXVIII (§442): parties (or tribunal suo-motu) may refer any matter to CG-maintained panel of experts; recommendations go back to forum; objections allowed. Quick-check → panel application, three-month clock, fee receipt. Flag-if → recommendation ignored without objection filing. :contentReference[oaicite:9]{index=9}"
+                },
+                {
+                  "checklist_name": "Apply lower-penalty regime for OPC, small, start-up or producer companies—½ standard penalty with ₹2 lakh/₹1 lakh caps",
+                  "checklist_category": "Penalty Optimisation",
+                  "checklist_ai_description": "Chapter XXVIII (§446B): secretarial team should flag eligibility before paying/adjudicating fines. Quick-check → check MCA master-data category, DPIIT start-up recognition. Flag-if → full penalty paid despite eligibility for concession. :contentReference[oaicite:10]{index=10}"
+                },
+              
+                
+                {
+                  "checklist_name": "Fraud ≥₹10 lakh or 1 % turnover attracts 6-10 years jail plus fine up to 3× amount; below that (without public interest) carries lighter limits",
+                  "checklist_category": "Fraud & Misconduct",
+                  "checklist_ai_description": "Chapter XXIX (§447): classify fraud cases to brief directors on sentencing exposure; heavier minimum 3-year term if public interest involved. Quick-check → forensic report, turnover figure, public-interest test. Flag-if → charge sheet understates fraud quantum to dodge higher slab. :contentReference[oaicite:11]{index=11}"
+                },
+                {
+                  "checklist_name": "Any false statement or material omission in a statutory filing triggers §447 fraud penalty—treat diligence on all ROC forms as high-risk area",
+                  "checklist_category": "Fraud & Misconduct",
+                  "checklist_ai_description": "Chapter XXIX (§448): applies to returns, certificates, financial statements, prospectus, etc. Quick-check → maker checker review, UDIN validation. Flag-if → late discovery of typo/omission without immediate revised filing. :contentReference[oaicite:12]{index=12}"
+                },
+                {
+                  "checklist_name": "Generic contraventions where no specific penalty exists—penalty ₹10 000 plus ₹1 000 per day (caps: ₹2 lakh company/₹50 k officer)",
+                  "checklist_category": "Generic Penalties",
+                  "checklist_ai_description": "Chapter XXIX (§450): maintain breach-register to spot accumulating per-day fines. Quick-check → date-of-default log, auto-calc of daily accrual. Flag-if → cap exceeded without board escalation. :contentReference[oaicite:13]{index=13}"
+                },
+                {
+                  "checklist_name": "Second or subsequent offence within 3 years → fines double under §451; repeat defaults under adjudication double under §454A",
+                  "checklist_category": "Repeat Defaults",
+                  "checklist_ai_description": "Chapter XXIX (§451 & §454A): compliance tracker must tag ‘repeat’ flags when calculating settlement amounts. Quick-check → look-back query (3-year window), previous penalty orders. Flag-if → repeat default treated as first-time in compounding/adjudication papers. :contentReference[oaicite:14]{index=14}"
+                },
+                {
+                  "checklist_name": "Wrongful withholding of company property by an officer—fine ₹1-5 lakh and court may order restitution within a fixed time or up to 2-year jail",
+                  "checklist_category": "Assets & Records",
+                  "checklist_ai_description": "Chapter XXIX (§452): includes cash; court cannot jail for housing dispute if PF/ESI dues unpaid. Quick-check → asset-return checklist at exit, legal-hold notices. Flag-if → company delays complaint despite clear misappropriation. :contentReference[oaicite:15]{index=15}"
+                },
+                {
+                  "checklist_name": "Adjudicating-officer (ROC/RD) penalty orders—rectify default if directed and pay within 90 days to avoid heavy fines or six-month jail for officers",
+                  "checklist_category": "Adjudication Process",
+                  "checklist_ai_description": "Chapter XXIX (§454 (3)-(8)): failure to obey AO/RD order → company fine ₹25 k-₹5 lakh; officer fine ₹25 k-₹1 lakh or 6-month imprisonment. Quick-check → monitor 90-day counter, evidence of rectification, payment challan. Flag-if → missed 90-day limit or no rectification filed. :contentReference[oaicite:16]{index=16}"
+                },
+                {
+                  "checklist_name": "Maintain dormant-company status—file required annual fee, keep minimum directors, apply to become active before new operations",
+                  "checklist_category": "Dormant Companies",
+                  "checklist_ai_description": "Chapter XXIX (§455): inactivity for two FYs triggers ROC notice; failure to comply may strike from dormant register. Quick-check → NDH-style tracker: directors count, annual fee receipt. Flag-if → dormant company executes transactions without activation filing. :contentReference[oaicite:17]{index=17}"
+                },
+                {
+                  "checklist_name": "Unregistered partnership/association > prescribed limit (currently 100 persons) carrying on business for gain is illegal—members face ₹1 lakh fine and unlimited liability",
+                  "checklist_category": "Prohibition on Large Partnerships",
+                  "checklist_ai_description": "Chapter XXIX (§464): secretarial/legal team must vet joint-venture or consortium structures that exceed threshold. Quick-check → head-count register, partnership deed review. Flag-if → business started with 101+ partners without corporate registration. :contentReference[oaicite:18]{index=18}"
+                },
+                {
+                  "checklist_name": "Apply for CG condonation when filing or application is late under any section—delay must be recorded in writing and condoned before ROC filing",
+                  "checklist_category": "Condonation of Delay",
+                  "checklist_ai_description": "Chapter XXIX (§460): board resolution + e-Form CG-1, fee, and speaking order from MCA. Quick-check → CG-1 SRN, condonation order annexed to belated form. Flag-if → late ROC form filed without prior condonation. :contentReference[oaicite:19]{index=19}"
+                }
+             
+            
+]
+          
+          
+ 

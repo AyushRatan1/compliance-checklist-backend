@@ -1,0 +1,87 @@
+[
+    {
+      "checklist_name": "KYC/AML Policy Governance",
+      "checklist_category": "Governance & Culture",
+      "checklist_ai_description": "1. Confirm a Board-approved KYC/AML policy exists, was reviewed within the last 12 months, and explicitly covers Customer Acceptance Policy, Risk-Based Approach, Customer Identification Procedures and Transaction Monitoring. 2. Verify that the latest enterprise-wide money-laundering/terror-financing risk assessment has been documented, approved by the Board, and linked to control enhancements. 3. Ensure appointment letters, RBI/FIU-IND filings and job descriptions are on file for the Designated Director (overall AML owner) and the Principal Officer (reporting head), and that the two roles are held by different individuals. 4. Check the responsibilities matrix: KYC compliance, independent testing and internal audit are clearly assigned and not outsourced.",
+      "scheduled_runs": "00 09 * * *"
+    },
+    {
+      "checklist_name": "Customer Acceptance & Risk Classification",
+      "checklist_category": "Customer Due Diligence",
+      "checklist_ai_description": "1. Confirm the Customer Acceptance Policy (CAP) prohibits anonymous/fictitious accounts and mandates full Customer Due Diligence before activation. 2. Review onboarding files to verify that Officially Valid Documents (identity and address) and PAN/Form 60 are collected and authenticated, and that sanction screening is completed pre-activation. 3. Test a sample of customer records to ensure each has a documented Low/Medium/High risk score with clear rationale. 4. Verify procedures require refusal of onboarding or filing of STR when documents are missing, unreliable or suspicious.",
+      "scheduled_runs": "00 09 * * *"
+    },
+    {
+      "checklist_name": "Customer Identification & Due Diligence (CIP/CDD)",
+      "checklist_category": "Customer Due Diligence",
+      "checklist_ai_description": "1. Review individual customer files for valid OVD copies and face matching (physical, biometric or e-KYC). 2. For companies, partnerships or trusts, confirm registration documents, PAN/GST, board/partner resolutions and authorised-signatory IDs are on file, and beneficial owners are identified and verified. 3. Check that accounts opened through non-face-to-face modes have complied with RBI limits (e.g., transaction caps) until full KYC is completed. 4. Verify CKYCR uploads occurred within 10 days of onboarding and pre-existing KYC identifiers were used to pull records where available.",
+      "scheduled_runs": "00 09 * * *"
+    },
+    {
+      "checklist_name": "Video Customer Identification (V-CIP) Compliance",
+      "checklist_category": "Customer Due Diligence",
+      "checklist_ai_description": "1. Confirm V-CIP sessions capture live customer image, original OVD, geolocation and liveness checks, stored with tamper-proof audit trail. 2. Verify all V-CIP infrastructure security tests (VAPT, technical audits) are current and critical vulnerabilities closed before go-live. 3. Sample-check V-CIP cases for concurrent audit sign-off and second-level approval before account activation.",
+      "scheduled_runs": "00 09 * * *"
+    },
+    {
+      "checklist_name": "Enhanced Due Diligence (High-Risk Customers)",
+      "checklist_category": "Customer Due Diligence",
+      "checklist_ai_description": "1. Confirm procedures identify Politically Exposed Persons, non-resident individuals, high-risk geographies or complex ownership structures at onboarding and on an ongoing basis. 2. Check high-risk customer files for documented source-of-wealth/funds verification and senior-management approval. 3. Verify high-risk accounts undergo enhanced monitoring and KYC refresh at least every two years.",
+      "scheduled_runs": "00 09 * * *"
+    },
+    {
+      "checklist_name": "Ongoing Monitoring & Periodic KYC Updates",
+      "checklist_category": "Monitoring & Reporting",
+      "checklist_ai_description": "1. Inspect the transaction-monitoring system to ensure alert scenarios are mapped to customer risk levels and are reviewed promptly. 2. Confirm periodic KYC update schedules: High-risk every 2 years, Medium-risk every 8 years, Low-risk every 10 years. 3. Review communications sent to customers for KYC renewal and verify accounts with overdue KYC are appropriately restricted in stages.",
+      "scheduled_runs": "00 09 * * *"
+    },
+    {
+      "checklist_name": "Sanctions and PEP Screening",
+      "checklist_category": "Monitoring & Reporting",
+      "checklist_ai_description": "1. Ensure daily automated screening of all customers and transactions against UNSC, domestic terrorist and proliferation lists; test a sample for hits and response actions. 2. Verify real-time screening of new customers and cross-border payments before execution. 3. Confirm procedures for immediate freezing, reporting and escalation when a match is found.",
+      "scheduled_runs": "00 09 * * *"
+    },
+    {
+      "checklist_name": "Suspicious Transaction Reporting (STR)",
+      "checklist_category": "Monitoring & Reporting",
+      "checklist_ai_description": "1. Validate that automated and manual processes generate alerts for unusual patterns, large cash activity, rapid in-and-out movement or structuring. 2. Confirm documented investigations exist for all alerts closed or escalated. 3. Check that STRs are filed with FIU-IND within 7 days of confirming suspicion and that employees are trained not to tip off customers.",
+      "scheduled_runs": "00 09 * * *"
+    },
+    {
+      "checklist_name": "CTR and Other Regulatory Reports",
+      "checklist_category": "Monitoring & Reporting",
+      "checklist_ai_description": "1. Review monthly Cash Transaction Reports to verify all cash transactions ≥ ₹10 lakh (single or aggregated) are reported by the 15th of the following month. 2. Confirm Counterfeit Currency Reports, Non-Profit Transaction Reports and NIL reports are submitted as required. 3. Check reconciliation logs to ensure no reportable transactions are missed and any late filings are explained and rectified.",
+      "scheduled_runs": "00 09 * * *"
+    },
+    {
+      "checklist_name": "FATCA/CRS Compliance",
+      "checklist_category": "Monitoring & Reporting",
+      "checklist_ai_description": "1. Verify account-opening forms capture tax-residency self-certification and Tax Identification Number where applicable. 2. Confirm reportable accounts are flagged in the system, and annual FATCA/CRS Form 61B files are submitted on time. 3. Check procedures for handling customers who refuse self-certification (e.g., account closure or enhanced monitoring).",
+      "scheduled_runs": "00 09 * * *"
+    },
+    {
+      "checklist_name": "Employee Training & Awareness",
+      "checklist_category": "Governance & Culture",
+      "checklist_ai_description": "1. Review the annual AML/KYC training calendar and attendance records for all relevant staff and outsourced service providers. 2. Verify content is role-based and includes document verification, red-flag identification and escalation procedures. 3. Confirm a Know-Your-Employee process is in place with background checks for new hires and monitoring for high-risk roles.",
+      "scheduled_runs": "00 09 * * *"
+    },
+    {
+      "checklist_name": "Independent Audit & Compliance Testing",
+      "checklist_category": "Technology, Audit & Records",
+      "checklist_ai_description": "1. Ensure internal or concurrent audit covers KYC/AML controls each quarter, with documented sample tests and findings. 2. Confirm audit reports are presented to the Audit Committee/Board and corrective actions tracked to closure. 3. Verify periodic external or independent reviews are conducted for high-risk areas or new products.",
+      "scheduled_runs": "00 09 * * *"
+    },
+    {
+      "checklist_name": "Technology & System Controls",
+      "checklist_category": "Technology, Audit & Records",
+      "checklist_ai_description": "1. Confirm automated transaction-monitoring, name-screening and risk-scoring systems are in place and integrated with core banking. 2. Verify unique customer identifiers aggregate all relationships for holistic due diligence. 3. Check encryption, access controls and audit trails for KYC data, and review latest VAPT reports with remediation evidence. 4. Ensure business-continuity plans keep KYC/AML controls operational during system outages.",
+      "scheduled_runs": "00 09 * * *"
+    },
+    {
+      "checklist_name": "Recordkeeping & Retention",
+      "checklist_category": "Technology, Audit & Records",
+      "checklist_ai_description": "1. Verify transaction records (cash, transfers, statements) are retained for at least five years from transaction date. 2. Confirm customer identification documents and V-CIP recordings are stored for five years after account closure. 3. Test retrieval of KYC and transaction records to ensure they can be produced quickly for regulators. 4. Ensure records capture enough detail to reconstruct each transaction and are protected against tampering or premature destruction.",
+      "scheduled_runs": "00 09 * * *"
+    }
+  ]
+  

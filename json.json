@@ -1,0 +1,238 @@
+[
+    {
+      "checklist_name": "Accuracy, Truthfulness, Fairness, Clarity, Completeness, Unambiguity, Conciseness",
+      "checklist_category": "General Principles and Prohibitions",
+      "checklist_ai_description": "1. Read the draft advertisement line-by-line; cross-check every fact and figure against source documents, remove exaggeration, and rewrite in plain, unambiguous language so the copy is concise yet complete."
+    },
+    {
+      "checklist_name": "No False, Misleading, Biased or Deceptive Statements",
+      "checklist_category": "General Principles and Prohibitions",
+      "checklist_ai_description": "1. Demand primary evidence for every claim; delete or qualify anything that could create a misleading or biased impression, including selective data or unsupported projections."
+    },
+    {
+      "checklist_name": "No Design Likely to Mislead or Disguise Significance",
+      "checklist_category": "General Principles and Prohibitions",
+      "checklist_ai_description": "1. Inspect the visual hierarchy—size, colour, placement, and footnotes—to ensure key risk and cost information is at least as prominent as performance claims; remove any design element that obscures material facts."
+    },
+    {
+      "checklist_name": "Slogans and Taglines",
+      "checklist_category": "General Principles and Prohibitions",
+      "checklist_ai_description": "1. Cross-check the slogan or tagline against the scheme’s stated objectives; avoid superlatives unless objectively provable and ensure wording reflects the actual risk-return profile."
+    },
+    {
+      "checklist_name": "No Celebrity Endorsements",
+      "checklist_category": "General Principles and Prohibitions",
+      "checklist_ai_description": "1. Verify that no celebrity, influencer, or public figure (image, likeness, voice, or quote) appears anywhere in the ad or its metadata."
+    },
+    {
+      "checklist_name": "Avoid Exploiting Investor Inexperience",
+      "checklist_category": "General Principles and Prohibitions",
+      "checklist_ai_description": "1. Replace jargon with plain-English equivalents and insert brief footnotes where regulatory terms cannot be simplified, ensuring the copy remains accessible to first-time investors."
+    },
+    {
+      "checklist_name": "Timeliness and Consistency with Disclosure Documents",
+      "checklist_category": "General Principles and Prohibitions",
+      "checklist_ai_description": "1. Update all numbers—NAV, AUM, performance, asset mix—to the chosen cut-off date and reconcile them with the latest SID, SAI, and KIM so no figure conflicts."
+    },
+    {
+      "checklist_name": "No Discrediting Other Advertisements or Unfair Comparisons",
+      "checklist_category": "General Principles and Prohibitions",
+      "checklist_ai_description": "1. Remove any disparaging or comparative language that is not strictly factual; where comparisons are essential, present identical periods, metrics, and data sources with proper citations."
+    },
+    {
+      "checklist_name": "Presence of Standard Warning",
+      "checklist_category": "Standard Risk Warning",
+      "checklist_ai_description": "1. Embed the exact SEBI-prescribed warning—“Mutual Fund investments are subject to market risks, read all scheme related documents carefully.” —in the mandated font size and placement without alteration."
+    },
+    {
+      "checklist_name": "Audio-Visual Advertisements",
+      "checklist_category": "Standard Risk Warning",
+      "checklist_ai_description": "1. In audio-visual formats, display the warning for at least five seconds, voice it at normal speech speed, and maintain a high-contrast background for readability."
+    },
+    {
+      "checklist_name": "Disclosure of Dividend Amount",
+      "checklist_category": "Dividend / Distribution Advertisements",
+      "checklist_ai_description": "1. State the gross dividend per unit in rupees alongside the face value and NAV on the record date; avoid percentage figures that could be misconstrued as yields."
+    },
+    {
+      "checklist_name": "Maturity/Interval Schemes",
+      "checklist_category": "Dividend / Distribution Advertisements",
+      "checklist_ai_description": "1. For interval or closed-ended schemes, include the statement: “The entire distributable surplus at maturity/interval shall be distributed to unit-holders.”"
+    },
+    {
+      "checklist_name": "Impact on NAV Disclosure",
+      "checklist_category": "Dividend / Distribution Advertisements",
+      "checklist_ai_description": "1. Immediately below the dividend figure, disclose that the NAV will fall by the amount of the payout and mention any applicable statutory levy or tax."
+    },
+    {
+      "checklist_name": "General Performance Data Requirements",
+      "checklist_category": "Performance-Related Advertisements",
+      "checklist_ai_description": "1. For schemes older than one year, display CAGR returns for 1, 3, and 5 years and since inception; separate Regular and Direct plans and footnote if the fund-manager tenure is shorter than the period shown."
+    },
+    {
+      "checklist_name": "Schemes in Existence Less Than Six Months",
+      "checklist_category": "Performance-Related Advertisements",
+      "checklist_ai_description": "1. If the scheme is less than six months old, omit historical performance tables and include the statement: “Performance data will be available after the scheme completes six months in operation as per SEBI norms.”"
+    },
+    {
+      "checklist_name": "Overnight, Liquid, and Money Market Funds",
+      "checklist_category": "Performance-Related Advertisements",
+      "checklist_ai_description": "1. For overnight, liquid, and money-market funds, show simple annualised returns for 7, 15, and 30 days and add a bold note that such short-term returns are not indicative of future performance."
+    },
+    {
+      "checklist_name": "Benchmark Disclosure",
+      "checklist_category": "Performance-Related Advertisements",
+      "checklist_ai_description": "1. Present benchmark (primary and, where mandated, secondary) returns for identical periods alongside scheme returns, using the same calculation method and citing the data source and date."
+    },
+    {
+      "checklist_name": "Performance of Other Schemes by Same Fund Manager",
+      "checklist_category": "Performance-Related Advertisements",
+      "checklist_ai_description": "1. If highlighting a fund manager’s record, show performance of all other actively managed open schemes handled by that individual for identical periods, with a link to full data on the AMC website."
+    },
+    {
+      "checklist_name": "Post-Merger Performance Disclosure",
+      "checklist_category": "Performance-Related Advertisements",
+      "checklist_ai_description": "1. After scheme mergers, show performance only for the surviving scheme; archive pre-merger data separately and make it available on request with a clear explanatory disclaimer."
+    },
+    {
+      "checklist_name": "Submission to SEBI",
+      "checklist_category": "Filing, Record-Keeping, and Compliance Confirmation",
+      "checklist_ai_description": "1. File every advertisement with SEBI within seven working days of its first public release in the format specified under the latest applicable SEBI circular."
+    },
+    {
+      "checklist_name": "Indicative Portfolio or Yield",
+      "checklist_category": "Prohibited or Restricted Content",
+      "checklist_ai_description": "1. Remove any reference to indicative portfolio or yield figures unless explicitly permitted; if unavoidable, add a clear disclaimer that such values are illustrative and not guaranteed."
+    },
+    {
+      "checklist_name": "Unapproved or Non-Standard Claims",
+      "checklist_category": "Prohibited or Restricted Content",
+      "checklist_ai_description": "1. Eliminate claims that are not expressly approved or that depart from SEBI-prescribed formats, such as qualitative statements of superiority unsupported by data."
+    },
+    {
+      "checklist_name": "Comparisons and Competitive Claims",
+      "checklist_category": "Prohibited or Restricted Content",
+      "checklist_ai_description": "1. When making competitive comparisons, use identical time frames, risk measures, and peer-group categories; cite an independent public data source and the extraction date."
+    },
+    {
+      "checklist_name": "Font Size & Legibility",
+      "checklist_category": "Format, Presentation, and Legibility",
+      "checklist_ai_description": "1. Confirm body text is at least 8-point (print) or equivalent pixel height (digital) and the standard risk warning is no smaller than the body copy; ensure adequate line spacing."
+    },
+    {
+      "checklist_name": "Graphics and Layout",
+      "checklist_category": "Format, Presentation, and Legibility",
+      "checklist_ai_description": "1. Check that charts and infographics are proportionate, include axis labels, units, and data sources, and do not rely on colour choices that mask negative values or risks."
+    },
+    {
+      "checklist_name": "Audio-Visual Specifics",
+      "checklist_category": "Format, Presentation, and Legibility",
+      "checklist_ai_description": "1. In audio-visual pieces, ensure on-screen supers match the voice-over verbatim and remain long enough to be read (approx. 3–4 words per second)."
+    },
+    {
+      "checklist_name": "Digital/Internet Advertisements",
+      "checklist_category": "Format, Presentation, and Legibility",
+      "checklist_ai_description": "1. For digital banners and social media posts, link directly to a full disclosure landing page containing the SID, SAI, KIM, risk factors, and performance tables."
+    },
+    {
+      "checklist_name": "Consistency with SID/SAI/KIM",
+      "checklist_category": "Cross-Verification with Scheme Documents",
+      "checklist_ai_description": "1. Reconcile every statement with the latest SID, SAI, and KIM; flag any unavoidable deviation for legal review and include an explanatory footnote."
+    },
+    {
+      "checklist_name": "NAV and Other Figures",
+      "checklist_category": "Cross-Verification with Scheme Documents",
+      "checklist_ai_description": "1. Cross-check NAV, AUM, and performance numbers against the daily valuation file signed off by the fund accountant; correct rounding discrepancies before release."
+    },
+    {
+      "checklist_name": "Fund Manager Information",
+      "checklist_category": "Cross-Verification with Scheme Documents",
+      "checklist_ai_description": "1. Verify that fund-manager names, qualifications, and tenure match the most recent fact sheet and HR records."
+    },
+    {
+      "checklist_name": "Expense Ratio Disclosure",
+      "checklist_category": "Disclaimers, Footnotes, and Investor Education",
+      "checklist_ai_description": "1. Disclose the scheme’s Total Expense Ratio (TER) as on the last business day of the previous month, clarifying whether it includes GST and other levies."
+    },
+    {
+      "checklist_name": "Fund Manager Tenure",
+      "checklist_category": "Disclaimers, Footnotes, and Investor Education",
+      "checklist_ai_description": "1. State the fund-manager’s tenure next to performance tables and footnote where the tenure is shorter than any period displayed to avoid misleading continuity assumptions."
+    },
+    {
+      "checklist_name": "Past Performance Disclaimer",
+      "checklist_category": "Disclaimers, Footnotes, and Investor Education",
+      "checklist_ai_description": "1. Place the sentence “Past performance may or may not be sustained in the future” immediately under every performance figure, chart, or table."
+    },
+    {
+      "checklist_name": "Risk Factors Reminder",
+      "checklist_category": "Disclaimers, Footnotes, and Investor Education",
+      "checklist_ai_description": "1. Insert a brief reminder for investors to review the risk factors in the SID and SAI, positioned near any performance or return claim."
+    },
+    {
+      "checklist_name": "Timely Submission to SEBI",
+      "checklist_category": "Filing Checklist",
+      "checklist_ai_description": "1. Email or portal-upload a PDF of the advertisement, media plan, and insertion dates to SEBI within seven working days of the first release."
+    },
+    {
+      "checklist_name": "Compliance Officer Confirmation",
+      "checklist_category": "Filing Checklist",
+      "checklist_ai_description": "1. Obtain a dated sign-off from the Compliance Officer confirming adherence to all SEBI circulars before the advertisement is issued to media outlets."
+    },
+    {
+      "checklist_name": "Record-Keeping",
+      "checklist_category": "Filing Checklist",
+      "checklist_ai_description": "1. Archive final creative files, sign-offs, and underlying data for at least eight years or such longer period as prescribed by SEBI."
+    },
+    {
+      "checklist_name": "Pre-Release Review",
+      "checklist_category": "Internal Review & Sign-Off Workflow",
+      "checklist_ai_description": "1. Route every draft through marketing, product, legal, and compliance reviewers, capturing comments in a tracked-changes log and resolving all issues before final sign-off."
+    },
+    {
+      "checklist_name": "Data Verification",
+      "checklist_category": "Internal Review & Sign-Off Workflow",
+      "checklist_ai_description": "1. Validate every statistic against its primary source (Bloomberg, AMFI, internal NAV files) and attach the supporting worksheets to the approval packet."
+    },
+    {
+      "checklist_name": "Compliance Sign-Off",
+      "checklist_category": "Internal Review & Sign-Off Workflow",
+      "checklist_ai_description": "1. Record the Compliance Officer’s electronic signature and approval date on the sign-off form; distribute creatives to media only after this step."
+    },
+    {
+      "checklist_name": "Post-Release Monitoring",
+      "checklist_category": "Internal Review & Sign-Off Workflow",
+      "checklist_ai_description": "1. Monitor all live platforms after release to ensure creatives are not altered; log investor comments and complaints and correct any compliance breach within 24 hours."
+    },
+    {
+      "checklist_name": "Language Versions",
+      "checklist_category": "Special Considerations",
+      "checklist_ai_description": "1. Produce identical content in every authorised language version; engage certified translators and have compliance review the translated copy for semantic consistency."
+    },
+    {
+      "checklist_name": "Regional Regulations",
+      "checklist_category": "Special Considerations",
+      "checklist_ai_description": "1. Check for additional local advertising regulations (e.g., regional language requirements) before launching state-specific campaigns and adapt creatives if necessary."
+    },
+    {
+      "checklist_name": "Emerging Media Formats",
+      "checklist_category": "Special Considerations",
+      "checklist_ai_description": "1. Apply the standard risk-warning, data disclosure, and font-size rules to emerging formats such as podcasts, OTT, and in-app ads, coordinating with the platform to guarantee visibility."
+    },
+    {
+      "checklist_name": "Social Media Amplification",
+      "checklist_category": "Special Considerations",
+      "checklist_ai_description": "1. Issue social-media guidelines to employees and third-party agents; routinely scan for unauthorised resharing or modification that could omit required disclosures."
+    },
+    {
+      "checklist_name": "Prepare Audit Form",
+      "checklist_category": "Usage Instructions for Audit",
+      "checklist_ai_description": "1. Create an audit spreadsheet listing each checklist item, the responsible reviewer, review date, remarks, and evidence link; keep it updated as the single source of compliance truth."
+    },
+    {
+      "checklist_name": "Summary Report",
+      "checklist_category": "Usage Instructions for Audit",
+      "checklist_ai_description": "1. Draft a concise post-campaign summary noting compliance successes, issues fixed, and lessons learned, and present it to the Compliance Committee within 30 days of campaign completion."
+    }
+  ]
+  

@@ -1,0 +1,830 @@
+[
+  {
+    "checklist_name": "Confirm Applicability of the Companies Act to the Entity",
+    "checklist_category": "Scope & Applicability",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Establish that the company you are reviewing is in fact governed by the Companies Act 2013 and not by a sector-specific statute that overrides it.\\n\\n**Step-by-step review**\\n1. **Collect base documents** Download the Certificate of Incorporation (COI) and the latest master-data sheet from the MCA portal.\\n2. **Check for special statutes** Identify whether the entity is a bank, insurance company, electricity generator, telecom operator, NBFC, etc.\\n3. **Search exemptions** Run a Gazette-notification search (use MCA, RBI, IRDAI, SEBI and sector-ministry sites) for any order issued under §1 (4) or §462 granting the company, or its class, an exemption or override.\\n4. **Document conclusion** If no overriding statute/notification exists, tick ‘Applicable’. If an exemption is found, attach the notification, note the carve-out sections and stop further Companies-Act testing for those provisions.\\n\\n**Red flags**\\n• Company claims exemption but no Gazette notification exists.\\n• Dual compliance frameworks cited (e.g., both Banking Regulation Act and complete Companies Act)."
+  },
+  {
+    "checklist_name": "Verify “Listed-Company” Classification via Stock-Exchange Admission",
+    "checklist_category": "Listing & Securities",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Confirm that the entity qualifies as a ‘listed company’ (any security admitted to trading on a recognised stock exchange) and therefore must follow SEBI LODR + heightened Companies-Act rules.\\n\\n**Step-by-step review**\\n1. **ISIN inventory** Export the company’s ISIN list from its share-registry / depository statements.\\n2. **Exchange cross-check** Query each ISIN on the NSE & BSE websites (use ‘Get Quote’). Note the security type (equity, debt, pref, commercial paper).\\n3. **Review SEBI exemption list** If the company has only NCDs or PSUs’ certain securities, see whether SEBI has exempted that class (e.g., privately placed debt listed on IFSC exchanges).\\n4. **Confirm ongoing status** Check corporate-action history for suspension, delisting or trading halt.\\n5. **Update compliance matrix** Mark entity ‘Listed’, ‘Partially Listed (Debt-Listed)’ or ‘Unlisted’.\\n\\n**Red flags**\\n• ISIN trades suspended > 6 months but company still calls itself ‘listed’.\\n• Entity claims ‘debt-listed only’ to dodge LODR but equity ESOP options are live."
+  },
+  {
+    "checklist_name": "Determine Whether Financial Instruments Qualify as “Securities” (SCRA test)",
+    "checklist_category": "Listing & Securities",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Make sure every instrument the company intends to list, disclose or trade actually fits the SCRA definition of ‘securities’.\\n\\n**Step-by-step review**\\n1. **Compile instrument list** Shares, CCPS, OCDs, warrants, units, structured notes, etc.\\n2. **Apply SCRA §2(h) grid** Tick whether the instrument falls under shares, bonds, derivatives, units of mutual fund, government securities or ‘other such instruments’.\\n3. **Consult recent SEBI circulars** Check if SEBI has classified newer hybrids (e.g., SR shares, REIT units).\\n4. **Conclusion** Mark ‘Security’ or ‘Not a security’; advise on alternate regulatory path (FEMA, RBI) for non-securities.\\n\\n**Red flags**\\n• Innovative instrument marketed as ‘bond’ but lacks coupon / repayment schedule.\\n• Tokenised digital asset promoted without SEBI sandbox nod."
+  },
+  {
+    "checklist_name": "Assess Debt Instruments Against “Debenture” Definition & Compliance Triggers",
+    "checklist_category": "Listing & Securities",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Identify all instruments that are legally ‘debentures’ so that trust-deed, DRR, listing and redemption rules kick in.\\n\\n**Step-by-step review**\\n1. **Pull term sheets** List all bonds, NCDs, OCDs, CCDs and commercial paper.\\n2. **Exclude RBI-exempted items** Check RBI circulars for CP or certain securitised receipts exemptions.\\n3. **Check conversion clause** If convertible, note timeline; still a debenture until converted.\\n4. **Map compliance** If ‘debenture’, confirm Rule 18 trust-deed, charge creation and DRR.\\n\\n**Red flags**\\n• Instrument labelled ‘note’ to avoid trust-deed but meets debenture tests.\\n• Missing DRR entries in ledger."
+  },
+  {
+    "checklist_name": "Ensure Depository Agreements Are Executed and All Listed Securities Fully Dematted",
+    "checklist_category": "Listing & Securities",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Guarantee that every listed security is in demat form and that tripartite agreements with NSDL/CDSL are active.\\n\\n**Step-by-step review**\\n1. **Obtain executed tripartite agreements** Company-RTA-NSDL and Company-RTA-CDSL.\\n2. **Verify validity** Check execution date, stamp duty, board approval and renewal clauses.\\n3. **Run depository master query** Pull ISIN status report—look for ‘ACTIVE – EG’ flag.\\n4. **Spot physical remnants** Scan share-ledger for certificate numbers > 0; cross-verify register transfer agent statement.\\n5. **Action** For any physical residue, launch compulsory demat process and inform holders.\\n\\n**Red flags**\\n• Bonus shares issued in physical form post-2019.\\n• Tripartite agreement expired or missing NSDL signatory seal."
+  },
+  {
+    "checklist_name": "Confirm Key Managerial Personnel (KMP) Positions Filled and Filings Up to Date",
+    "checklist_category": "Governance Roles & Board Composition",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Ensure every legally mandated KMP role—MD/CEO/Manager, Whole-Time Director, CFO and Company Secretary—is occupied and properly disclosed to MCA and the stock exchanges.\\n\\n**Step-by-step review**\\n1. **Pull MCA data** Download the latest ‘Signatory Details’ and DIR-12 history from the MCA portal.\\n2. **Cross-check exchange disclosures** Match the NSE/BSE corporate-governance report (Reg 27) KMP list with MCA filings.\\n3. **Board-resolution audit** Locate the Board resolution appointing each KMP; note effective date, term and remuneration.\\n4. **Vacancy tracker** Verify that no KMP role has remained vacant for more than six months (§203 deadline).\\n5. **Filing confirmation** Ensure every appointment or cessation has a corresponding DIR-12 SRN and email acknowledgement.\\n\\n**Red flags**\\n• Company Secretary seat vacant despite the company crossing the ₹10 crore paid-up-capital threshold.\\n• CFO shown in stock-exchange filing but missing in MCA DIR-12 history."
+  },
+  {
+    "checklist_name": "Validate Independent-Director Independence Criteria and Tenure Limits",
+    "checklist_category": "Governance Roles & Board Composition",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Verify that each Independent Director (ID) truly meets the independence tests and has not exceeded the permissible tenure.\\n\\n**Step-by-step review**\\n1. **Collect declarations** Obtain Form DIR-8 (non-disqualification) and annual independence declaration under §149(7).\\n2. **Run relational screening** Check MCA, Bloomberg and LinkedIn for past employment, supplier or customer links with the company, its promoters or group entities in the last three years.\\n3. **Pecuniary-interest test** Inspect related-party tables and payment ledgers to ensure no transaction > 10 % of ID’s total income.\\n4. **Tenure calculation** Build a tenure matrix—max two consecutive five-year terms with a three-year cooling-off.\\n5. **Databank status** Verify ID is enrolled in the MCA ID databank and (if < three years’ experience) has passed the proficiency test.\\n\\n**Red flags**\\n• ID draws consulting fee from group subsidiary in the current FY.\\n• Second five-year term extended without shareholder special resolution."
+  },
+  {
+    "checklist_name": "Reconcile Promoter Disclosures With Actual Control Rights",
+    "checklist_category": "Governance Roles & Board Composition",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Make sure every person or entity exercising control is correctly tagged as a ‘promoter’ in shareholding and regulatory filings.\\n\\n**Step-by-step review**\\n1. **Extract promoter list** Download latest shareholding pattern (SHP) from NSE/BSE.\\n2. **Inspect control documents** Review shareholder agreements, voting-trust deeds and Board-nomination rights.\\n3. **Compare with MCA data** Check MGT-7 annual return promoter table.\\n4. **Look for hidden controllers** Search for persons with > 25 % beneficial interest (BEN-2) or golden-share rights.\\n5. **File corrective disclosure** If mismatch found, prepare revised SHP and MGT-7A; notify exchanges under Reg 30.\\n\\n**Red flags**\\n• PE fund exercises veto rights but is disclosed as ‘public shareholder’.\\n• Promoter stake transferred to family trust without promoter-tag update."
+  },
+  {
+    "checklist_name": "Maintain Officer-in-Default Responsibility Matrix for Every Statutory Obligation",
+    "checklist_category": "Governance Roles & Board Composition",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Ensure that a specific individual is assigned (and accepts) accountability for each compliance calendar item, minimising ambiguity if prosecution arises.\\n\\n**Step-by-step review**\\n1. **Prepare obligation register** List every recurring Companies-Act form/return and board approval.\\n2. **Map officers** Against each line, assign a whole-time director, KMP or designated officer as ‘Officer in Default’.\\n3. **Board ratification** Get the matrix table adopted by the Board (resolution + annexure).\\n4. **Annual refresh** Update for resignations, new laws or departmental ownership shifts.\\n5. **Awareness training** Circulate the matrix to all tagged officers with penalty summary.\\n\\n**Red flags**\\n• DIR-12 filings show different Responsible Officer than the matrix.\\n• Matrix never updated after CFO resignation."
+  },
+  {
+    "checklist_name": "Evaluate Subsidiary and Holding-Company Relationships Against Control Tests",
+    "checklist_category": "Corporate Structure",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Confirm which entities are ‘subsidiaries’ and thus subject to consolidation, audit-committee oversight and LODR Reg 24.\\n\\n**Step-by-step review**\\n1. **Create group diagram** Map direct shareholding percentages and Board-control rights.\\n2. **Apply > 50 % voting-power rule** Identify direct or indirect ownership lines exceeding 50 %.\\n3. **Apply Board-control rule** Check shareholder agreements for right to appoint majority of directors even with < 50 % shares.\\n4. **One-extra-layer check** Count subsidiary layers; listed company allowed only one extra beyond first tier.\\n5. **Document and tag** Label each entity as subsidiary, step-down subsidiary or associate in compliance tracker.\\n\\n**Red flags**\\n• Step-down subsidiary incorporates further layer breaching layering cap.\\n• Shell JV holds 51 % but Board seats controlled by third party."
+  },
+  {
+    "checklist_name": "Identify Associate Companies via Significant-Influence Thresholds (≥ 20 % or JV)",
+    "checklist_category": "Corporate Structure",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Spot entities where the company wields ‘significant influence’ so equity-method accounting and related-party controls apply.\\n\\n**Step-by-step review**\\n1. **Shareholding scan** Pull cap-table for every investee; flag ≥ 20 % holdings.\\n2. **Joint-venture agreements** Identify 50-50 or other contractual JVs with joint control.\\n3. **Board-participation rights** Even < 20 % can be associate if Board seat or veto rights grant significant influence.\\n4. **Accounting treatment** Check whether equity-method pick-up is present in consolidated FS.\\n5. **Disclosure** List associates in MGT-7 and annual report.\\n\\n**Red flags**\\n• 22 % stake treated as financial investment, not associate.\\n• JV profits not equity-accounted."
+  },
+  {
+    "checklist_name": "Detect Undisclosed Control Rights Embedded in Agreements or Special Shares",
+    "checklist_category": "Corporate Structure",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Uncover de-facto controllers who may trigger obligations under takeover code, insider rules and promoter disclosures.\\n\\n**Step-by-step review**\\n1. **Review SHA/SSA** Scan shareholder and subscription agreements for veto, affirmative vote or golden-share clauses.\\n2. **Inspect special-class shares** Check if differential-voting or SR shares confer majority votes at same economic stake.\\n3. **Analyse board-observer rights** Sometimes disguised control via observer with veto.\\n4. **Benchmark vs SEBI definition** Compare rights to SEBI (SAST) ‘control’ definition and MCA §2 (27).\\n5. **Recommend disclosure** Advise tagging as promoter or controller.\\n\\n**Red flags**\\n• Private equity investor holds < 15 % but has veto on budget, sale and hiring CFO.\\n• SR shares carry 10× votes undisclosed in offer document."
+  },
+  {
+    "checklist_name": "Map Related-Party and Relative Definitions to Transaction Counter-Parties",
+    "checklist_category": "Transactions & Disclosures",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Ensure every contract counter-party is screened against §2 (76) and Rule 4 ‘relative’ list so that RPT and MBP-1 controls fire correctly.\\n\\n**Step-by-step review**\\n1. **Build relationship database** For each director, KMP and promoter, list relatives and entities where they have > 2 % interest.\\n2. **Feed into ERP** Upload master list to ERP system so purchase orders trigger alerts.\\n3. **Quarterly sweep** Reconcile GL with list for un-flagged payments.\\n4. **Audit-committee log** Track which contracts were pre-approved, omnibus-approved or ratified.\\n5. **Annual disclosure** Populate Form AOC-2 and Board’s report table.\\n\\n**Red flags**\\n• Vendor paid ₹ 1 cr discovered as director’s brother-in-law mid-year.\\n• Relative definition not updated for 2024 amendment adding step-sibling."
+  },
+  {
+    "checklist_name": "Ensure Financial Year Ends on 31 March Unless Central-Government Exemption Granted",
+    "checklist_category": "Financial Reporting & Metrics",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Verify compliance with the mandatory FY end-date, critical for aligning AGM, filing and taxation cycles.\\n\\n**Step-by-step review**\\n1. **Extract latest financial statements** Check balance-sheet date.\\n2. **Search MCA site for approval** If FY ends 31 Dec or 30 Jun, confirm CG approval under §2 (41) proviso.\\n3. **Group alignment** For MNC subsidiary requesting different FY, obtain holding-company consolidation proof.\\n4. **Update auditor engagement letter** Auditor scope must follow approved FY.\\n\\n**Red flags**\\n• Calendar-year financials without CG order.\\n• Approval expired but FY not realigned."
+  },
+  {
+    "checklist_name": "Compute Net-Worth Excluding Revaluation and Amalgamation Reserves Before Threshold Tests",
+    "checklist_category": "Financial Reporting & Metrics",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Avoid threshold mis-classification (CSR, secretarial audit, XBRL) by using the statutory net-worth definition.\\n\\n**Step-by-step review**\\n1. **Pull trial balance** List all reserve and surplus ledgers.\\n2. **Exclude disallowed items** Revaluation reserve, write-back depreciation, amalgamation reserve.\\n3. **Recompute net-worth** Add paid-up capital + free reserves – accumulated losses – deferred expenditure.\\n4. **Compare with thresholds** Apply to CSR (₹ 500 cr), KMP rules (₹ 10 cr paid-up), etc.\\n\\n**Red flags**\\n• CSR applicability triggered because revaluation reserve was erroneously counted.\\n• Net-worth certifications to bank use different definition."
+  },
+  {
+    "checklist_name": "Verify Paid-Up Share-Capital Figure Matches Actual Cash/Consideration Received",
+    "checklist_category": "Dividend & Capital Management",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Ensure paid-up capital is not overstated by unpaid call money, thereby distorting ratios and borrowing limits.\\n\\n**Step-by-step review**\\n1. **Match PAS-3 allotment figures** Pull each PAS-3 SRN and reconcile with general ledger bank entries.\\n2. **Check call status** Identify shares with calls-in-arrears; deduct from paid-up figure.\\n3. **Review forfeiture ledger** Shares forfeited but not reissued should not count as paid-up.\\n4. **Cross-check public disclosures** Ensure the paid-up figure in offer documents and SH-4 matches ledger.\\n\\n**Red flags**\\n• ESOP shares credited as paid-up before exercise price received.\\n• Unpaid shares counted in net-worth certificate to lender."
+  },
+  {
+    "checklist_name": "Exclude Unrealised Gains from “Free Reserves” Before Dividend or Buy-Back Decisions",
+    "checklist_category": "Dividend & Capital Management",
+    "checklist_ai_description": "**Chapter I – Preliminary**\\n\\n**Objective** Guarantee that dividends and buy-backs are funded only from genuine realised profits, not revaluation reserves or fair-value adjustments.\\n\\n**Step-by-step review**\\n1. **Open trial balance** Filter for OCI, FVOCI, revaluation-surplus and unrealised gain accounts.\\n2. **Trace journal entries** Confirm these reserves stem from fair-value MTM or asset revaluation, not realised cash profits.\\n3. **Reconcile with free-reserve schedule** Ensure none of the unrealised reserves are included in the ‘free reserve’ figure used for dividend, buy-back or bonus-issue calculations.\\n4. **Board note** Include a line in the Board note on dividend explaining the free-reserve computation and exclusions.\\n5. **Auditor confirmation** Seek written confirmation from statutory auditor that the amount utilised is from realised profits.\\n\\n**Red flags**\\n• Company capitalises unrealised FX gain to declare dividend.\\n• Revaluation surplus moved to General Reserve and then used for buy-back without Tribunal approval."
+  },
+  
+ 
+  {
+    "checklist_name": "Follow Statutory Path for Shifting Registered Office Within or Outside the State",
+    "checklist_category": "Registered Office & Commencement",
+    "checklist_ai_description": "**Chapter II – §§12 & 13 (Change of Registered Office)**\\n\\n**Objective** Make sure every move—local limits, intra-ROC, inter-State—obtains the right approvals and filings before the company begins operating from the new address.\\n\\n**Step-by-step review**\\n1. **Identify move type** Local-limits, ROC-within-State, or inter-State.\\n2. **Board resolution** Pass BR approving move and authorising CS/CFO to act.\\n3. **Special resolution** Local-limit shift: just file MGT-14; ROC/inter-State: convene GM and pass SR.\\n4. **Regulatory approval** • Intra-State ROC shift → RD order (GNL-2). • Inter-State shift → CG order (INC-23 + two newspaper ads).\\n5. **File INC-22** Within 30 days of set-up; attach proof of address + order.\\n6. **Update collateral** Change address on PAN, GST, bank, website, stationery.\\n\\n**Red flags**\\n• Company starts invoicing from new office before CG/RD order.\\n• INC-22 filed late (> 30 days) or without occupancy proof."
+  },
+  {
+    "checklist_name": "Alter Memorandum Only by Special Resolution and Timely RoC Submission",
+    "checklist_category": "Constitutional Documents",
+    "checklist_ai_description": "**Chapter II – §13 (Alteration of Memorandum)**\\n\\n**Objective** Ensure that every change (name, objects, registered office, capital) follows the SR + 30-day filing rule and, where needed, Central-Government approval.\\n\\n**Step-by-step review**\\n1. **Draft alteration clause** Identify MoA clause(s) to amend.\\n2. **Board approval** Pass BR to call GM and circulate notice + ES.\\n3. **Special resolution** Secure ≥ 75 % votes.\\n4. **Regulatory nod** • Name change → CG approval via RUN-NC (unless only adding/dropping “Private”). • Inter-State shift already covered above.\\n5. **File MGT-14** Upload SR + altered MoA within 30 days.\\n6. **Fresh COI** For name change, wait for new COI before using name.\\n\\n**Red flags**\\n• MoA alteration filed late → RoC may mark “invalid”.\\n• Business under new objects before SR/filing."
+  },
+  {
+    "checklist_name": "Disclose and Obtain Approvals for Object Change When IPO Funds Remain Unutilised",
+    "checklist_category": "Constitutional Documents",
+    "checklist_ai_description": "**Chapter II – §13 (8) (Unutilised Public Funds & Object Change)**\\n\\n**Objective** Protect investors by ensuring object change gets SR, media notice and exit offer when public-issue proceeds are still unspent.\\n\\n**Step-by-step review**\\n1. **Identify unspent proceeds** Compare utilisation certificate vs prospectus.\\n2. **Draft GM notice** Include justification, amount unutilised, proposed use.\\n3. **Publish ads** English + vernacular before GM.\\n4. **Provide exit offer** Price per SEBI ICDR; keep open ≥ 15 days.\\n5. **Pass SR & file MGT-14** Within 30 days.\\n6. **Update website/annual report** Note variation & utilisation.\\n\\n**Red flags**\\n• Funds diverted before SR.\\n• Exit-offer letter missing on exchange portal."
+  },
+  {
+    "checklist_name": "Convert Public ↔ Private Only After Prescribed Approvals and CG Order (for Public → Private)",
+    "checklist_category": "Constitutional Documents",
+    "checklist_ai_description": "**Chapter II – §14 (Alteration of Articles)**\\n\\n**Objective** Ensure lawful change of company status so downstream filings (e.g., LODR exit) stand up.\\n\\n**Step-by-step review**\\n1. **Draft revised AoA** Mark deletions/insertions.\\n2. **Board + SR** Board calls GM; SR passed with ≥ 75 %.\\n3. **Public → Private** File RD-1 petition; attach SR, altered AoA, creditor/members list.\\n4. **Await CG order** Effect only on order date.\\n5. **File INC-27 + MGT-14** 15/30-day limits.\\n6. **Exchange intimation** If earlier listed, follow SEBI delisting route.\\n\\n**Red flags**\\n• CIN changed to “U” before CG order.\\n• Private → Public SR filed but AoA still restricts share transfers."
+  },
+  {
+    "checklist_name": "Note Every Charter Alteration on All Copies Circulated Post-Change",
+    "checklist_category": "Constitutional Documents",
+    "checklist_ai_description": "**Chapter II – §15 (Noting of Alterations)**\\n\\n**Objective** Stop distribution of outdated constitutional documents that could mislead investors or lenders.\\n\\n**Step-by-step review**\\n1. **Download certified PDFs** Fresh MoA/AoA after RoC approval.\\n2. **Replace old versions** Website, data-room, investor packs.\\n3. **Stamp hard copies** “Altered up to …”.\\n4. **Update KYC kits** Banker, lender, rating-agency folders.\\n5. **Archive superseded versions** Label and store.\\n\\n**Red flags**\\n• Loan agreement still annexes pre-alteration AoA.\\n• Registered-office copy shows previous capital clause."
+  },
+  {
+    "checklist_name": "Comply With CG Rectification Orders to Change Name Within Three Months",
+    "checklist_category": "Name & Branding",
+    "checklist_ai_description": "**Chapter II – §16 (Rectification of Name)**\\n\\n**Objective** Avoid automatic CG-allotted name and penalties.\\n\\n**Step-by-step review**\\n1. **Locate CG/trademark order** Note service date.\\n2. **Board resolution** Within 3 months.\\n3. **Pass SR + RUN-NC** File MGT-14 and name-application.\\n4. **Obtain fresh COI** Start using new name only after receipt.\\n5. **Update signage & statutory records** Everywhere.\\n\\n**Red flags**\\n• Order ignored past 3 months.\\n• Old name still on invoices six months later."
+  },
+  {
+    "checklist_name": "Ensure No Subsidiary Holds Shares in Its Holding Company (Voting Rights Nil)",
+    "checklist_category": "Corporate Structure",
+    "checklist_ai_description": "**Chapter II – §19 (Prohibition on Cross-Holdings)**\\n\\n**Objective** Prevent void acquisitions and voting in parent shares.\\n\\n**Step-by-step review**\\n1. **Cross-holdings register** List each subsidiary’s investments.\\n2. **Identify parent shares** Search for parent ISIN.\\n3. **Check exceptions** Trustee/legal-rep or pre-Act holdings (non-voting).\\n4. **Plan disposal** If void, transfer/cancel.\\n5. **Report to Board & audit committee**.\\n\\n**Red flags**\\n• Subsidiary granted ESOP of parent post-2013.\\n• Subsidiary uses voting rights in AGM."
+  },
+  {
+    "checklist_name": "Match Service-of-Document Mode to Member Preference and Retain Proof",
+    "checklist_category": "Documentation & Service",
+    "checklist_ai_description": "**Chapter II – §20 (Service of Documents)**\\n\\n**Objective** Ensure statutory notices withstand legal challenge on service.\\n\\n**Step-by-step review**\\n1. **Member-mode register** Capture e-mail/post/courier preference.\\n2. **Generate dispatch list** ERP tags mode per member.\\n3. **Track delivery** Read receipts, AWBs, PODs.\\n4. **Archive proofs** 8-year retention.\\n5. **Fallback** Bounce-back → re-send by speed-post.\\n\\n**Red flags**\\n• Institutional holder opted e-mail but got late hard copy.\\n• POD sheets missing → meeting invalidated."
+  },
+  {
+    "checklist_name": "Use Only Statutory Routes for Capital-Raising: Public Offer, Rights, Bonus, Private Placement",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "**Chapter III – §23 (Permissible Modes)**\\n\\n**Objective** Ensure fund-raising method aligns with §23 and SEBI regs so allotments aren’t void.\\n\\n**Step-by-step review**\\n1. **Identify proposed route** IPO/FPO, rights, bonus, private placement.\\n2. **Check company type** Public vs private (private can’t IPO).\\n3. **List SEBI regulations** ICDR (public/rights), SCRA (listing), LODR (post-listing).\\n4. **Board/shareholder approvals** SR where needed (PP, DVR).\\n5. **File offer docs** DRHP/RHP or PAS-4 etc.\\n\\n**Red flags**\\n• Private company circulates “information memorandum” to > 200 persons.\\n• Bonus issue funded from revaluation surplus."
+  },
+  {
+    "checklist_name": "Route Issue- and Transfer-of-Securities Compliance to SEBI for Listed Companies",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "**Chapter III – §24 (SEBI Jurisdiction)**\\n\\n**Objective** Avoid dual-filing confusion; listed entities must file capital-market documents with SEBI/stock exchange, not only RoC.\\n\\n**Step-by-step review**\\n1. **Compile offer/transfer docs** DRHP, placement memo, OFS notice.\\n2. **File with SEBI/stock exchange** Follow SEBI observation timelines.\\n3. **RoC filings** Submit only sections not exempt (e.g., PAS-3).\\n4. **Maintain SEBI comment tracker** Respond within deadlines.\\n5. **Disclose on website** Post filed versions for public.\\n\\n**Red flags**\\n• DRHP sent only to RoC.\\n• SEBI observation letter conditions ignored in final prospectus."
+  },
+  {
+    "checklist_name": "Treat Any ‘Offer for Sale’ Within Six Months of Allotment as a Deemed Prospectus",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "**Chapter III – §25 (Deemed Prospectus)**\\n\\n**Objective** Bring quick secondary sales into prospectus regime.\\n\\n**Step-by-step review**\\n1. **Scan recent allotments** Shares allotted ≤ 6 months.\\n2. **Check sale document** If holders circulate offer note → prospectus.\\n3. **Insert §26 disclosures** Financials, risk, consents.\\n4. **File GNL-1 with RoC** Before circulation.\\n5. **Apply SEBI ICDR** If listing.\\n\\n**Red flags**\\n• PE exit note omits prospectus-level info.\\n• Sale circular sent pre-RoC filing."
+  },
+  {
+    "checklist_name": "Include Full §26 Table in Every Prospectus and File With RoC Before Publication",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "**Chapter III – §26 (Mandatory Prospectus Disclosures)**\\n\\n**Objective** Give investors standard information and avoid criminal liability for omissions.\\n\\n**Step-by-step review**\\n1. **Use SEBI ICDR Part A checklist** History, capital, financials, objects, risk.\\n2. **Get expert consents** Auditor, bankers, legal counsel.\\n3. **Date & sign** Two directors sign every page.\\n4. **File GNL-1** Prospectus with RoC before marketing.\\n5. **Host PDF online** Company & exchange websites.\\n\\n**Red flags**\\n• Prospectus hits media before RoC filing.\\n• Track-record of promoters section missing."
+  },
+  {
+    "checklist_name": "Secure Shareholder Approval Before Varying Prospectus Objects or Contract Terms",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "**Chapter III – §27 (Variation of Objects/Contracts)**\\n\\n**Objective** Protect IPO investors and offer exit to dissenters.\\n\\n**Step-by-step review**\\n1. **Draft explanatory statement** Current utilisation vs proposed change.\\n2. **Publish notice** Two newspapers + website.\\n3. **Pass SR** ≥ 75 % approval.\\n4. **Provide exit offer** SEBI-priced; open ≥ 15 days.\\n5. **File MGT-14 + SR outcome** 30-day limit.\\n\\n**Red flags**\\n• Unspent funds used before SR.\\n• Exit-offer letter missing valuation basis."
+  },
+  {
+    "checklist_name": "Ensure Prospectus Advertisements Carry Memorandum Objects, Liability & Capital Synopsis",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "**Chapter III – §30 (Advertisement Content)**\\n\\n**Objective** Stop misleading teaser ads by reproducing key charter and capital details.\\n\\n**Step-by-step review**\\n1. **Review creatives** Print/digital ads must show objects, liability clause, capital, subscribers.\\n2. **Verify against prospectus** Numbers must match.\\n3. **Legal sign-off** Compliance signs ad release.\\n4. **Archive tear-sheets** Eight-year retention.\\n5. **RoC bundle** Include ad in GNL-1 filing if required.\\n\\n**Red flags**\\n• Teaser ad omits liability clause.\\n• Share-capital figures deviate from prospectus."
+  },
+  {
+    "checklist_name": "Update Information Memorandum for Every Tranche Under a Shelf Prospectus",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "**Chapter III – §31 (Shelf Prospectus & IM)**\\n\\n**Objective** Inform investors of material changes and refund option prior to each tranche.\\n\\n**Step-by-step review**\\n1. **Check shelf prospectus age** Must be ≤ 1 year.\\n2. **Prepare Information Memorandum** Update financials, litigation, ratings.\\n3. **File IM** RoC + SEBI before tranche opens.\\n4. **Offer refund window** Prior applicants may exit.\\n5. **Disclose online** Post IM with shelf prospectus.\\n\\n**Red flags**\\n• IM filed after tranche opens.\\n• Shelf prospectus older than one year."
+  },
+  
+  {
+    "checklist_name": "File Red-Herring Prospectus ≥ Three Days Before Issue Opens and Highlight Variations",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "**Chapter III – §32 (Red-Herring Prospectus)**\\n\\n**Objective** Ensure investors receive updated disclosures while allowing price-band finalisation later.\\n\\n**Step-by-step review**\\n1. **Draft RHP** Same disclosures as prospectus but without price/size.\\n2. **File with RoC** At least 3 days before bid/issue opening.\\n3. **Highlight changes** Mark variations v. shelf/prospectus.\\n4. **Upload to SEBI & exchanges** PDF + press release.\\n5. **Convert to final prospectus** Incorporate price and close stats.\\n\\n**Red flags**\\n• RHP filed < 3 days before opening.\\n• Variations not highlighted in bold italics."
+  },
+  {
+    "checklist_name": "Attach Abridged Prospectus to Every Application Form Unless Statutory Exemption Applies",
+    "checklist_category": "Public Offer & Prospectus",
+    "checklist_ai_description": "**Chapter III – §33 (Abridged Prospectus)**\\n\\n**Objective** Give retail investors key data without full 400-page prospectus.\\n\\n**Step-by-step review**\\n1. **Prepare Form F-2 table** Financials, risk factors, objects.\\n2. **Print on reverse of form** Or attach as booklet (e-IPO: PDF link).\\n3. **Identify exemptions** Underwriting invitation, placement, etc.\\n4. **Board certification** Declare contents true & correct.\\n5. **File sample with RoC** Bundle in GNL-1.\\n\\n**Red flags**\\n• Application forms distributed with only a web link and no PDF.\\n• Exemption claimed but route actually public offer."
+  },
+  {
+    "checklist_name": "Mitigate Mis-statement Liability—Maintain Diligence Records and Expert Consents",
+    "checklist_category": "Investor Protection & Liability",
+    "checklist_ai_description": "**Chapter III – §§34-37 (Mis-statement & Civil/Criminal Liability)**\\n\\n**Objective** Avoid prosecution, penalties and class actions for untrue statements.\\n\\n**Step-by-step review**\\n1. **Maintain verification file** Working papers for every data point.\\n2. **Obtain written consents** Auditors, valuers, legal advisors.\\n3. **Circulate ‘no-material-fact-omitted’ certificate** From each author section head.\\n4. **Preserve drafts** Red-lined to show edits.\\n5. **Board & committee minutes** Record Q&A with merchant bankers.\\n\\n**Red flags**\\n• Risk factor watered down by marketing team with no legal sign-off.\\n• Expert consent omitted in filed prospectus."
+  },
+  {
+    "checklist_name": "Print Anti-Personation Warning and Block Multiple Applications by Same PAN",
+    "checklist_category": "Investor Protection & Liability",
+    "checklist_ai_description": "**Chapter III – §38 (Personation of Shareholder Applications)**\\n\\n**Objective** Deter fictitious applications and fraud.\\n\\n**Step-by-step review**\\n1. **Ensure legend** “Any person who…” printed in bold on prospectus & form.\\n2. **PAN de-duplication** RTA software to reject ≥ 2 PANs.\\n3. **Scrutiniser report** List duplicates and reject codes.\\n4. **Board note** Record rejection at allotment meeting.\\n5. **File PAS-3** Reflect only accepted apps.\\n\\n**Red flags**\\n• Legend missing on electronic application form.\\n• Multiple apps with different PAN formats (e.g., minor spaces) slipping through."
+  },
+  {
+    "checklist_name": "Allot Shares Only After Minimum Subscription Achieved and Handle Refunds Within 30 Days",
+    "checklist_category": "Allotment & Post-Issue Compliance",
+    "checklist_ai_description": "**Chapter III – §39 (Minimum Subscription & Application Money)**\\n\\n**Objective** Protect investors from under-subscription risk and timely refunds.\\n\\n**Step-by-step review**\\n1. **Verify escrow certificates** Amount ≥ stated minimum.\\n2. **Check application money** ≥ 5 % face value (or SEBI-specified).\\n3. **Refund schedule** If minimum not reached within 30 days.\\n4. **Board resolution** Record subscription status and authorise allotment/refund.\\n5. **Public disclosure** Notify exchanges of subscription %.\\n\\n**Red flags**\\n• Allotment completed at 88 % subscription.\\n• Refund cheques dispatched after 30-day deadline."
+  },
+  {
+    "checklist_name": "File Return of Allotment (PAS-3) Within Fifteen Days of Every Issue",
+    "checklist_category": "Allotment & Post-Issue Compliance",
+    "checklist_ai_description": "**Chapter III – §39(4) (PAS-3 Filing)**\\n\\n**Objective** Keep share-capital data on MCA current and avoid per-day penalties.\\n\\n**Step-by-step review**\\n1. **Generate allotment list** ISIN-wise with distinctive numbers.\\n2. **Validate against escrow receipt**.\\n3. **Prepare PAS-3 XML** Attach board resolution & list.\\n4. **File within 15 days** Count from allotment date.\\n5. **Update share certificates / demat credit**.\\n\\n**Red flags**\\n• PAS-3 filed in bulk quarter-end packs (late).\\n• Distinctive-number range errors."
+  },
+  {
+    "checklist_name": "Obtain Stock-Exchange In-Principle Approval and Maintain Escrow Until Listing",
+    "checklist_category": "Allotment & Post-Issue Compliance",
+    "checklist_ai_description": "**Chapter III – §40 (Listing Permission & Escrow)**\\n\\n**Objective** Prevent use of subscription money before listing permission.\\n\\n**Step-by-step review**\\n1. **Apply to exchanges** In-principle approval letters before opening.\\n2. **Open Schedule-A bank account** No withdrawals until listing/refund.\\n3. **Receive final listing & trading approvals** Post-allotment.\\n4. **Board authorisation** Release of funds only after approvals loaded.\\n5. **File utilisation certificate** Merchant banker to SEBI.\\n\\n**Red flags**\\n• Money moved to general account before listing.\\n• Exchange approval dated after issue opening."
+  },
+  {
+    "checklist_name": "Issue Public-Offer Securities Only in Dematerialised Form",
+    "checklist_category": "Listing & Securities",
+    "checklist_ai_description": "**Chapter III – §29 (Demat-Only Issues)**\\n\\n**Objective** Meet SEBI & Depositories Act requirements; no physical certificates.\\n\\n**Step-by-step review**\\n1. **Tripartite agreements** Company–RTA–NSDL/CDSL active.\\n2. **ISIN creation** Before filing prospectus.\\n3. **Collect demat account details** Mandatory in application form.\\n4. **Allot via corporate actions** No certificate printing.\\n5. **Investor education** FAQ on demat process in ads.\\n\\n**Red flags**\\n• Physical certificates dispatched for oversubscription refund.\\n• Investors without demat account accepted."
+  },
+  {
+    "checklist_name": "Pay Commission on Subscription Strictly Within SEBI-Specified Limits",
+    "checklist_category": "Allotment & Post-Issue Compliance",
+    "checklist_ai_description": "**Chapter III – §40(6) (Brokerage/Commission)**\\n\\n**Objective** Control issue expenses and avoid hidden inducements.\\n\\n**Step-by-step review**\\n1. **Review syndicate agreement** Rate ≤ SEBI/ICDR cap.\\n2. **Board approval** Minutes specify % and payee list.\\n3. **Payment mode** Bank transfer post-listing.\\n4. **Disclose in prospectus** ‘Issue expenses’ table.\\n5. **Retain invoices** For merchant banker audit.\\n\\n**Red flags**\\n• Lump-sum success fee undisclosed.\\n• Commission paid in advance."
+  },
+  {
+    "checklist_name": "Obtain Special Resolution and RBI / MoF Clearance Before Issuing GDRs or FCCBs",
+    "checklist_category": "International Offerings & Depository Receipts",
+    "checklist_ai_description": "**Chapter III – §41 (Global Depository Receipts)**\\n\\n**Objective** Ensure compliance with FEMA, Companies Act and depositary regulations.\\n\\n**Step-by-step review**\\n1. **Pass special resolution** Section 41 + FEMA guidelines.\\n2. **Appoint overseas depository & domestic custodian**.\\n3. **File offer circular with SEBI / stock exchange (if listed)**.\\n4. **Obtain RBI ‘no-objection’** For pricing, end-use.\\n5. **Report proceeds** FC-GPR within 30 days.\\n\\n**Red flags**\\n• GDR raised without SR.\\n• End-use violates ECB negative list."
+  },
+  {
+    "checklist_name": "Follow Private-Placement Rulebook: Max 200 Investors per FY, PAS-4 Serial-Numbered, Banking Channels Only",
+    "checklist_category": "Private Placement",
+    "checklist_ai_description": "**Chapter III – §42 (Private Placement)**\\n\\n**Objective** Keep placements within statutory head-count limits and disclosure regime.\\n\\n**Step-by-step review**\\n1. **Prepare offer-cum-application (PAS-4)** Serial numbers, renunciation barred.\\n2. **Identify investors** ≤ 50 per issue and ≤ 200 per FY (excl. QIB/ESOP).\\n3. **Open separate bank account** Receive monies only via banking channel.\\n4. **Complete allotment** ≤ 60 days; else refund within 15 days.\\n5. **File PAS-3** ≤ 15 days of allotment.\\n\\n**Red flags**\\n• Google-forms invite sent to > 200 addresses.\\n• Cash subscription accepted."
+  },
+
+
+  {
+    "checklist_name": "Classify Share-Capital Correctly: Equity (Ordinary/SR) and Preference per §43",
+    "checklist_category": "Share Capital & Securities",
+    "checklist_ai_description": "**Chapter IV – §43 (Kinds of Share Capital)**\\n\\n**Objective** Ensure only permissible share classes exist and required approvals obtained for differential-voting shares (DVR/SR).\\n\\n**Step-by-step review**\\n1. **Extract cap-table** Identify ordinary, DVR, preference.\\n2. **Check AoA authority** Clause permitting DVR/SR.\\n3. **SEBI approval** For SR shares (pre-IPO).\\n4. **Record rights** Voting/ dividend/ conversion terms documented.\\n5. **Disclose in offer documents & annual report**.\\n\\n**Red flags**\\n• DVR issued without SEBI circular compliance.\\n• Preference shares mis-labelled as ‘debentures’."
+  },
+  {
+    "checklist_name": "Issue Share Certificates Within Statutory Time and Keep Demat Records Pristine",
+    "checklist_category": "Share Capital & Securities",
+    "checklist_ai_description": "**Chapter IV – §§44-47, 57 (Certificates & Demat)**\\n\\n**Objective** Create reliable title evidence and avoid penalties for late dispatch or personation.\\n\\n**Step-by-step review**\\n1. **Certificate preparation** Printed, two-director (or dir + CS) signatures.\\n2. **Dispatch window** Within 2 months (allotment) / 1 month (transfer).\\n3. **Duplicate issuance** Only on affidavit + indemnity.\\n4. **Demat reconciliation** Daily RTA NSDL/CDSL BO balances.\\n5. **Anti-personation legend** Present on forms.\\n\\n**Red flags**\\n• Transfer certificates delivered after 60 days.\\n• Duplicate issued without police-complaint proof."
+  },
+  {
+    "checklist_name": "Account for Securities Premium Correctly; Prohibit Issue of Shares at Discount Except for Stressed Debt",
+    "checklist_category": "Dividend & Capital Management",
+    "checklist_ai_description": "**Chapter IV – §§52-55 & 63 (Premium, Discount, Bonus)**\\n\\n**Objective** Guard against misuse of premium and illegal discounting; ensure bonus issues draw only from lawful reserves.\\n\\n**Step-by-step review**\\n1. **Trace premium ledger** Separate bank a/c or GL code.\\n2. **Check utilisation** Permitted uses: bonus issue, write off prelim expenses, buy-back, etc.\\n3. **Discount prohibition** Verify no shares issued below face value except §54(⚙) conversion.\\n4. **Sweat-equity** Special resolution + valuation report.\\n5. **Bonus issue** Free reserves / SP / CRR only (no revaluation).\\n\\n**Red flags**\\n• Premium used to pay dividends.\\n• Discounted ESOP beyond sweat-equity rules."
+  },
+  {
+    "checklist_name": "Confirm Preference Shares Are Redeemable ≤ 20 Years (Unless Infra) and Redemption Funded Properly",
+    "checklist_category": "Dividend & Capital Management",
+    "checklist_ai_description": "**Chapter IV – §55 (Preference Shares)**\\n\\n**Objective** Avoid perpetual instruments and under-funded redemptions.\\n\\n**Step-by-step review**\\n1. **Review term sheet** Redemption schedule.\\n2. **Check infra exception** Staged redemption > 20 yrs only if infra project.\\n3. **Verify CRR transfer** Profits into Capital Redemption Reserve.\\n4. **Fresh issue route** Where profits inadequate.\\n5. **Tribunal petition** For overdue redemption with ¾ consent.\\n\\n**Red flags**\\n• Irredeemable prefs issued post-2013.\\n• Redemption funded from short-term bank OD."
+  },
+  {
+    "checklist_name": "Alter Share Capital Only by Resolution, Statutory Filings and (If Needed) Tribunal Order",
+    "checklist_category": "Capital Alteration & Disclosure",
+    "checklist_ai_description": "**Chapter IV – §§61, 64-66 (Capital Alteration & Reduction)**\\n\\n**Objective** Ensure accuracy of authorised, issued and paid-up capital and protect creditors during reduction.\\n\\n**Step-by-step review**\\n1. **Board agenda** Increase AC, split, consolidate, cancel, reduce.\\n2. **Pass ordinary/SR** Depending on action.\\n3. **File SH-7** Within 30 days.\\n4. **Reduction** Petition NCLT; creditors’ list, auditor certificate, newspaper ads.\\n5. **Update MoA & financials**.\\n\\n**Red flags**\\n• Consolidation changes voting % without tribunal approval.\\n• Reduction accounted without NCLT order."
+  },
+  {
+    "checklist_name": "Offer Further Capital First to Existing Shareholders (Rights) Unless ESOP/Preferential Route Complied",
+    "checklist_category": "Fund-Raising & Convertible Instruments",
+    "checklist_ai_description": "**Chapter IV – §62 (Rights, ESOP, Preferential)**\\n\\n**Objective** Protect pre-emptive rights and ensure ESOP/accounts rules are met.\\n\\n**Step-by-step review**\\n1. **Rights letter** 15-30 day offer window.\\n2. **ESOP scheme** Special resolution + Rule 12 compliance.\\n3. **Preferential issue** SR + valuation report (not > 6 months old).\\n4. **Debt conversion** SR + term-sheet disclosure.\\n5. **File PAS-3 & allotment** Within 15 days.\\n\\n**Red flags**\\n• Rights renunciation barred.\\n• ESOP grant before SR."
+  },
+  {
+    "checklist_name": "Correctly Execute Transfer/Transmission and Publish Capital Figures With Every Public Document",
+    "checklist_category": "Transfer & Transmission",
+    "checklist_ai_description": "**Chapter IV – §§56-60 (Transfer, Certificates, Capital Statement)**\\n\\n**Objective** Ensure share transfers/transmissions are valid and statutory timelines met.\\n\\n**Step-by-step review**\\n1. **Check share-transfer deeds** Proper stamp duty, executed by transferor & transferee.\\n2. **60-day filing** Company must receive deed ≤ 60 days of execution.\\n3. **Certificate / demat credit** Within 30 days of approval.\\n4. **Refusal notice** If refused, send within 30 days.\\n5. **Capital statements** Letterheads must show authorised, subscribed & paid-up.\\n\\n**Red flags**\\n• Transfer deed unstamped.\\n• Letterhead shows only authorised capital."
+  },
+  {
+    "checklist_name": "Conduct Buy-Back Within 25 % Paid-Up + Free-Reserves, Maintain 2:1 Debt-Equity and Observe 12-Month Cooling-Off",
+    "checklist_category": "Buy-Back & Financial Assistance",
+    "checklist_ai_description": "**Chapter IV – §§67-70 (Buy-Back & Financial Assistance)**\\n\\n**Objective** Prevent leveraged buy-backs and self-financing of share purchase.\\n\\n**Step-by-step review**\\n1. **Articles authority** Check AoA permits buy-back.\\n2. **Board/SR** ≤ 10 % via Board, > 10 % up to 25 % via SR.\\n3. **Solvency declaration** Affidavit by 2 directors + filed with RoC.\\n4. **File SH-11** Buy-back return within 30 days.\\n5. **Maintain 2:1 ratio** Post buy-back.\\n\\n**Red flags**\\n• Repeat buy-back within 12 months.\\n• Buy-back announced while deposit/default exists."
+  },
+  {
+    "checklist_name": "Issue Secured Debentures Only With Trust Deed, DRR and Registered Charge",
+    "checklist_category": "Debentures & Debt Securities",
+    "checklist_ai_description": "**Chapter IV – §71 & Rule 18 (Debentures)**\\n\\n**Objective** Protect debenture-holder rights and ensure redemption reserve created.\\n\\n**Step-by-step review**\\n1. **Special resolution** For convertible debentures.\\n2. **Appoint trustees** If > 500 investors.\\n3. **Execute trust deed** Within 60 days of allotment.\\n4. **Create DRR** Transfer profits in scheduled percentages.\\n5. **Register charge** CHG-9 within 30 days.\\n\\n**Red flags**\\n• DRR ledger empty.\\n• Charge not registered—debentures unsecured."
+  },
+  
+    {
+      "checklist_name": "Accept Public or Member Deposits Only Within Eligibility Limits and After Credit Rating",
+      "checklist_category": "Deposits & Borrowings",
+      "checklist_ai_description": "**Chapter V – §§73 & 76 (Eligibility & Limits)**\\n\\n**Objective** Prevent unqualified companies from raising deposits and cap the quantum for eligible ones.\\n\\n**Step-by-step review**\\n1. **Determine company class** Public co. net-worth ≥ ₹500 cr OR turnover ≥ ₹1 000 cr → may accept public deposits; others: members only.\\n2. **Compute limits** Members: ≤ 35 % of paid-up + free reserves + SP; Public: extra 10 % window.\\n3. **Obtain credit rating** Minimum investment-grade every year.\\n4. **Board + shareholder resolution** Ordinary resolution (members); SR (public).\\n5. **Maintain deposit insurance (if notified)**.\\n\\n**Red flags**\\n• Private company issuing deposit ad.\\n• Rating older than one year."
+    },
+    {
+      "checklist_name": "Issue Circular (DPT-1) 30 Days Before Opening Deposit Window and File With RoC",
+      "checklist_category": "Deposits & Borrowings",
+      "checklist_ai_description": "**Chapter V – §73(2)(a)(b) & Rules (Pre-Issue Disclosure)**\\n\\n**Objective** Give prospective depositors audited financials, credit rating and terms.\\n\\n**Step-by-step review**\\n1. **Prepare DPT-1** Include audited figures, rating, repayment schedule.\\n2. **Board approval** Attach to minutes.\\n3. **File with RoC** At least 30 days before issue opening.\\n4. **Publish/dispatch** Newspaper ad + e-mail to members.\\n5. **Open designated bank A/c** Receive monies only therein.\\n\\n**Red flags**\\n• Circular filed late or after acceptances start.\\n• Rating letter missing in annexure."
+    },
+    {
+      "checklist_name": "Maintain Deposit Repayment Reserve ≥ 20 % of Deposits Maturing Next FY by 30 April",
+      "checklist_category": "Deposits & Borrowings",
+      "checklist_ai_description": "**Chapter V – §73(2)(c)&(f) (Reserve, Security, Insurance)**\\n\\n**Objective** Ring-fence part of deposits for timely repayment.\\n\\n**Step-by-step review**\\n1. **Compute maturing deposits** Next 1-April→31-March.\\n2. **Transfer ≥ 20 % to scheduled-bank account** by 30 April.\\n3. **Create security (if secured deposits)** Register charge (CHG-1).\\n4. **Verify insurance** If CG notifies product.\\n5. **Reconcile monthly** Reserve balance vs schedule.\\n\\n**Red flags**\\n• Reserve shortfall.\\n• Security described in circular but charge unregistered."
+    },
+    {
+      "checklist_name": "Issue Deposit Receipts Within 21 Days, Update Register and Pay Interest as Scheduled",
+      "checklist_category": "Deposits & Borrowings",
+      "checklist_ai_description": "**Chapter V – Rule 14 (Receipts, Register, Interest)**\\n\\n**Objective** Provide evidence of deposit and maintain statutory records.\\n\\n**Step-by-step review**\\n1. **Generate numbered receipts** Within 21 days.\\n2. **Update deposit register** Serial number, depositor data, interest rate.\\n3. **Accept only via banking channel** No cash.\\n4. **Pay interest/repay principal** Per circular timetable.\\n5. **Utilise deposits strictly for stated objects**.\\n\\n**Red flags**\\n• Cash acceptance over counter.\\n• Register not updated since last FY."
+    },
+    {
+      "checklist_name": "Report Pre-2014 Deposits and Repay Within Three Years Unless Tribunal Extension",
+      "checklist_category": "Deposits & Borrowings",
+      "checklist_ai_description": "**Chapter V – §74 (Legacy Deposits)**\\n\\n**Objective** Clean up old deposits taken under Companies Act 1956.\\n\\n**Step-by-step review**\\n1. **File return of deposits** Form DPT-3 (one-off).\\n2. **Repay within three years** Or original maturity (later).\\n3. **If unable** Petition NCLT for extension.\\n4. **Update repayment register**.\\n5. **Disclose in Board’s report**.\\n\\n**Red flags**\\n• No filing for pre-2014 deposits.\\n• Three-year deadline lapsed."
+    },
+    {
+      "checklist_name": "Monitor Penalties and Officer Liability for Deposit Defaults or Misstatements",
+      "checklist_category": "Deposits & Borrowings",
+      "checklist_ai_description": "**Chapter V – §§74-76A (Penalties & Fraud)**\\n\\n**Objective** Avoid heavy fines, imprisonment and personal liability.\\n\\n**Step-by-step review**\\n1. **Track repayment status** Dashboard to CFO.\\n2. **Flag defaults to Board** Within 30 days.\\n3. **File NCLT application** If extension needed.\\n4. **Pay penalties promptly** ROC adjudication orders.\\n5. **Update D&O insurance** Cover deposit claims.\\n\\n**Red flags**\\n• Continuing default unreported.\\n• Misstatement in DPT-1 discovered post-issue."
+    },
+    {
+      "checklist_name": "File CHG-1/9 for Every Charge or Modification Within 30 Days (60 Days With Additional Fee)",
+      "checklist_category": "Charges – Creation & Registration",
+      "checklist_ai_description": "**Chapter VI – §77 (Charge Creation)**\\n\\n**Objective** Give public notice of encumbrances and secure lender priority.\\n\\n**Step-by-step review**\\n1. **Identify charge instrument** Loan agreement, debenture trust deed.\\n2. **Prepare CHG-1 (creation) / CHG-9 (debenture series)**.\\n3. **File within 30 days** Count from instrument date.\\n4. **Pay additional fee** If 31-60 days late.\\n5. **Save certificate** ROC form once issued.\\n\\n**Red flags**\\n• Charge marked ‘pending for filing’ > 30 days.\\n• Lender security unenforceable in IBC."
+    },
+    {
+      "checklist_name": "Maintain Company Register of Charges and Reconcile With RoC Public Register",
+      "checklist_category": "Charges – Registers & Governance",
+      "checklist_ai_description": "**Chapter VI – §§81 & 85 (Registers of Charges)**\\n\\n**Objective** Ensure internal records match MCA data and are open for inspection.\\n\\n**Step-by-step review**\\n1. **Update Form CHG-7 register** Every charge/modification.\\n2. **Attach copies of instruments**.\\n3. **Quarterly reconciliation** Company vs MCA index search.\\n4. **Provide inspection** Members/creditors - free; others fee.\\n5. **Rectify mismatches** File missing CHG forms.\\n\\n**Red flags**\\n• Charge present in ledger but absent on MCA.\\n• Inspection refused to creditor."
+    },
+    {
+      "checklist_name": "File CHG-4 Within 30 Days of Full Satisfaction or Partial Release of Charge",
+      "checklist_category": "Charges – Satisfaction & Release",
+      "checklist_ai_description": "**Chapter VI – §§82-83 (Satisfaction of Charge)**\\n\\n**Objective** Remove obsolete liens and improve credit profile.\\n\\n**Step-by-step review**\\n1. **Obtain lender No-Due certificate**.\\n2. **File CHG-4** Within 30 days of payment.\\n3. **Track RoC memorandum entry** Check MCA portal.\\n4. **Update company register** Mark ‘satisfied’.\\n5. **Notify credit rating agencies**.\\n\\n**Red flags**\\n• Satisfied charge still marked ‘open’.\\n• CHG-4 filed but certificate not downloaded."
+    },
+    {
+      "checklist_name": "Notify RoC of Receiver/Manager Appointment and Cessation Within 30 Days",
+      "checklist_category": "Charges – Enforcement & Insolvency",
+      "checklist_ai_description": "**Chapter VI – §84 (Receiver/Manager)**\\n\\n**Objective** Publicly flag enforcement over charged assets.\\n\\n**Step-by-step review**\\n1. **Receive lender notice** Appointment instrument.\\n2. **Company filing** CHG-6 to RoC within 30 days.\\n3. **Receiver filing** Separate notice by receiver.\\n4. **Cessation notice** On discharge, file again.\\n5. **Update statutory registers**.\\n\\n**Red flags**\\n• Receiver active but no CHG-6 seen on MCA.\\n• Cessation unreported."
+    },
+    {
+      "checklist_name": "Warn Management That Unregistered Charges Are Void in Liquidation Priority",
+      "checklist_category": "Charges – Enforcement & Insolvency",
+      "checklist_ai_description": "**Chapter VI – §77(3) (Priority Risk)**\\n\\n**Objective** Ensure every lender registers security to retain priority in winding-up or IBC.\\n\\n**Step-by-step review**\\n1. **List all loan agreements**.\\n2. **Tick registration status** Certificate yes/no.\\n3. **Inform lender** If unregistered, file CHG-8 condonation + CHG-1.\\n4. **Board memo** Highlight risk.\\n5. **Track closure** Until certificate obtained.\\n\\n**Red flags**\\n• Pledge of shares exists but no charge filing.\\n• Liquidator later ignores lender claim."
+    },
+    {
+      "checklist_name": "Maintain Statutory Registers of Members, Debenture-Holders and Indexes",
+      "checklist_category": "Registers & Returns",
+      "checklist_ai_description": "**Chapter VII – §88 (Registers of Members & Security-Holders)**\\n\\n**Objective** Provide accurate ownership records and enable inspection rights.\\n\\n**Step-by-step review**\\n1. **Update member register** Distinctive numbers, folio/DP-ID.\\n2. **Create index** If > 50 members.\\n3. **Foreign register** Board resolution + RoC notice.\\n4. **Backup** Daily RTA data dump to offsite.\\n5. **Inspection availability** Members free, fee for others.\\n\\n**Red flags**\\n• Register last printed at AGM 2022.\\n• Index missing for 5 000 shareholders."
+    },
+    {
+      "checklist_name": "Track Beneficial Interest Declarations and Maintain Significant Beneficial Owner (SBO) Register",
+      "checklist_category": "Registers & Returns",
+      "checklist_ai_description": "**Chapter VII – §§89-90 (BEN-1/2, SBO)**\\n\\n**Objective** Expose hidden ownership and comply with anti-money-laundering norms.\\n\\n**Step-by-step review**\\n1. **Process BEN-1 from registered holders**.\\n2. **File BEN-2** Within 30 days of receipt.\\n3. **Identify SBOs** ≥ 25 % or significant influence.\\n4. **Maintain SBO register** Form BEN-3.\\n5. **Issue Sec 90(5) notices** If SBO not declared.\\n\\n**Red flags**\\n• BEN-2 filings missing since 2023.\\n• An overseas fund holds 28 % but no SBO entry."
+    },
+    {
+      "checklist_name": "Prepare and File Annual Return (MGT-7/7A) Within 60 Days of AGM and Get PCS Certification Where Required",
+      "checklist_category": "Registers & Returns",
+      "checklist_ai_description": "**Chapter VII – §92 (Annual Return)**\\n\\n**Objective** Provide RoC and investors a snapshot of governance, shareholding and penalties.\\n\\n**Step-by-step review**\\n1. **Collect data** Shareholding, KMP changes, meetings, fines.\\n2. **Draft MGT-7/7A** Use MCA utility.\\n3. **PCS certification** Listed & threshold cos. — MGT-8.\\n4. **Board approval & DIR-2 signature**.\\n5. **File within 60 days of AGM**.\\n\\n**Red flags**\\n• MGT-7 filed on 70th day.\\n• PCS remarks unresolved."
+    },
+    {
+      "checklist_name": "Hold AGM Every Year Within Six Months of FY-End and ≤ 15-Month Gap",
+      "checklist_category": "Meetings & Resolutions",
+      "checklist_ai_description": "**Chapter VII – §96 (AGM Calendar)**\\n\\n**Objective** Preserve shareholder democratic rights and avoid Tribunal orders.\\n\\n**Step-by-step review**\\n1. **Create AGM calendar** Add ROC extension buffer.\\n2. **Send 21-day notice** Or 95 % consent for shorter.\\n3. **File financials** Board approval 30 days pre-AGM.\\n4. **Hold AGM** Quorum & minutes.\\n5. **If default** File CG petition for extension.\\n\\n**Red flags**\\n• FY 2024-25 AGM planned Oct 5 2025 (> 6 months).\\n• Previous AGM extended but still missed."
+    },
+    {
+      "checklist_name": "Call EGM on Valid Member Requisition (≥ 10 % Members) or Allow Requisitionists to Convene",
+      "checklist_category": "Meetings & Resolutions",
+      "checklist_ai_description": "**Chapter VII – §100 (EGM Requisition)**\\n\\n**Objective** Ensure Board honours legitimate shareholder calls.\\n\\n**Step-by-step review**\\n1. **Verify requisition** Members ≥ 10 % paid-up capital carry voting rights.\\n2. **Board duty** Within 21 days to call EGM for a date ≤ 45 days.\\n3. **If Board fails** Requisitionists may convene within 3 months.\\n4. **Company to refund reasonable costs**.\\n5. **File MGT-14 if SR passed**.\\n\\n**Red flags**\\n• Board ignores requisition letter.\\n• EGM held after 3-month window."
+    },
+    {
+      "checklist_name": "Send 21-Day Notice With Explanatory Statement Disclosing KMP Interests for Special Business",
+      "checklist_category": "Meetings & Resolutions",
+      "checklist_ai_description": "**Chapter VII – §§101-102 (Notice & ES)**\\n\\n**Objective** Give members full facts to make informed decisions.\\n\\n**Step-by-step review**\\n1. **Draft notice** Date, time, venue, ordinary/special items.\\n2. **Add explanatory statement** Material facts, KMP interest ≥ 2 %.\\n3. **Deliver 21 clear days** Or shorter with 95 % consent.\\n4. **Upload to website & exchange**.\\n5. **File proof of dispatch**.\\n\\n**Red flags**\\n• ES omits director interest.\\n• E-mail notices bounce with no resend."
+    },
+    {
+      "checklist_name": "Ensure Quorum, Proxy Limits, E-Voting and Poll Procedures Follow Statute and SS-2",
+      "checklist_category": "Meetings & Resolutions",
+      "checklist_ai_description": "**Chapter VII – §§103-109 (Quorum, Voting, E-Voting)**\\n\\n**Objective** Validate meeting decisions against quorum and voting-method requirements.\\n\\n**Step-by-step review**\\n1. **Quorum head-count** Public: 5-30-30 rule; Private: 2; OPC: 1.\\n2. **Proxy lodging** ≥ 48 h; limit 50 proxies/person.\\n3. **Enable remote e-voting** If > 1 000 members or listed.\\n4. **Conduct poll/postal ballot** When demanded or mandated.\\n5. **Prepare scrutiniser report** File within 48 h.\\n\\n**Red flags**\\n• Interested members counted toward quorum.\\n• E-voting omitted for listed company."
+    },
+    {
+      "checklist_name": "File Special and Selected Board Resolutions With RoC in MGT-14 Within 30 Days",
+      "checklist_category": "Meetings & Resolutions",
+      "checklist_ai_description": "**Chapter VII – §117 (Filing of Resolutions)**\\n\\n**Objective** Keep public record of critical decisions and avoid per-day fines.\\n\\n**Step-by-step review**\\n1. **Identify list under Rule 24** SRs + certain OR/BR.\\n2. **Prepare certified copy** Extract of minutes signed.\\n3. **File MGT-14** With explanatory statement + MOA/AOA copy if altered.\\n4. **Track SRN** Save acknowledgement.\\n5. **Update resolution register**.\\n\\n**Red flags**\\n• MGT-14 for SR filed 45 days later.\\n• Non-filing of Board resolution for borrowing under §179."
+    },
+    {
+      "checklist_name": "Enter Minutes Within 30 Days, Number Consecutively and Follow SS-1 / SS-2 Format",
+      "checklist_category": "Secretarial Records & Inspection",
+      "checklist_ai_description": "**Chapter VII – §118 (Minutes & Secretarial Standards)**\\n\\n**Objective** Create legally admissible meeting records and avoid penalties for tampering.\\n\\n**Step-by-step review**\\n1. **Draft minutes** Within 15 days; finalise ≤ 30 days.\\n2. **Page-number & bind** Consecutively.\\n3. **Chairperson sign and date** Within stipulated time.\\n4. **Follow SS-1/SS-2 layout** Background, resolutions, dissent.\\n5. **Store electronically with DSC**.\\n\\n**Red flags**\\n• Minutes written 3 months later.\\n• White-spaces left between entries."
+    },
+    {
+      "checklist_name": "Allow Member Inspection of Registers and Minute Books or Face Tribunal Direction",
+      "checklist_category": "Secretarial Records & Inspection",
+      "checklist_ai_description": "**Chapter VII – §§94 & 119 (Inspection Rights)**\\n\\n**Objective** Safeguard transparency and comply with statutory access requirements.\\n\\n**Step-by-step review**\\n1. **Maintain registers at RO** Or SR-approved other place.\\n2. **Provide copies within 7 days of request**.\\n3. **Charge permitted fee** Not above Rule limit.\\n4. **Record inspection log** Name, date, doc inspected.\\n5. **Respond to NCLT orders** If inspection refused.\\n\\n**Red flags**\\n• Inspection refused without reason.\\n• Registers kept at branch office without ROC-advised SR."
+    },
+    
+      {
+        "checklist_name": "Classify and File Every Ordinary and Special Resolution (Board or Member) in MGT-14 Within 30 Days",
+        "checklist_category": "Meetings & Resolutions",
+        "checklist_ai_description": "**Chapter VII – §117 & Rule 24**\\n\\n**Objective** Keep the public register of decisive corporate actions current and avoid per-day penalties.\\n\\n**Step-by-step review**\\n1. **Resolution log** Maintain spreadsheet of GM / Board outcomes tagged ‘file’ vs ‘no-file’.\\n2. **Prepare certified extract** Signed by chairperson or CS.\\n3. **File MGT-14** Upload PDF of resolution + ES (if member SR) + altered MoA/AoA within 30 days.\\n4. **Save SRN & acknowledgment** Attach to minutes book.\\n5. **Update register of resolutions** Index in hard copy and DMS.\\n\\n**Red flags**\\n• Filing missed for borrowing BR (Rule 24(i)).\\n• SR filed late—daily penalty accumulating unnoticed."
+      },
+    
+    
+      {
+        "checklist_name": "Declare Dividend Only From Realised Profits After Depreciation and Loss Set-Off",
+        "checklist_category": "Dividend & Capital Management",
+        "checklist_ai_description": "**Chapter VIII – §123(1)(a–c)**\\n\\n**Objective** Ensure payouts are funded by genuine earnings—not capital or unrealised gains.\\n\\n**Step-by-step review**\\n1. **Compute profit figure** Start with P&L surplus ➜ adjust prior-year losses & unprovided depreciation.\\n2. **Exclude unrealised/ revaluation gains** Check OCI and FV reserves.\\n3. **Board note** Summarise calculation and auditor concurrence.\\n4. **Confirm free-reserve eligibility** If drawing from reserves, follow Rule 3 caps.\\n5. **Record in minutes** Specify amount, rate and book-closure dates.\\n\\n**Red flags**\\n• Dividend proposed while carry-forward loss exists.\\n• Revaluation surplus silently counted as profit."
+      },
+      {
+        "checklist_name": "Transfer Declared Dividend Sum to a Separate Bank Account Within Five Days",
+        "checklist_category": "Dividend & Capital Management",
+        "checklist_ai_description": "**Chapter VIII – §123(4)**\\n\\n**Objective** Ring-fence dividend monies for prompt distribution.\\n\\n**Step-by-step review**\\n1. **Open dedicated dividend account** Scheduled commercial bank.\\n2. **Transfer gross amount** Within 5 days of declaration.\\n3. **Reconcile ledger → bank** Finance team confirms.\\n4. **Attach bank advice to minutes**.\\n5. **Close account** After unpaid amount moved to ‘Unpaid Dividend A/c’.\\n\\n**Red flags**\\n• Transfer on day 6 or later.\\n• Dividend paid out of operating account instead."
+      },
+      {
+        "checklist_name": "Distribute Dividend Within 30 Days; Directors Liable for Delay Unless Statutory Exceptions Apply",
+        "checklist_category": "Shareholder Rights & Liability",
+        "checklist_ai_description": "**Chapter VIII – §127**\\n\\n**Objective** Safeguard shareholder entitlement and avoid fines/imprisonment for officers.\\n\\n**Step-by-step review**\\n1. **Prepare payment file** List bank mandates, cheque details.\\n2. **Dispatch / electronic transfer** Complete within 30 days.\\n3. **Record undeliverables** Unpaid entries flagged.\\n4. **File return of dividend** With RTA & exchange.\\n5. **Note statutory exceptions** Force-majeure, directions by law, etc.\\n\\n**Red flags**\\n• Cheques mailed on day 32.\\n• No board note citing reasons for delay."
+      },
+      {
+        "checklist_name": "Cap Interim Dividend Rate When Company Posts Year-to-Date Loss",
+        "checklist_category": "Dividend & Capital Management",
+        "checklist_ai_description": "**Chapter VIII – §123(3)**\\n\\n**Objective** Prevent erosion of capital in lean financial years.\\n\\n**Step-by-step review**\\n1. **Compute YTD profit/loss** Auditor-reviewed figures to Board.\\n2. **If loss** Cap interim dividend at past 3-year average rate.\\n3. **Board minutes** Record earnings analysis and cap.\\n4. **File exchange disclosure** Reg 30 outcome.\\n5. **Carry adjustment into final dividend calc**.\\n\\n**Red flags**\\n• Interim dividend equals last year’s 200 % despite YTD loss.\\n• Average-rate cap mis-calculated (use ₹ not %)."
+      },
+      {
+        "checklist_name": "Transfer Unpaid Dividend to ‘Unpaid Dividend Account’ After 30-Day Payment Window and Publish Name-Wise List",
+        "checklist_category": "Unpaid Dividend & IEPF",
+        "checklist_ai_description": "**Chapter VIII – §124(1–2)**\\n\\n**Objective** Ensure traceability of unpaid amounts and prepare for IEPF transfer.\\n\\n**Step-by-step review**\\n1. **Identify unpaid entries** After 30-day payment cut-off.\\n2. **Transfer to dedicated account** Within 7 days.\\n3. **Publish shareholder list** Company website + exchange within 90 days.\\n4. **Send reminders** At least three months before 7-year cut-off.\\n5. **Rectify claims** Pay out with interest if delay on company side.\\n\\n**Red flags**\\n• Transfer done on day 10 (> 7-day limit).\\n• Name-wise list missing PAN / folio columns."
+      },
+      {
+        "checklist_name": "Move Unpaid Dividend and Underlying Shares to IEPF After Seven Years and File IEPF-1/4 Forms",
+        "checklist_category": "Unpaid Dividend & IEPF",
+        "checklist_ai_description": "**Chapter VIII – §124(5–6) & §125**\\n\\n**Objective** Comply with investor-protection transfer, avoiding hefty fines.\\n\\n**Step-by-step review**\\n1. **Compile 7-year ageing list** Dividend + shares.\\n2. **Transfer funds to IEPF**  ➜ IEPF-1 within 30 days.\\n3. **Transfer shares**  ➜ DEMAT IEPF account & file IEPF-4.\\n4. **Update corporate actions** Exchange intimation, ‘IEPF’ notation in member register.\\n5. **Assist claimants** Provide refund procedure link.\\n\\n**Red flags**\\n• Shares kept in company suspense ISIN—transfer skipped.\\n• IEPF-1 filed after 30-day window."
+      },
+    
+    
+    
+      {
+        "checklist_name": "Maintain Books of Account on Accrual and Double-Entry Basis at Registered Office or Board-Notified Place",
+        "checklist_category": "Financial Reporting & Accounts",
+        "checklist_ai_description": "**Chapter IX – §128**\\n\\n**Objective** Provide accurate, retrievable financial records for eight-year period.\\n\\n**Step-by-step review**\\n1. **Verify accounting system** ERP settings: accrual + double-entry.\\n2. **Board resolution** If books kept elsewhere (Form AOC-5 filed).\\n3. **Branch returns**  Monthly import into HO books.\\n4. **Director inspection**  Access log maintained.\\n5. **Retention policy**  8-year archive + electronic backups.\\n\\n**Red flags**\\n• Cash-basis parallel set used for tax.\\n• AOC-5 absent for warehouse finance office."
+      },
+      {
+        "checklist_name": "Prepare Financial Statements in Compliance With Schedule III and Applicable Accounting Standards",
+        "checklist_category": "Financial Reporting & Accounts",
+        "checklist_ai_description": "**Chapter IX – §129**\\n\\n**Objective** Deliver true-and-fair view and uniform presentation of accounts.\\n\\n**Step-by-step review**\\n1. **Apply latest Schedule III format** Balance Sheet & P&L headings.\\n2. **Check AS / Ind AS compliance** Disclosure checklists signed by auditor.\\n3. **Prepare Consolidated FS** If subsidiary/associate/JV exists.\\n4. **Attach salient-feature AOC-1** Subsidiary performance table.\\n5. **Board approval** Circulate draft to directors ≥ 7 days before meeting.\\n\\n**Red flags**\\n• Stand-alone FS filed despite wholly-owned subsidiary.\\n• GAAP departure not explained in notes."
+      },
+      {
+        "checklist_name": "File Limited-Reviewed or Audited Periodic Financial Results Under §129A When Notified",
+        "checklist_category": "Financial Reporting & Accounts",
+        "checklist_ai_description": "**Chapter IX – §129A (Periodic Results)**\\n\\n**Objective** Prepare for future rule-making that may mimic SEBI quarterly rules for certain unlisted classes.\\n\\n**Step-by-step review**\\n1. **Monitor MCA notifications** Check if §129A class rules activated.\\n2. **Set up quarterly close calendar** If applicable.\\n3. **Engage auditor or limited-review** Within 45 days quarter-end.\\n4. **Board approval & website upload**.\\n5. **File with RoC (e-form TBD)**.\\n\\n**Red flags**\\n• Company missed first mandatory quarter after notification.\\n• Website lacks PDF of Q results."
+      },
+      {
+        "checklist_name": "Re-open Books Only by Court/Tribunal Order Alleging Fraud; Voluntary Revision Requires Tribunal Approval",
+        "checklist_category": "Financial Reporting & Accounts",
+        "checklist_ai_description": "**Chapter IX – §§130 & 131**\\n\\n**Objective** Control restatement to serious cases and maintain investor confidence.\\n\\n**Step-by-step review**\\n1. **Check trigger** Court/Tribunal order (fraud/mis-management) → §130; Board kudos → §131.\\n2. **Petition NCLT** For voluntary revision ≤ 3 preceding FYs.\\n3. **Prepare revised FS & Board’s report**.\\n4. **File AOC-4 (revised)**  Within 30 days of order.\\n5. **Disclose in AGM notice** Reasons for revision.\\n\\n**Red flags**\\n• Re-opened accounts without Tribunal leave.\\n• Multiple revisions of same FY."
+      },
+      {
+        "checklist_name": "Comply With NFRA Standards and Reporting; Avoid Engaging Debarred Auditors",
+        "checklist_category": "Audit & Assurance",
+        "checklist_ai_description": "**Chapter IX – §132 (NFRA)**\\n\\n**Objective** Ensure audit quality and avert NFRA penalties/debarment.\\n\\n**Step-by-step review**\\n1. **Verify auditor registration**  Not debarred on NFRA portal.\\n2. **Follow notified AS/SA**  Update firm checklist annually.\\n3. **File NFRA-2**  Annual return by 30 Nov.\\n4. **Respond to inspection notices**  Within timeline.\\n5. **Capture CARO/NFRA observations**  Board risk tracker.\\n\\n**Red flags**\\n• Auditor on NFRA debar list still engaged.\\n• NFRA-2 filed after December."
+      },
+      {
+        "checklist_name": "Approve Financial Statements and Board’s Report in Same Meeting; Attach Directors’ Responsibility Statement",
+        "checklist_category": "Board Report & Governance Disclosures",
+        "checklist_ai_description": "**Chapter IX – §134**\\n\\n**Objective** Provide full statutory disclosures and director accountability.\\n\\n**Step-by-step review**\\n1. **Draft Board’s report**  Map §134(3) items: ESOP, CSR, RPT, risk, etc.\\n2. **Insert Directors’ Responsibility Statement**.\\n3. **Attach auditor’s report**  Unmodified / modified opinion basis.\\n4. **Approve FS + Board’s report**  Same Board meeting.\\n5. **Sign & date**  Chairman or authorised director + CS/CFO.\\n\\n**Red flags**\\n• Board’s report signed a day later than FS.\\n• Missing web-link to annual return."
+      },
+      {
+        "checklist_name": "Constitute CSR Committee, Monitor 2 % Spend and Transfer Unspent Amounts to Fund or Schedule VII Projects",
+        "checklist_category": "Corporate Social Responsibility",
+        "checklist_ai_description": "**Chapter IX – §135 & Rules**\\n\\n**Objective** Ensure CSR obligations are met and unspent funds handled per law.\\n\\n**Step-by-step review**\\n1. **Check applicability thresholds**  Net-worth ≥ ₹500 cr, turnover ≥ ₹1 000 cr or profit ≥ ₹5 cr.\\n2. **Form CSR committee**  (waived if spend ≤ ₹50 lakh).\\n3. **Approve CSR policy & place on website**.\\n4. **Spend ≥ 2 % of avg 3-yr PAT**  Prefer Schedule VII causes.\\n5. **Transfer unspent**  Ongoing project → CSR a/c within 30 days AGM; others → Govt Fund within 6 months.\\n\\n**Red flags**\\n• No CSR policy uploaded.\\n• Unspent general amount still in company a/c after 6-month deadline."
+      },
+      {
+        "checklist_name": "Circulate Financial Statements ≥ 21 Days Before AGM (or Provide Web Link) and Keep Copies for Inspection",
+        "checklist_category": "Shareholder Communication",
+        "checklist_ai_description": "**Chapter IX – §136**\\n\\n**Objective** Give members adequate time to review accounts and facilitate transparency.\\n\\n**Step-by-step review**\\n1. **Dispatch physical/e-copy**  21 clear-day rule.\\n2. **Listed company option**  E-mail link + website hosting.\\n3. **Keep hard copies at RO**  During business hours.\\n4. **Upload subsidiary accounts**  On parent website.\\n5. **Board note**  Confirm compliance.\\n\\n**Red flags**\\n• Notice + FS e-mailed 15 days before AGM.\\n• Subsidiary FS missing on website."
+      },
+      {
+        "checklist_name": "File Adopted or Provisional Financial Statements (AOC-4/XBRL) Within 30 Days of AGM",
+        "checklist_category": "Regulatory Filings & Timelines",
+        "checklist_ai_description": "**Chapter IX – §137**\\n\\n**Objective** Meet statutory filing timeline and avoid staggered late fees.\\n\\n**Step-by-step review**\\n1. **Generate XBRL or non-XBRL AOC-4**.\\n2. **Attach signed FS, Board’s report, auditor’s report**.\\n3. **File within 30 days of AGM**  OPC: 180 days of FY-end.\\n4. **Replace provisional FS**  Within 30 days of adoption if AGM adjourned.\\n5. **Retain SRN**  and e-form for record.\\n\\n**Red flags**\\n• AOC-4 filed day 45.\\n• Provisional FS not replaced after adjourned AGM."
+      },
+      
+        {
+          "checklist_name": "Institute Risk-Based Internal Audit Where Section 138 Applies and Ensure Auditor Independence",
+          "checklist_category": "Internal Audit & Controls",
+          "checklist_ai_description": "**Chapter IX – §138 & Rule 13**\\n\\n**Objective** Provide continuous assurance for prescribed companies (listed, unlisted with assets ≥ ₹500 cr, turnover ≥ ₹200 cr, etc.).\\n\\n**Step-by-step review**\\n1. **Check applicability thresholds** Net-worth, turnover, loans, deposits.\\n2. **Board resolution** Appoint internal auditor (CA, CMA or internal professional).\\n3. **Define scope & frequency** Risk-based plan approved by Audit Committee.\\n4. **Verify independence** Internal auditor not engaged in external audit or consulting that impairs objectivity.\\n5. **Submit periodic reports** Table findings at Audit Committee/Board with action-taken note.\\n\\n**Red flags**\\n• Same partner handles both statutory and internal audit.\\n• Internal-audit report older than six months without follow-up."
+        },
+        {
+          "checklist_name": "Activate Immutable Audit-Trail Feature in Accounting Software and Disable Editing Lock Controls",
+          "checklist_category": "Financial Reporting & Accounts",
+          "checklist_ai_description": "**Companies (Accounts) Rules 2014 – Rule 3(1)​(g) (effective 1 Apr 2023)**\\n\\n**Objective** Ensure every accounting edit leaves a chronological log that cannot be disabled.\\n\\n**Step-by-step review**\\n1. **Confirm ERP version** Supports audit-trail and cannot turn it off.\\n2. **Enable daily log back-up** Retain for eight years + current.\\n3. **Test alteration log** Sample transaction → edit → verify trail.\\n4. **Document controls in SOP** User roles, maker–checker.\\n5. **Present log to auditors** Each quarter.\\n\\n**Red flags**\\n• Audit-trail toggle visible to admin.\\n• Logs purged during financial close."
+        },
+        {
+          "checklist_name": "Transmit Monthly Branch Returns and Incorporate Them Into Head-Office Books",
+          "checklist_category": "Financial Reporting & Accounts",
+          "checklist_ai_description": "**Chapter IX – §128(1) Proviso (Branch Accounts)**\\n\\n**Objective** Ensure branch transactions feed consolidated ledgers for true-and-fair reporting.\\n\\n**Step-by-step review**\\n1. **Map branches** Domestic & overseas.\\n2. **Define return template** Trial balance + schedules.\\n3. **Set monthly cut-off** E.g., T+5 calendar days.\\n4. **Reconcile HO & branch ledgers** Variance tracker.\\n5. **Retain signed branch returns** Eight-year archive.\\n\\n**Red flags**\\n• Overseas branch sends returns quarterly.\\n• HO books show suspense entries > 60 days."
+        },
+        {
+          "checklist_name": "Attach Salient Features (Form AOC-1) of Each Subsidiary, Associate and JV to Consolidated FS",
+          "checklist_category": "Financial Reporting & Accounts",
+          "checklist_ai_description": "**Chapter IX – §129(3) & Rule 5**\\n\\n**Objective** Provide stakeholders with one-page summary of group performance.\\n\\n**Step-by-step review**\\n1. **Complete AOC-1 table** Shareholding %, PAT, net-worth.\\n2. **Obtain subsidiary BoD certification** Accuracy of figures.\\n3. **Attach to consolidated FS & Board’s report**.\\n4. **Host standalone FS of subs on website**.\\n5. **File with AOC-4(XBRL)** Tag correctly.\\n\\n**Red flags**\\n• Omni-bus “Nil” disclosure despite active foreign sub.\\n• AOC-1 omits joint-venture data."
+        },
+        {
+          "checklist_name": "Present Cash-Flow Statement Except for OPC, Small, Dormant and Start-up Companies",
+          "checklist_category": "Financial Reporting & Accounts",
+          "checklist_ai_description": "**Chapter IX – §2(40) Definition & Schedule III**\\n\\n**Objective** Ensure liquidity information for stakeholders.\\n\\n**Step-by-step review**\\n1. **Check company category** If exemption not available, include CFS.\\n2. **Prepare indirect method** Unless direct chosen consistently.\\n3. **Reconcile CFO, CFI, CFF totals** Opening vs closing cash.\\n4. **Cross-verify with bank confirmations**.\\n5. **Comparatives for previous period**.\\n\\n**Red flags**\\n• Listed company omits cash-flow.\\n• CFO > Net profit with no note."
+        },
+        {
+          "checklist_name": "Appeal NFRA Orders to NCLAT Within 90 Days, Seek Extension Only for ‘Sufficient Cause’",
+          "checklist_category": "Audit & Assurance",
+          "checklist_ai_description": "**Chapter IX – §132(5)​(8)**\\n\\n**Objective** Preserve auditor/company rights against penalties or debarment.\\n\\n**Step-by-step review**\\n1. **Diary NFRA order date** Start 90-day clock.\\n2. **Engage counsel** Draft grounds and prayer.\\n3. **File appeal with fee** Within 90 days; seek condonation (≤ 90 days extra) if delayed.\\n4. **Serve NFRA & parties**.\\n5. **Disclose open appeal in Board/Audit Committee**.\\n\\n**Red flags**\\n• Appeal filed day 95 without condonation motion.\\n• NFRA order implemented (e.g., auditor change) before appeal decision."
+        },
+        {
+          "checklist_name": "Disclose Auditor Remuneration Split—Audit, Tax and Other Services—in Notes to Accounts",
+          "checklist_category": "Audit Oversight & Reporting",
+          "checklist_ai_description": "**Schedule III – General Instruction 5(i)**\\n\\n**Objective** Provide transparency on fees and independence.\\n\\n**Step-by-step review**\\n1. **Obtain invoice break-up** Statutory audit, limited review, tax, certification.\\n2. **Map to GL** Ensure completeness.\\n3. **Prepare note in ₹ lakh**.\\n4. **Cross-check non-audit services vs §144 list**.\\n5. **Have Audit Committee review** Before FS approval.\\n\\n**Red flags**\\n• Bulk fee shown as “professional services”.\\n• Non-audit services fee > audit fee without AC approval."
+        },
+        {
+          "checklist_name": "Affix UDIN on All Auditor Reports, Certificates and Consent Letters Before Filing",
+          "checklist_category": "Audit Oversight & Reporting",
+          "checklist_ai_description": "**ICAI UDIN Mandate (2019) & MCA Circular (2020)**\\n\\n**Objective** Prevent bogus audit reports on ROC / SEBI portals.\\n\\n**Step-by-step review**\\n1. **Generate UDIN** Within 15 days of signing.\\n2. **Insert under signature** PDF reports & certificates.\\n3. **Maintain UDIN register** Audit firm ledger.\\n4. **Verify UDIN status** ICAI portal before MCA upload.\\n5. **Retain screenshots** For peer review.\\n\\n**Red flags**\\n• ADT-1 filed with report lacking UDIN.\\n• UDIN generated but not quoted."
+        },
+        {
+          "checklist_name": "Include CARO 2020 Report Annexure for All Companies to Which It Applies (Turnover > ₹10 cr, etc.)",
+          "checklist_category": "Audit Oversight & Reporting",
+          "checklist_ai_description": "**Companies (Auditor’s Report) Order 2020**\\n\\n**Objective** Give expanded auditor comments on fixed assets, inventory, compliances.\\n\\n**Step-by-step review**\\n1. **Check applicability** Private cos exempt if turnover ≤ ₹10 cr & borrowings ≤ ₹1 cr.\\n2. **Ensure 21 clause responses** Fixed-asset records, immovable property title, inventory counts, RPT, etc.\\n3. **Cross-validate with GL schedules**.\\n4. **Board/Audit Committee note** Significant adverse remarks.\\n5. **Attach as annexure to main report**.\\n\\n**Red flags**\\n• Auditor’s report missing CARO annexure despite turnover ₹50 cr.\\n• Generic “not applicable” for all clauses."
+        },
+        {
+          "checklist_name": "Auditor Must Report on Adequacy and Operating Effectiveness of Internal Financial Controls",
+          "checklist_category": "Audit Oversight & Reporting",
+          "checklist_ai_description": "**Chapter X – §143(3)(i) & ICAI Guidance**\\n\\n**Objective** Provide shareholders with assurance on IFC design and operation.\\n\\n**Step-by-step review**\\n1. **Management IFC framework** Document & risk-control matrix.\\n2. **Auditor testing** Walk-through + sample tests.\\n3. **Obtain management representation** On effectiveness.\\n4. **Include separate opinion paragraph** In audit report.\\n5. **Track remediation of key deficiencies**.\\n\\n**Red flags**\\n• Auditor expresses disclaimer of opinion without substantive reason.\\n• No Board action plan for ‘material weakness’."
+        },
+        {
+          "checklist_name": "File CSR-2 e-Form With MCA Alongside AOC-4 and Publish Annual CSR Report on Website",
+          "checklist_category": "Corporate Social Responsibility",
+          "checklist_ai_description": "**Rule 12(1B) of CSR Rules (2022)**\\n\\n**Objective** Standardise CSR disclosures and enable MCA analytics.\\n\\n**Step-by-step review**\\n1. **Prepare CSR annual report (Annex II)** Activity-wise spend, impact, surplus.\\n2. **Generate CSR-2 form** Auto-fill from AOC-4 + manual fields.\\n3. **File CSR-2** Separately but same SRN group as AOC-4.\\n4. **Upload report/POLICY on website** Section 8 company details of implementing agencies.\\n5. **Keep supporting invoices, board approval**.\\n\\n**Red flags**\\n• CSR-2 flagged ‘pending’ beyond March 31.\\n• Surplus retained in business without declaration."
+        },
+        {
+          "checklist_name": "Disclose Energy Conservation, Technology Absorption and Foreign-Exchange Earnings in Board’s Report",
+          "checklist_category": "Board Report & Governance Disclosures",
+          "checklist_ai_description": "**Rule 8 of Companies (Accounts) Rules 2014**\\n\\n**Objective** Provide statutory environmental & FX disclosures.\\n\\n**Step-by-step review**\\n1. **Gather plant data** Energy saved (kWh), capex on conservation.\\n2. **Compile tech-absorption efforts** R&D spend, import substitution.\\n3. **Summarise FX earnings/outgo** Export sales vs import payments.\\n4. **Insert three-part section in Board’s report**.\\n5. **Cross-check with ledger & customs docs**.\\n\\n**Red flags**\\n• ‘Not applicable’ stated for manufacturing plant.\\n• FX earnings note differs from FS note-31."
+        },
+        {
+          "checklist_name": "Maintain Attendance Registers for Board and Committee Meetings and Preserve for Eight Years",
+          "checklist_category": "Board Meetings & Procedures",
+          "checklist_ai_description": "**Secretarial Standard 1 – Clause 4.4**\\n\\n**Objective** Evidence director participation and support CSR & SEBI disclosures.\\n\\n**Step-by-step review**\\n1. **Create bound register** Serial-numbered pages.\\n2. **Get signatures** Directors present (physical/VC) – digital where allowed.\\n3. **Record mode of attendance** VC vs in-person.\\n4. **Preserve for 8 years** Alongside minutes.\\n5. **Provide to auditors/PCS** During secretarial audit.\\n\\n**Red flags**\\n• Register maintained only as loose sheets.\\n• VC participants not recorded."
+        },
+        {
+          "checklist_name": "Maintain Register of Loans, Guarantees, Securities and Investments (Form MBP-2) and Keep Open for Inspection",
+          "checklist_category": "Treasury & Inter-corporate Deals",
+          "checklist_ai_description": "**Chapter XII – §186(9) & Rule 12**\\n\\n**Objective** Document all inter-corporate transactions and enable stakeholder oversight.\\n\\n**Step-by-step review**\\n1. **Open MBP-2 register** Hard-bound or electronic with DSC.\\n2. **Enter particulars** Date, amount, rate, purpose, SRN.\\n3. **Update within 7 days** Of transaction.\\n4. **Allow director/member inspection** Free of charge.\\n5. **Table register annually to Board**.\\n\\n**Red flags**\\n• Register empty despite active group loans.\\n• Entries missing SR or valuation details."
+        },
+        {
+          "checklist_name": "Publish Vigil-Mechanism / Whistle-Blower Policy on Website and Ensure Direct Access to Audit-Committee Chair",
+          "checklist_category": "Board Committees",
+          "checklist_ai_description": "**Chapter XII – §177(9) & LODR Reg 22**\\n\\n**Objective** Protect whistle-blowers and comply with SEBI & Companies Act.\\n\\n**Step-by-step review**\\n1. **Board approval of policy** Periodic review.\\n2. **Upload PDF on website** Easy navigation.\\n3. **Set up hotline/e-mail** Direct to AC chair.\\n4. **Maintain complaint register** Category, outcome, timeframe.\\n5. **Include disclosure in CG report & Board’s report**.\\n\\n**Red flags**\\n• Policy link broken.\\n• Retaliation case unresolved > 90 days."
+        },
+        {
+          "checklist_name": "Track Implementation of Auditor Qualifications, Reservations or Adverse Remarks and Disclose Corrective Action",
+          "checklist_category": "Audit Oversight & Reporting",
+          "checklist_ai_description": "**Chapter X – §134(3)(f) & LODR Reg 34(3)**\\n\\n**Objective** Demonstrate Board accountability for audit issues.\\n\\n**Step-by-step review**\\n1. **List audit qualifications** Main report + CARO.\\n2. **Prepare explanatory note** Management viewpoint, action plan.\\n3. **Upload to Board’s report** ‘Explanation/comment by Directors’.\\n4. **Monitor closure** Status tracker to Audit Committee.\\n5. **Update subsequent FS** Narrate resolution.\\n\\n**Red flags**\\n• Same qualification repeats three years.\\n• Explanations limited to “taken note”."
+        },
+        {
+          "checklist_name": "Keep Separate ‘IEPF Suspense’ ISIN for Shares Pending Transfer and Reconcile Monthly With RTA",
+          "checklist_category": "Unpaid Dividend & IEPF",
+          "checklist_ai_description": "**IEPF Authority Rules 2017 – Rule 6**\\n\\n**Objective** Avoid errors in IEPF share transfers and enable investor claims.\\n\\n**Step-by-step review**\\n1. **Open IEPF suspense demat account** With DP.\\n2. **Transfer shares due (7 years)** Corporate action before filing IEPF-4.\\n3. **Monthly reconcile** RTA vs DP holdings.\\n4. **Disclose in corporate-governance report** Number of shares transferred.\\n5. **Assist claimants** RTA facilitates IEPF-5 refunds.\\n\\n**Red flags**\\n• Active shares lying in ‘unclaimed’ ISIN beyond due date.\\n• Mismatch between DP statement and MCA IEPF-2 filing."
+        },
+        {
+          "checklist_name": "Record Director Familiarisation and Training Programmes and Disclose Hours Attended on Website",
+          "checklist_category": "Board Structure & Diversity",
+          "checklist_ai_description": "**SEBI LODR Reg 25(7) & SS-1 Guidance**\\n\\n**Objective** Equip directors, especially IDs, to discharge duties effectively.\\n\\n**Step-by-step review**\\n1. **Design induction module** Company strategy, risk, compliance.\\n2. **Schedule annual refreshers** Regulatory updates.\\n3. **Maintain attendance log** Hours per director.\\n4. **Upload details on website** Programme contents + hours.\\n5. **Include disclosure in CG section of annual report**.\\n\\n**Red flags**\\n• IDs claim they never received induction.\\n• Website disclosure outdated."
+        },
+        
+        
+          {
+            "checklist_name": "Appoint or Re-appoint Statutory Auditor for Five-Year Term and File ADT-1 Within 15 Days",
+            "checklist_category": "Audit Appointment & Rotation",
+            "checklist_ai_description": "**Chapter X – §139 & Rule 4**\\n\\n**Objective** Document auditor appointment and keep MCA database current.\\n\\n**Step-by-step review**\\n1. **Board recommendation** Audit Committee vets and recommends auditor.\\n2. **Member approval** OR at AGM (or within 3 months for first auditor).\\n3. **File ADT-1** Within 15 days of AGM / BoD meeting.\\n4. **Record tenure** Five years; rotation check (individual ≥ 1 term, firm ≥ 2).\\n5. **Maintain appointment register**.\\n\\n**Red flags**\\n• ADT-1 filed late day 30.\\n• Auditor already served full rotation limit elsewhere in group."
+          },
+          {
+            "checklist_name": "Rotate Individual Auditor After One Term and Audit Firm After Two Terms With Four-Year Cooling-Off",
+            "checklist_category": "Audit Appointment & Rotation",
+            "checklist_ai_description": "**Chapter X – §139(2) & Rule 6**\\n\\n**Objective** Preserve auditor independence for listed and prescribed companies.\\n\\n**Step-by-step review**\\n1. **Create rotation matrix** List entities in group + auditor tenure.\\n2. **Issue appointment cadence** Track expiry year and AGM.\\n3. **Appoint new firm** No common partners with outgoing firm.\\n4. **Cooling-off monitor** 4 years before re-appointment.\\n5. **Stock-exchange intimation** Upload change announcement.\\n\\n**Red flags**\\n• Same network firm replaces outgoing auditor.\\n• Partner rotation attempted instead of firm rotation."
+          },
+          {
+            "checklist_name": "Process Auditor Resignation Within 30 Days—Company to File ADT-3; Auditor to File Form",
+            "checklist_category": "Audit Appointment & Rotation",
+            "checklist_ai_description": "**Chapter X – §140(2–3)**\\n\\n**Objective** Ensure transparent disclosures of auditor exit and reasons.\\n\\n**Step-by-step review**\\n1. **Receive resignation letter** Cite reasons, effective date.\\n2. **Board meeting** Take note & fill casual vacancy within 30 days (members approve within 3 months).\\n3. **Company filing** ADT-3 (by company) within 30 days.\\n4. **Auditor filing** ADT-3 (by auditor) also within 30 days.\\n5. **Stock-exchange disclosure** For listed cos. within 24 h.\\n\\n**Red flags**\\n• Only auditor filed ADT-3; company missed.\\n• Resignation reason vague (“other commitments”) without Audit-Committee review."
+          },
+          {
+            "checklist_name": "Pre-approve or Ratify All Non-Audit Services That Are Permitted Under §144",
+            "checklist_category": "Non-Audit Services & Independence",
+            "checklist_ai_description": "**Chapter X – §144 & Audit-Committee Charter**\\n\\n**Objective** Safeguard auditor independence from conflicting engagements.\\n\\n**Step-by-step review**\\n1. **Maintain prohibited-service list** Accounting, IT design, investment banking, etc.\\n2. **Route permitted services** Tax, certifications → Audit Committee pre-approval.\\n3. **Fee cap policy** ≤ agreed % of audit fee.\\n4. **Update engagement register** Purpose, amount, approval date.\\n5. **Disclose split in FS note**.\\n\\n**Red flags**\\n• Auditor performs bookkeeping for subsidiary.\\n• Engagement letters missing AC minutes."
+          },
+          {
+            "checklist_name": "Record Auditor Attendance at AGM and Read Qualifications/Emphasis Paragraphs Aloud",
+            "checklist_category": "Audit Oversight & Reporting",
+            "checklist_ai_description": "**Chapter X – §§145-146 & SS-2**\\n\\n**Objective** Let shareholders question auditors and understand report remarks.\\n\\n**Step-by-step review**\\n1. **Send AGM notice to auditor** 21-day rule.\\n2. **Confirm attendance** Physical, VC or authorised rep.\\n3. **Chair reads qualifications** Auditor clarifies queries.\\n4. **Record Q&A in minutes**.\\n5. **Update website with AGM transcript**.\\n\\n**Red flags**\\n• Auditor absent without leave.\\n• Qualifications omitted from AGM proceedings."
+          },
+        
+         
+        
+          {
+            "checklist_name": "File DIR-3 KYC for Every DIN Holder by 30 September Each Year and Track ‘Deactivated’ Status",
+            "checklist_category": "Director DIN & Compliance",
+            "checklist_ai_description": "**Chapter XI – Rule 12A of Companies (Appointment & Qualification of Directors) Rules**\\n\\n**Objective** Keep DIN database current and avoid penalty + deactivation.\\n\\n**Step-by-step review**\\n1. **Prepare DIN list** All current & former directors.\\n2. **Generate pre-fill DIR-3 KYC / KYC-Web**.\\n3. **Obtain OTP verification** E-mail & mobile.\\n4. **File by 30 Sep**  ROC fee else DIN ‘deactivated’.\\n5. **Monitor activation status** If late, file with ₹5 000 fee.\\n\\n**Red flags**\\n• Active director DIN still shows ‘Deactivated’.\\n• DIR-3 KYC filed but OTP mismatch—status pending."
+          },
+          {
+            "checklist_name": "Ensure Statement of Significant Impact of Non-Compliance Is Included in Director Responsibility Statement",
+            "checklist_category": "Director Duties & Ethics",
+            "checklist_ai_description": "**Chapter XI – §134(5)(f) cross-read**\\n\\n**Objective** Make directors explicitly acknowledge internal-control & compliance effectiveness.\\n\\n**Step-by-step review**\\n1. **Draft DRS clause** “Directors have devised proper systems…”.\\n2. **List any material lapses** Insert explanatory note if gaps.\\n3. **Audit Committee concurrence**.\\n4. **Board approval** Minutes capture reading.\\n5. **Cross-match with IFC opinion** Auditor report.\\n\\n**Red flags**\\n• DRS generic copy-paste with no system reference.\\n• Disclosed IC weaknesses in CARO but none in DRS."
+          },
+          {
+            "checklist_name": "Update Register of Contracts and Arrangements (MBP-4) Immediately After Board Meeting",
+            "checklist_category": "Conflicts & Related Parties",
+            "checklist_ai_description": "**Chapter XI – §189 & Rule 16**\\n\\n**Objective** Maintain up-to-date record of §184(2) and §188 contracts for inspection.\\n\\n**Step-by-step review**\\n1. **Keep bound MBP-4 register** Indexed.\\n2. **Enter details** Date, parties, amount, Board resolution No.\\n3. **Get director signatures** All directors present next meeting.\\n4. **Produce at AGM for inspection**.\\n5. **Reconcile with RPT tracker**.\\n\\n**Red flags**\\n• Register shows last entry 2022.\\n• Details incomplete—no consideration figure."
+          },
+          {
+            "checklist_name": "Confirm Every Independent Director’s Registration in the MCA Databank and Proficiency Test Pass (If Required)",
+            "checklist_category": "Independent Director Governance",
+            "checklist_ai_description": "**Chapter XI – §150 & Rule 6**\\n\\n**Objective** Meet eligibility criteria and avoid vacancy disqualification.\\n\\n**Step-by-step review**\\n1. **Download ID databank dashboard** Registration dates.\\n2. **Verify renewal (annual or lifetime)** Fee paid.\\n3. **Identify pass/fail** Proficiency test within one year (exemption if listed co. ID > 10 yrs).\\n4. **Place status note in NRC meeting**.\\n5. **Disclose in CG report** Compliance status.\\n\\n**Red flags**\\n• ID registration expired last month.\\n• Test due but not scheduled."
+          },
+        
+         
+        
+          {
+            "checklist_name": "Ratify Urgent-Business Short-Notice Board Meetings by Independent Directors at Next Meeting",
+            "checklist_category": "Board Meetings & Procedures",
+            "checklist_ai_description": "**Chapter XII – §173(3) Proviso**\\n\\n**Objective** Validate decisions taken on shorter-than-7-day notice.\\n\\n**Step-by-step review**\\n1. **Record urgency ground** In notice & minutes.\\n2. **Obtain at least one ID’s presence** Else circular resolution route.\\n3. **Place ratification item** First agenda of next BM.\\n4. **Minute ratification vote**.\\n5. **File MGT-14 if any §179 powers exercised**.\\n\\n**Red flags**\\n• No ID present; ratification skipped.\\n• 3-day notice becomes routine practice."
+          },
+          {
+            "checklist_name": "Send Draft Minutes to All Directors Within 15 Days of Board Meeting; Directors to Confirm Within Seven Days",
+            "checklist_category": "Board Meetings & Procedures",
+            "checklist_ai_description": "**Secretarial Standard 1 – Clause 7.4**\\n\\n**Objective** Speed up approval and freeze record for legal reliability.\\n\\n**Step-by-step review**\\n1. **Prepare draft minutes** Include attendance, agenda, resolutions.\\n2. **E-mail to directors** PDF with DSC of CS.\\n3. **Collect comments** Track change log.\\n4. **Finalise & sign** Chairperson within 30 days.\\n5. **Paste minutes in book** Page-number consecutively.\\n\\n**Red flags**\\n• Draft minutes dispatched after 20 days.\\n• Multiple unsigned edits in minute-book."
+          },
+          {
+            "checklist_name": "Verify Annual Evaluation of Board, Committees and Individual Directors and Record Methodology in NRC Minutes",
+            "checklist_category": "Board Evaluation & Effectiveness",
+            "checklist_ai_description": "**Chapter XII – §178(2) & SEBI LODR Reg 17(10)**\\n\\n**Objective** Drive performance improvement and meet disclosure standards.\\n\\n**Step-by-step review**\\n1. **Design evaluation forms** Peer, self, chair, committee.\\n2. **NRC reviews methodology** Document in minutes.\\n3. **Conduct evaluation** Digital or paper; anonymise scores.\\n4. **Board discussion** Aggregate findings—not personal scores.\\n5. **Disclose process** CG report high-level description.\\n\\n**Red flags**\\n• Evaluation marked “not done” during secretarial audit.\\n• Same template repeated three years without revision."
+          },
+        
+         
+        
+          {
+            "checklist_name": "Publish Ratio of Each Director’s Remuneration to Median Employee Pay and % Increase Year-on-Year",
+            "checklist_category": "Managerial Remuneration – Disclosure",
+            "checklist_ai_description": "**Chapter XIII – §197(12) & Rule 5**\\n\\n**Objective** Ensure transparency on pay equity and director compensation.\\n\\n**Step-by-step review**\\n1. **Calculate median salary** Include permanent employees.\\n2. **Compute ratio & % increase** Each director, KMP.\\n3. **Draft Rule 5 statement** Also covers variable pay criteria.\\n4. **Insert into Board’s report & CG report**.\\n5. **Cross-check with payroll ledger**.\\n\\n**Red flags**\\n• Ratios omitted for ID sitting-fees.\\n• Numbers differ from remuneration note in FS."
+          },
+          {
+            "checklist_name": "Pass Special Resolution for Paying Sitting Fees and Commission to Independent Directors Exceeding Rule 4 Caps",
+            "checklist_category": "Managerial Remuneration – Limits",
+            "checklist_ai_description": "**Chapter XIII – §149(9) & Rule 4**\\n\\n**Objective** Stay within per-meeting sitting-fee limits or obtain shareholder nod.\\n\\n**Step-by-step review**\\n1. **Check current caps** ₹1 lakh per meeting (listed cos. may vary by SR).\\n2. **Compile attendance & fee log**.\\n3. **If proposing higher fee/commission** Draft SR + rationale.\\n4. **Disclose in notice & Board’s report**.\\n5. **File MGT-14** Within 30 days.\\n\\n**Red flags**\\n• Fees paid ₹1.25 lakh/meeting without SR.\\n• Commission exceeds 1 % limits without Schedule V compliance."
+          },
+          {
+            "checklist_name": "Fill Vacant Key-Managerial-Personnel (CS, CFO, CEO/MD) Positions Within Six Months",
+            "checklist_category": "Key Managerial Personnel",
+            "checklist_ai_description": "**Chapter XIII – §203(4) & Rule 8**\\n\\n**Objective** Avoid penalties for gaps in critical governance roles.\\n\\n**Step-by-step review**\\n1. **Maintain KMP vacancy dashboard** Date of cessation.\\n2. **Recruitment plan** Initiate within 30 days.\\n3. **Board resolution + DIR-12** File for new KMP.\\n4. **Notify stock exchanges** Reg 30 disclosure.\\n5. **Update website & letterhead**.\\n\\n**Red flags**\\n• CS position vacant for nine months.\\n• DIR-12 filed but role description wrong (e.g., WTD vs MD)."
+          },
+        
+         
+        
+          {
+            "checklist_name": "Maintain Register of Registrar/SFIO/Inspector Notices and Respond Within Statutory Timelines",
+            "checklist_category": "Registrar Scrutiny & Notices",
+            "checklist_ai_description": "**Chapter XIV – §206-213**\\n\\n**Objective** Ensure no notice slips through, preventing levy of obstruction fines.\\n\\n**Step-by-step review**\\n1. **Create tracking register** Notice date, section invoked, due date.\\n2. **Assign responsible officer** Legal/CS.\\n3. **Draft authorised response** Attach board certified docs.\\n4. **Send via tracked courier/e-mail** Retain POD.\\n5. **File update to Board/Audit Committee**.\\n\\n**Red flags**\\n• Notice unanswered beyond deadline.\\n• Late submission with incomplete annexures."
+          },
+          {
+            "checklist_name": "Assist Inspector During Search & Seizure and Demand Copy of Seized Books Inventory",
+            "checklist_category": "Registrar Scrutiny & Notices",
+            "checklist_ai_description": "**Chapter XIV – §209 & §217(4)**\\n\\n**Objective** Secure company’s rights and comply with fraud-prevention protocol.\\n\\n**Step-by-step review**\\n1. **Verify inspector’s court order & ID**.\\n2. **Allow access and facilitate copying**.\\n3. **Request seizure inventory** Signed list of documents taken.\\n4. **Seek certified copies** For business continuity.\\n5. **Track 180-day retention clock** Follow-up for return/extension.\\n\\n**Red flags**\\n• Inventory not provided at site.\\n• Records held > 180 days without fresh order."
+          },
+          {
+            "checklist_name": "Freeze Transfer of Funds, Assets or Securities Only on NCLT Order and Monitor Three-Year Limit",
+            "checklist_category": "Asset & Stakeholder Protection",
+            "checklist_ai_description": "**Chapter XIV – §221-222**\\n\\n**Objective** Comply with freeze orders and avoid contempt.\\n\\n**Step-by-step review**\\n1. **Receive certified NCLT order**.\\n2. **Circulate to CFO, Company Secretary, DP & RTA**.\\n3. **Flag affected ledgers & ISINs** Block further transfers.\\n4. **Maintain freeze tracker** Expiry date ≤ 3 years unless extended.\\n5. **Seek modification order** If genuine transaction urgently required.\\n\\n**Red flags**\\n• DP account still allows credits.\\n• Freeze not lifted after expiry."
+          },
+        
+         
+        
+          {
+            "checklist_name": "Submit Valuation Report From Two Independent Registered Valuers When Listed Company Is Involved in Scheme",
+            "checklist_category": "Scheme Documentation & Notices",
+            "checklist_ai_description": "**Chapter XV – SEBI Master Circular & §232(2)(d)**\\n\\n**Objective** Provide minority and regulator assurance on swap ratio and fairness.\\n\\n**Step-by-step review**\\n1. **Appoint two RVs** One each for transferor & transferee (if listed).\\n2. **Ensure no conflict** RVs independent of party/PE fund.\\n3. **Prepare joint fairness opinion** Merchant banker + RV.\\n4. **Attach to NCLT notice, stock-exchange filing**.\\n5. **Disclose summary in shareholder notice**.\\n\\n**Red flags**\\n• Single valuer used despite SEBI requirement.\\n• Valuer also acted as transaction adviser."
+          },
+          {
+            "checklist_name": "File CAA-16 Compliance Statement Every Year Post-Merger Until Conditions Fully Met",
+            "checklist_category": "Post-Merger Monitoring",
+            "checklist_ai_description": "**Chapter XV – §232(7) & Rule 16**\\n\\n**Objective** Demonstrate ongoing adherence to scheme clauses.\\n\\n**Step-by-step review**\\n1. **Compile action-taken report** Asset transfer, accounting, legal orders.\\n2. **Get CA/CS certification**.\\n3. **File e-Form CAA-16 with RoC** Within 210 days of FY-end.\\n4. **Upload on website** Investors tab.\\n5. **Notify exchanges** If listed.\\n\\n**Red flags**\\n• No CAA-16 filed two FYs post-merger.\\n• Certification unsigned."
+          },
+
+           
+          
+            {
+              "checklist_name": "Obtain SEBI No-Objection Letter for Listed-Company Scheme Before NCLT Notice Is Issued",
+              "checklist_category": "Regulatory Approvals",
+              "checklist_ai_description": "**Chapter XV – §230(5) & SEBI LODR Reg 37**\\n\\n**Objective** Ensure exchange/SEBI clearance precedes shareholder or creditor voting.\\n\\n**Step-by-step review**\\n1. **File draft scheme** With stock exchanges ➜ forward to SEBI.\\n2. **Respond to SEBI queries** Within stipulated 30-day turnaround.\\n3. **Receive ‘no-objection’ letter** Upload to NCLT application.\\n4. **Disclose on company website & exchanges**.\\n5. **Proceed to NCLT notice** Only after clearance.\\n\\n**Red flags**\\n• NCLT notice published without SEBI letter.\\n• SEBI conditions ignored in final scheme."
+            },
+            {
+              "checklist_name": "File Stamp-Duty Assessment and Pay Within 30 Days of High-Court/NCLT Sanction Order",
+              "checklist_category": "Post-Merger Compliance",
+              "checklist_ai_description": "**Chapter XV – §232 & State Stamp Acts**\\n\\n**Objective** Avoid interest/penalties and secure final certified copy for ROC.\\n\\n**Step-by-step review**\\n1. **Apply to Collector of Stamps** With scheme & valuation.\\n2. **Receive assessment order** Amount & deadline.\\n3. **Pay electronically** Generate e-challan.\\n4. **Collect stamped order** For ROC filing.\\n5. **Archive payment receipt** Audit evidence.\\n\\n**Red flags**\\n• ROC filing done with unstamped order.\\n• Interest triggered due to late duty payment."
+            },
+            {
+              "checklist_name": "Issue Consideration Shares/DRs Within 30 Days of ‘Effective Date’ Mentioned in Scheme",
+              "checklist_category": "Post-Merger Implementation",
+              "checklist_ai_description": "**Chapter XV – §232(6) & SEBI Master Circular**\\n\\n**Objective** Complete swap promptly and avoid shareholder complaints.\\n\\n**Step-by-step review**\\n1. **Determine appointed / effective date** Per scheme.\\n2. **Compile eligible holder list** Cut-off record date.\\n3. **Credit shares in demat** Corporate action ➜ NSDL/CDSL.\\n4. **File PAS-3 return of allotment** Within 15 days.\\n5. **Publish completion notice** Stock-exchange disclosure.\\n\\n**Red flags**\\n• Consideration issued three months late.\\n• Fractional entitlements not handled as per scheme."
+            },
+            {
+              "checklist_name": "Deposit ‐In‐Court Cash When Seeking Dispensation of Creditor Meeting on 90 % Affidavits",
+              "checklist_category": "Tribunal Filings",
+              "checklist_ai_description": "**Chapter XV – §230(9) & NCLT Rules 2016 Rule 76**\\n\\n**Objective** Provide security for dissenting creditors if meeting waived.\\n\\n**Step-by-step review**\\n1. **Collect consent affidavits** Cover ≥ 90 % in value.\\n2. **Compute deposit amount** As directed by Tribunal.\\n3. **Pay into NCLT or designated bank** Obtain challan.\\n4. **File proof with Registry**.\\n5. **Disclose in petition** Reference receipt number.\\n\\n**Red flags**\\n• Tribunal order silent on deposit but scheme omits meeting.\\n• Deposit proof missing in MCA upload."
+            },
+            {
+              "checklist_name": "File Intimation of Cross-Border Merger With RBI Within 30 Days of NCLT Approval",
+              "checklist_category": "Cross-Border Transactions",
+              "checklist_ai_description": "**Chapter XV – §234 & FEMA Regulations 2018**\\n\\n**Objective** Align foreign-exchange compliance with corporate approval.\\n\\n**Step-by-step review**\\n1. **Collect NCLT order & valuation report**.\\n2. **File FC-TRS/FC-GPR (as applicable)** For share issue/transfer.\\n3. **Submit merger intimation** To RBI Foreign-Investments Cell within 30 days.\\n4. **Update authorised dealer bank** For account changes.\\n5. **Monitor post-merger foreign-liability-asset (FLA) filings**.\\n\\n**Red flags**\\n• RBI filing overlooked—penalty under FEMA.\\n• Consideration paid before RBI nod."
+            },
+          
+           
+          
+            {
+              "checklist_name": "Verify Requisite Shareholding Threshold or NCLT Waiver Before Filing Oppression Petition",
+              "checklist_category": "Shareholder Remedies",
+              "checklist_ai_description": "**Chapter XVI – §244 & §241**\\n\\n**Objective** Prevent dismissal for locus-standi failure.\\n\\n**Step-by-step review**\\n1. **Check applicant strength** ≥ 10 % share capital or ≥ 100 members.\\n2. **Compute paid-up capital** Exclude calls-in-arrears.\\n3. **If short** File waiver plea (Form NCLT-9) with grounds.\\n4. **Deposit court-fees** Per Rule.\\n5. **Serve company & ROC** Within 14 days.\\n\\n**Red flags**\\n• Petition dismissed for want of waiver.\\n• Share transfers during dispute ignored in calculation."
+            },
+            {
+              "checklist_name": "Track Interim Orders Under §242(4) (e.g., Status-Quo, Freeze) and Update Insider-Trading Closure Lists",
+              "checklist_category": "Tribunal Orders & Filings",
+              "checklist_ai_description": "**Chapter XVI – §242(4) & SEBI PIT Reg 2(1)(l)**\\n\\n**Objective** Stop unauthorised actions while oppression suit is live.\\n\\n**Step-by-step review**\\n1. **Log interim relief order** Freeze assets/board changes.\\n2. **Notify stock exchanges** SEBI Reg 30.\\n3. **Update insiders list** Enforce trading window closure.\\n4. **Comply with order timelines** Status reports to Tribunal.\\n5. **Seek modification** If operations hampered.\\n\\n**Red flags**\\n• Share transfers executed despite freeze.\\n• Trading window left open after order."
+            },
+            {
+              "checklist_name": "Implement Tribunal-Ordered Buy-Out Within 30 Days at Valuation Specified Under §242(2)(c)",
+              "checklist_category": "Tribunal Orders & Filings",
+              "checklist_ai_description": "**Chapter XVI – §242(2)(c)**\\n\\n**Objective** Ensure smooth exit for oppressed shareholders.\\n\\n**Step-by-step review**\\n1. **Read order clauses** Identify buyer, price, timeline.\\n2. **Open escrow** Deposit buy-out funds.\\n3. **Execute share-transfer deeds / off-market instruction slips**.\\n4. **File PAS-6 & BEN-2** Register changes.\\n5. **Report compliance to NCLT with affidavit**.\\n\\n**Red flags**\\n• Price renegotiated informally.\\n• Transfer deed filed late—contempt risk."
+            },
+            {
+              "checklist_name": "Maintain Cost Deposit for Class-Action Petition Expense and Seek Tribunal Approval for Withdrawal",
+              "checklist_category": "Class Action",
+              "checklist_ai_description": "**Chapter XVI – §245(6)**\\n\\n**Objective** Cover company notice expenses ordered to be borne by company.\\n\\n**Step-by-step review**\\n1. **Calculate publication cost** Newspaper, e-mail, RTA charges.\\n2. **Deposit amount** As per Tribunal order.\\n3. **Keep separate ledger** Class-action cost account.\\n4. **Submit utilisation statement** To Tribunal after notice served.\\n5. **Seek refund order** If cost underspent.\\n\\n**Red flags**\\n• No deposit—petition stayed.\\n• Excess funds withdrawn without leave."
+            },
+          
+           
+          
+            {
+              "checklist_name": "Rotate Registered Valuer for the Same Asset After Three Consecutive Engagements",
+              "checklist_category": "Registered Valuer Compliance",
+              "checklist_ai_description": "**Chapter XVII – Rule 8(3) of Valuation Rules**\\n\\n**Objective** Preserve independence and fresh perspective.\\n\\n**Step-by-step review**\\n1. **Maintain valuer-assignment log** Asset wise.\\n2. **Check rotation trigger** > 3 consecutive valuations.\\n3. **Empanel alternate valuers** From different entity.\\n4. **Disclose change in Board resolution**.\\n5. **Inform previous valuer** End of engagement letter.\\n\\n**Red flags**\\n• Same RV signs six straight yearly ESOP valuations.\\n• Rotation ignored citing ‘expertise’."
+            },
+            {
+              "checklist_name": "Ensure Valuer Retains Working-Papers and Correspondence for Eight Years",
+              "checklist_category": "Registered Valuer Compliance",
+              "checklist_ai_description": "**Chapter XVII – Rule 7(f)**\\n\\n**Objective** Facilitate future investigation and peer review.\\n\\n**Step-by-step review**\\n1. **List deliverables** Valuation model, evidence files.\\n2. **Sign data-sharing NDA** Company access for eight years.\\n3. **Confirm secure storage** Encrypted cloud / fire-safe.\\n4. **Include retention clause** In engagement letter.\\n5. **Peer-review readiness** Annual sample audit by RVO.\\n\\n**Red flags**\\n• Valuer says “deleted spreadsheet”.\\n• No retention clause in contract."
+            },
+            {
+              "checklist_name": "Disclose Valuation Methodology and Key Assumptions Clearly in Valuer’s Report",
+              "checklist_category": "Registered Valuer Reporting",
+              "checklist_ai_description": "**Chapter XVII – Rule 8(2)(j)**\\n\\n**Objective** Allow stakeholders to assess robustness and replicate outcome.\\n\\n**Step-by-step review**\\n1. **State purpose & standard of value** Fair/market value.\\n2. **Explain method** DCF, NAV, Comparable Multiple.\\n3. **List assumptions & limitations** Growth, WACC, discount rate.\\n4. **Provide sensitivity analysis** Key variables ±1 %.\\n5. **Affix UDIN / RVIN** Verification code.\\n\\n**Red flags**\\n• Report shows only single number—method blank.\\n• No sensitivity table for DCF."
+            },
+          
+
+          
+            {
+              "checklist_name": "Deposit Realisations Into Public Account of India or Scheduled Bank Within Five Days",
+              "checklist_category": "Liquidator Cash Management",
+              "checklist_ai_description": "**Chapter XX – §349 & Rule 171**\\n\\n**Objective** Safeguard liquidation proceeds and earn treasury interest.\\n\\n**Step-by-step review**\\n1. **Open designated bank account** ‘Company-in-Liquidation’.\\n2. **Deposit sale receipts within 5 working days**.\\n3. **Maintain cash-book daily**.\\n4. **Forward bank statement copies** To NCLT quarterly.\\n5. **Invest surplus** Per Rule 180 directions.\\n\\n**Red flags**\\n• Cash held on hand > ₹50 000.\\n• Late deposits prompt interest loss."
+            },
+            {
+              "checklist_name": "File Statement of Affairs in Form WIN-3 Within 21 Days After Winding-Up Order",
+              "checklist_category": "Liquidator Reports",
+              "checklist_ai_description": "**Chapter XX – §274 & Rule 28**\\n\\n**Objective** Provide liquidator with verified snapshot of assets and liabilities.\\n\\n**Step-by-step review**\\n1. **Directors & KMP prepare draft** With latest books.\\n2. **Affidavit verification** At least two directors.\\n3. **Submit to liquidator + ROC + NCLT** Within 21 days (extendible 21).\\n4. **Liquidator comparative analysis** To preliminary report.\\n5. **Record non-cooperation** Seek NCLT direction if default.\\n\\n**Red flags**\\n• Statement filed day 45 without extension.\\n• Values unaudited / estimated broadly."
+            },
+            {
+              "checklist_name": "Hold First Creditors’ Meeting Within 30 Days and Elect Committee of Inspection",
+              "checklist_category": "Governance & Oversight",
+              "checklist_ai_description": "**Chapter XX – §287 & Rule 34**\\n\\n**Objective** Give creditors voice and oversight in liquidation.\\n\\n**Step-by-step review**\\n1. **Send notice** To all proved creditors + newspaper ad.\\n2. **Conduct meeting** Liquidator chairs.\\n3. **Elect committee (max 12 members)** By value & number votes.\\n4. **File meeting minutes** With NCLT ✚ ROC.\\n5. **Arrange monthly COI reports**.\\n\\n**Red flags**\\n• Meeting skipped—creditors file complaint.\\n• COI minutes not kept."
+            },
+            {
+              "checklist_name": "File Liquidator’s Half-Yearly Accounts in Form WIN-19 and Get Audit by Chartered Accountant",
+              "checklist_category": "Books & Audit",
+              "checklist_ai_description": "**Chapter XX – §348 & Rule 180**\\n\\n**Objective** Provide transparent view of receipts, payments and asset realisations.\\n\\n**Step-by-step review**\\n1. **Prepare WIN-19 statement** Six-month period.\\n2. **Have accounts audited** Unless receipts < ₹50 000.\\n3. **File with NCLT & ROC** Within 2 months of half-year end.\\n4. **Upload summary on company website** (if still active).\\n5. **Share with COI** Next meeting.\\n\\n**Red flags**\\n• Audit exemption claimed despite high receipts.\\n• Half-yearly filing missed."
+            },
+            {
+              "checklist_name": "Send Draft Dissolution Application to ROC and Income-Tax Department  14 Days Before NCLT Hearing",
+              "checklist_category": "Liquidator Reports",
+              "checklist_ai_description": "**Chapter XX – §302 & Rule 190**\\n\\n**Objective** Give regulators opportunity to object before dissolution.\\n\\n**Step-by-step review**\\n1. **Draft final report** Assets realised, debts paid.\\n2. **Serve on ROC & IT Dept** 14-day notice.\\n3. **File application with NCLT** Attach acknowledgements.\\n4. **Publish hearing ad** If ordered.\\n5. **File NCLT dissolution order with ROC** INC-28 within 30 days.\\n\\n**Red flags**\\n• No proof of service on ROC.\\n• Order not filed—name remains active."
+            },
+          
+           
+          
+            {
+              "checklist_name": "Serve NCLT Petition Copies on All Respondents and ROC Within Seven Days of Filing",
+              "checklist_category": "Tribunal Procedure",
+              "checklist_ai_description": "**NCLT Rules 2016 – Rule 28**\\n\\n**Objective** Ensure audi alteram partem and prevent technical dismissal.\\n\\n**Step-by-step review**\\n1. **Obtain stamped petition**.\\n2. **Prepare courier/e-mail proof**.\\n3. **Serve respondents & ROC** Within 7 days.\\n4. **File affidavit of service** Rule 34.\\n5. **Carry originals to first hearing**.\\n\\n**Red flags**\\n• Service proof filed day 15.\\n• Respondent not served—ex-parte rejected."
+            },
+            {
+              "checklist_name": "File Reply and Rejoinder Affidavits Within 7 + 3 Days Unless Tribunal Grants Extension",
+              "checklist_category": "Tribunal Procedure",
+              "checklist_ai_description": "**NCLT Rules 2016 – Rule 45**\\n\\n**Objective** Keep pleadings cycle tight and decision prompt.\\n\\n**Step-by-step review**\\n1. **Diary date of notice** Respondent gets 7 days for reply.\\n2. **Petitioner rejoinder** Within 3 days of reply.\\n3. **Seek extension motion** If documents voluminous.\\n4. **File soft copy PDF** E-filing portal.\\n5. **Serve other side same day**.\\n\\n**Red flags**\\n• Reply filed after 14 days without leave.\\n• Rejoinder missing → allegations deemed admitted."
+            },
+          
+           
+          
+            {
+              "checklist_name": "Confirm Only ROC, CG or SEBI File Complaints—Police Cannot Register FIR Directly (Non-Cognisable Offences)",
+              "checklist_category": "Complaint Filing",
+              "checklist_ai_description": "**Chapter XXVIII – §439(2)**\\n\\n**Objective** Route enforcement through designated authorities and avoid jurisdictional challenge.\\n\\n**Step-by-step review**\\n1. **Check offence nature** Most CA offences non-cognisable.\\n2. **Prepare written complaint** ROC/SEBI authorisation letter.\\n3. **File before Special Court/Magistrate** Along with evidence.\\n4. **Track cognisance order**.\\n5. **Coordinate with police only after court order**.\\n\\n**Red flags**\\n• Local police registers FIR directly.\\n• Company files FIR but court returns for lack of locus."
+            },
+            {
+              "checklist_name": "Apply for Bail in Special Court Using Twin-Test When Offence Punishable ≥ 3 Years",
+              "checklist_category": "Litigation Strategy",
+              "checklist_ai_description": "**Chapter XXVIII – §212(6) (SFIO Arrest) & CrPC**\\n\\n**Objective** Secure release of accused directors/officers in fraud cases.\\n\\n**Step-by-step review**\\n1. **Check charge sheet** Fraud quantum & public-interest tag.\\n2. **Prepare bail application** Address flight-risk & evidence-tampering.\\n3. **Cite medical & cooperation grounds**.\\n4. **Offer surety & deposit passport**.\\n5. **Monitor conditions compliance**.\\n\\n**Red flags**\\n• Bail moved in wrong forum (regular court, not Special Court).\\n• Surety documents incomplete."
+            },
+            {
+              "checklist_name": "Use Compounding to Close Offences With Fine-Only Punishment ≤ ₹25 Lakh Before RD",
+              "checklist_category": "Compounding & Settlements",
+              "checklist_ai_description": "**Chapter XXVIII – §441(1)(b)**\\n\\n**Objective** Save time and avoid criminal prosecution for minor non-compliances.\\n\\n**Step-by-step review**\\n1. **Identify offence** Fine-only ≤ ₹25 lakh.\\n2. **File GNL-1 application** With ROC comments.\\n3. **Appear before RD** Show remediation proof.\\n4. **Pay compounding sum** Within 7 days of order.\\n5. **File order with ROC** INC-28.\\n\\n**Red flags**\\n• Mixed fine-and-imprisonment offence tried to compound.\\n• Compounding sum unpaid after 7 days—order void."
+            },
+          
+           
+          
+            {
+              "checklist_name": "Guard Against Perjury: False Evidence on Oath Before Tribunal Is Punishable Up to 7 Years",
+              "checklist_category": "Penalties & Enforcement",
+              "checklist_ai_description": "**Chapter XXIX – §449**\\n\\n**Objective** Deter false affidavits and oral statements during proceedings.\\n\\n**Step-by-step review**\\n1. **Vet affidavits thoroughly** Cross-check figures.\\n2. **Educate deponents** On §449 penalty.\\n3. **Keep file notes of coaching** Minutes.\\n4. **Rectify inadvertent errors immediately** File revised affidavit.\\n5. **Maintain audio transcripts** For key hearings.\\n\\n**Red flags**\\n• Fabricated board minutes annexed.\\n• Inconsistent testimony caught by cross-examination."
+            },
+            {
+              "checklist_name": "Recognise Enhanced Penalties for Repeat Defaults Within Three Years—Double the Fine Under §451",
+              "checklist_category": "Repeat Defaults",
+              "checklist_ai_description": "**Chapter XXIX – §451**\\n\\n**Objective** Track prior adjudication to budget accurate penalty provisions.\\n\\n**Step-by-step review**\\n1. **Compile penalty-history register** 3-year look-back.\\n2. **Flag repeat section breaches** e.g., late AOC-4 twice.\\n3. **Calculate doubled fines** Before compounding/adjudication.\\n4. **Inform Board & risk committee**.\\n5. **Disclose in contingent-liability note** If material.\\n\\n**Red flags**\\n• Finance team accrues only base fine.\\n• Compounding order omits ‘repeat’—may be rejected."
+            },
+            {
+              "checklist_name": "Report Wrongful Withholding of Company Property by Officer and Seek Restitution via Special Court",
+              "checklist_category": "Assets & Records",
+              "checklist_ai_description": "**Chapter XXIX – §452**\\n\\n**Objective** Retrieve company assets promptly and deter misuse.\\n\\n**Step-by-step review**\\n1. **Inventory property** Files, cash, vehicle with outgoing officer.\\n2. **Send demand notice** 14-day grace.\\n3. **File complaint under §452** If no return.\\n4. **Seek restitution order** Plus fines ₹1-5 lakh / jail ≤ 2 yrs.\\n5. **Update asset register** On recovery.\\n\\n**Red flags**\\n• No demand notice—case dismissed.\\n• Laptop withheld but complaint delayed 6 months."
+            },
+            {
+              "checklist_name": "Secure Condonation of Delay Under §460 Before Uploading Any Belated MCA Form",
+              "checklist_category": "Condonation of Delay",
+              "checklist_ai_description": "**Chapter XXIX – §460 & Rule 12**\\n\\n**Objective** Legalise late filings and avoid auto-rejection by MCA portal.\\n\\n**Step-by-step review**\\n1. **Draft CG-1 application** Explain reason for delay.\\n2. **Pass Board resolution** Authorise condonation filing.\\n3. **Pay prescribed fee** Via SRN.\\n4. **Receive condonation order**.\\n5. **File belated form with order copy** Within 30 days.\\n\\n**Red flags**\\n• Form PAS-3 uploaded first, condonation later—SRN invalidated.\\n• CG order not attached—ROC rejects."
+            }
+          
+          
+        
+        
+      
+      
+    
+
+  
+  
+]
+
+

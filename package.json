@@ -1,0 +1,25 @@
+{
+  "name": "compliance-checklist-app",
+  "version": "1.0.0",
+  "description": "AI-powered compliance checklist generation tool",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm run preview",
+    "install-frontend": "cd frontend && npm install",
+    "install-backend": "pip install -r requirements.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/compliance-checklist-app.git"
+  },
+  "keywords": [
+    "compliance",
+    "checklist",
+    "ai",
+    "fastapi",
+    "react"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

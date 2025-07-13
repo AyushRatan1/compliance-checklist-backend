@@ -1,0 +1,171 @@
+
+
+      {
+        "checklist_name": "Grounds & Petition for Winding-up",
+        "checklist_category": "Initiation & Tribunal Oversight",
+        "checklist_ai_description": "Chapter XX (§§270-274): a listed company may be wound-up by NCLT only on statutory grounds (special resolution, fraud, five-year filing default, CSR / sovereignty offences, just-and-equitable). Quick-check → verify petitioner locus, SOA filed in 30 days. Flag-if → petition lacks §271 ground, SOA missing or Registrar sanction absent."
+      },
+      {
+        "checklist_name": "NCLT Orders, Provisional Liquidator & Timelines",
+        "checklist_category": "Initiation & Tribunal Oversight",
+        "checklist_ai_description": "Chapter XX (§273): NCLT decides within 90 days—dismiss, interim, provisional liquidator, or winding-up order. Quick-check → order date vs. petition, urgency reasons. Flag-if → decision beyond 90 days or ex-parte provisional liquidator without reasons."
+      },
+      {
+        "checklist_name": "Company Liquidator Appointment, Disclosure & Remuneration",
+        "checklist_category": "Liquidator Governance & Monitoring",
+        "checklist_ai_description": "Chapter XX (§§275-277): NCLT appoints an IP as Company Liquidator; disclosure of conflict in 7 days; fee order. Quick-check → IBBI registration, conflict filing, fee/security. Flag-if → IP also auditor, declaration omitted, fee order absent."
+      },
+      {
+        "checklist_name": "Winding-up Committee, Reports & Time-Bound Dissolution",
+        "checklist_category": "Liquidator Governance & Monitoring",
+        "checklist_ai_description": "Chapter XX (§277(4)-(8) & §282): Liquidator seeks a three-member committee within three weeks, files progress reports; NCLT sets/extends completion timeline. Quick-check → committee order, quarterly statements. Flag-if → reporting gaps or timeline lapsed."
+      },
+      {
+        "checklist_name": "Books, Accounts & Audit of Liquidator",
+        "checklist_category": "Liquidator Governance & Monitoring",
+        "checklist_ai_description": "Chapter XX (§§293-294, 348): Liquidator keeps minute-books; files audited receipt & payment account every six months and yearly statement if winding-up > 1 year. Quick-check → audit reports, creditor access. Flag-if → audit skipped or statement overdue."
+      },
+      {
+        "checklist_name": "Custody, Safeguard & Sale of Assets",
+        "checklist_category": "Asset Management & Transactions",
+        "checklist_ai_description": "Chapter XX (§§283, 290): all assets vest in NCLT custody; Liquidator controls & may sell with Tribunal leave. Quick-check → inventory vs. SOA, valuer report, secured-creditor consent. Flag-if → sale without valuation or creditor notice."
+      },
+      {
+        "checklist_name": "Preferential & Overriding Payments",
+        "checklist_category": "Asset Management & Transactions",
+        "checklist_ai_description": "Chapter XX (§§326-327): workmen dues and secured-creditor shortfall rank paramount; taxes and wage cap follow. Quick-check → waterfall schedule. Flag-if → secured creditor paid ahead of workmen portion."
+      },
+      {
+        "checklist_name": "Fraudulent Preference & Avoidable Transactions",
+        "checklist_category": "Asset Management & Transactions",
+        "checklist_ai_description": "Chapter XX (§§328-334): transfers within look-back windows may be void; floating charges in last 12 months invalid if insolvent. Quick-check → ledger review, ROC charges. Flag-if → related-party security inside look-back."
+      },
+      {
+        "checklist_name": "Creditor & Contributory Claims, Set-off & Distribution",
+        "checklist_category": "Stakeholder Settlement & Investor Protection",
+        "checklist_ai_description": "Chapter XX (§§285-298): settle list of contributories, invite proofs, make calls, adjust set-off, distribute surplus. Quick-check → contribution calc, dividend warrants. Flag-if → surplus before workmen/secured settlement."
+      },
+      {
+        "checklist_name": "Unpaid Dividends & Undistributed Assets Transfer",
+        "checklist_category": "Stakeholder Settlement & Investor Protection",
+        "checklist_ai_description": "Chapter XX (§352): unpaid amounts go to ‘Company Liquidation Dividend & Undistributed Assets A/c’ after six months; idle 15 years → Consolidated Fund. Quick-check → bank transfers, IEPF log. Flag-if → retention beyond six months."
+      },
+      {
+        "checklist_name": "Offences by Officers During Liquidation",
+        "checklist_category": "Misconduct & Liability",
+        "checklist_ai_description": "Chapter XX (§§336-340): concealment, falsification, fraudulent trade, misfeasance—imprisonment & personal liability. Quick-check → Liquidator reports, prosecution files. Flag-if → misfeasance action not pursued."
+      },
+      {
+        "checklist_name": "Final Report & Dissolution Order",
+        "checklist_category": "Closure & Fast-Track Dissolution",
+        "checklist_ai_description": "Chapter XX (§§302-303): upon completion Liquidator files final report; NCLT orders dissolution and Registrar records within 30 days. Quick-check → final report, dissolution entry. Flag-if → books not disposed or order unregistered."
+      },
+      {
+        "checklist_name": "Summary Liquidation of Small Companies",
+        "checklist_category": "Closure & Fast-Track Dissolution",
+        "checklist_ai_description": "Chapter XX (§§361-365): asset ≤ ₹1 crore companies may use CG fast-track route via Official Liquidator. Quick-check → eligibility, 30-day creditor notice, 60-day asset sale. Flag-if → listed entity processed under summary route."
+      },
+
+  
+
+      {
+        "checklist_name": "Foreign-Company Classification & 50 % Indian-Ownership Test",
+        "checklist_category": "Scope & Registration",
+        "checklist_ai_description": "Chapter XXII (§379): foreign body corporate with Indian place of business; if Indian ownership ≥ 50 %, additional domestic-company compliances apply. Quick-check → beneficial-owner tracing, place-of-business evidence. Flag-if → Indian-controlled entity ignores Chapter XXII."
+      },
+      {
+        "checklist_name": "30-Day Registration Pack on Establishing Business",
+        "checklist_category": "Scope & Registration",
+        "checklist_ai_description": "Chapter XXII (§380): file charter, directors, agent, address, conviction declaration etc. within 30 days of opening place of business; update changes in 30 days. Quick-check → FC-1/FC-2 SRNs, translations. Flag-if → late filing or agent lapsed."
+      },
+      {
+        "checklist_name": "Annual Accounts & Place-of-Business List",
+        "checklist_category": "Ongoing Compliance & Reporting",
+        "checklist_ai_description": "Chapter XXII (§381): calendar-year accounts + list of Indian locations to RoC with English translation. Quick-check → filing receipt, translation cert. Flag-if → accounts not in English or filing skipped."
+      },
+      {
+        "checklist_name": "Display of Name, Country & Liability Status",
+        "checklist_category": "Ongoing Compliance & Reporting",
+        "checklist_ai_description": "Chapter XXII (§382): display name & country (and ‘limited’) on every Indian office, letterhead, website—in English and local language. Quick-check → signage photos, stationery samples. Flag-if → signage absent or local-language missing."
+      },
+      {
+        "checklist_name": "Books of Account, Charges & Annual-Return Parity",
+        "checklist_category": "Ongoing Compliance & Reporting",
+        "checklist_ai_description": "Chapter XXII (§384): keep Indian books under §128, file FC-4 annual return, register charges, follow Chapter XIV inspection rules. Quick-check → books location, FC-4 SRN, CHG-1 filings. Flag-if → books offshore or charge unregistered."
+      },
+      {
+        "checklist_name": "Prospectus / Offer Document Requirements",
+        "checklist_category": "Securities Offerings",
+        "checklist_ai_description": "Chapter XXII (§§387-389): prospectus for foreign company must carry full §387 particulars, expert consents and be registered with RoC before issue; application forms must accompany it. Quick-check → registration stamp on prospectus, expert-consent letters. Flag-if → unregistered prospectus or missing particulars."
+      },
+      {
+        "checklist_name": "Indian Depository Receipts (IDRs) Governance",
+        "checklist_category": "Securities Offerings",
+        "checklist_ai_description": "Chapter XXII (§390): follow CG IDR Rules, SEBI clearance and depository agreements for IDR issues. Quick-check → IDR prospectus vs. IDR Rules, SEBI observations. Flag-if → IDR issued without approvals."
+      },
+      {
+        "checklist_name": "Service of Process & Authorised Representative Consistency",
+        "checklist_category": "Legal Process & Cessation",
+        "checklist_ai_description": "Chapter XXII (§383): service valid if delivered to authorised person filed under §380. Quick-check → authorised person current on MCA. Flag-if → outdated address or no authorised recipient."
+      },
+      {
+        "checklist_name": "Closure of Indian Place of Business & Winding-up",
+        "checklist_category": "Legal Process & Cessation",
+        "checklist_ai_description": "Chapter XXII (§391): foreign company that raised money in India must follow Chapter XX winding-up provisions when closing its Indian place of business. Quick-check → winding-up petition referencing §391, creditor notice. Flag-if → exit without Chapter XX process."
+      },
+      {
+        "checklist_name": "Contravention Penalties & Contract Validity Limitation",
+        "checklist_category": "Enforcement & Penalties",
+        "checklist_ai_description": "Chapter XXII (§§392-393): fines for non-compliance; company cannot sue/counter-claim in Indian courts while defaults continue. Quick-check → penalty ledger, litigation due-diligence. Flag-if → company litigating while non-compliant or penalties unpaid."
+      },
+      
+       
+          {
+            "checklist_name": "C&AG-Audited Annual Report, Legislative Tabling & Parallel-Act Compliance",
+            "checklist_category": "Government-Company Reporting & Oversight",
+            "checklist_ai_description": "Chapter XXIII (-§§394-395): every Government company—Central, State or joint—must (i) prepare, within **three months** of the AGM, a full annual report on its workings for the FY **together with** the statutory audit report **and** the Comptroller-and-Auditor-General’s comments; (ii) lay that packet before each House of Parliament or the relevant State Legislature(s), even if the company is already in liquidation; and (iii) continue to comply with all other Companies-Act provisions that are *not* expressly exempted by the Central Government (e.g., secretarial audit, CSR, related-party approvals under the latest CG exemption notifications).  \n**Quick-check →** AGM date vs. report-preparation date; C&AG comment letter attached; proof of tabling (Lok Sabha/Rajya Sabha bulletins, State-assembly journal); mapping of CG exemption notification vs. internal compliance matrix.  \n**Flag-if →** report prepared after the 3-month window, audit or C&AG remarks missing, no evidence of tabling, or company relies on an exemption that is not in the latest CG notification."
+          },
+        
+      
+       
+          {
+            "checklist_name": "Registrar Jurisdiction, E-filing Integrity, Information Calls & Statutory-Fee Governance",
+            "checklist_category": "Registrar Administration & E-Governance",
+            "checklist_ai_description": "Chapter XXIV (-§§396-405): (a) **Registrar network**—file in the correct jurisdiction announced by CG notifications; ensure documents bear the current ROC’s official e-seal. (b) **E-Governance**—all returns/forms must be lodged in the prescribed MCA e-form with valid DSC; Registrar’s electronic records are primary evidence; certified extracts must carry the ROC’s e-authentication. (c) **Inspection & Service**—public copies, electronic service of notices, and IT-Act digital-signature rules apply mutatis-mutandis. (d) **Fees & Additional Fees**—pay the statutory fee on time; late filings under §§92 & 137 attract a *per-day graded additional fee*; other late documents follow CG-notified slabs, with *higher multipliers for repeat defaulters*. All amounts must be credited daily to the RBI/Public Account of India. (e) **Statistical-information calls (§405)**—when CG directs, furnish corporate information or statistics within the stipulated period or face penalties.  \n**Quick-check →** ROC-jurisdiction Gazette against SPICe+/GNL SRNs; DSC validity; auto-calculated additional fees vs. due-date ledger; repeat-default flag; RBI scroll matching MCA-21 payment; log of §405 information notices and responses.  \n**Flag-if →** filings lodged in the wrong ROC, DSC expired, paper filing after e-form mandate, additional fee under-paid or repeat-default multiplier skipped, Treasury credit mismatch, or §405 data not supplied on time."
+          },
+          {
+           
+                "checklist_name": "Central-Information Calls, Statutory Fees, Higher-Fee Repeat Defaults & Nidhi-Notification Tracking",
+                "checklist_category": "Government Orders, Filing Economics & Mutual-Benefit Entities",
+                "checklist_ai_description": "Chapter XXV (§§403-406):  (i) all e-forms/returns must reach the Registrar within the statutory window with the **prescribed fee**; late filings under §§92 or 137 pay a graded **₹ 100-per-day (or notified slab) additional fee**, and repeat defaulters pay a notified **higher multiplier**; fees/charges flow daily to the RBI Public Account (§404).  (ii) the **Central Government may order any or all companies to furnish information or statistics** on constitution or working within a Gazette-notified time-frame and may ask for supporting records (§405).  (iii) CG may **declare a company a “Nidhi / Mutual Benefit Society”** and carve out/allot modified Act-provisions via notified exemptions; every draft notification must lie before Parliament 30 days (§406).\n**Quick-check →** SRN ledger vs. due-date list, auto-fee computation, repeat-default flag; Gazette or MCA order log for §405 information calls and §406 Nidhi notifications; evidence that requisitioned data/records reached CG inside the deadline; RBI scroll matching MCA-21 receipts.\n**Flag-if →** additional fee under-calculated, filing after mandated e-form date, higher-fee multiplier not applied, §405 order unanswered/incomplete, or company claiming Nidhi status without CG notification."
+              },
+       
+          
+   
+              {
+                "checklist_name": "Constitution, Membership, Jurisdiction & Procedural Discipline of NCLT / NCLAT",
+                "checklist_category": "Tribunal Governance & Adjudicatory Framework",
+                "checklist_ai_description": "Chapter XXVII (§§407-434): covers the **creation of NCLT benches & NCLAT**, eligibility (Judicial/Technical) and age limits of President/Chairperson/Members (§§408-414); appointment via **CJI-linked Selection Committee** (§412); five-year terms, re-appointment limits and removal safeguards (§§413-417); staff, benches, single-member powers and IBC bench notifications (§§418-419); **civil-court procedural powers**, rectification, limitation, contempt, execution and right to legal representation (§§420-432, 424-425); **transfer of CLB/high-court matters & winding-up cases** (§434) and public-servant status/protection of action (§427-428).\n**Quick-check →** CG notifications constituting benches and member appointments; member age/qualification matrix vs. statute; vacancy/acting-president records; bench-constitution orders for IBC/Competition appeals; transfer log of CLB/HC matters; Tribunal procedural rules adopted, cause-list showing two-member quorum, rectification register, and limitation register; contempt cases docket.\n**Flag-if →** bench functioning without statutory mix, member term overrun, CLB matters not docketed in NCLT, or orders issued by single-member bench outside authorised class."
+              },
+
+          
+
+              {
+                "checklist_name": "Special-Court Establishment, Cognizance, Summary-Trial & Compounding Ecosystem",
+                "checklist_category": "Criminal Enforcement & Alternate Dispute Resolution",
+                "checklist_ai_description": "Chapter XXVIII (§§435-446B): CG may **establish/designate Special Courts** (Sessions-judge level for offences ≥ 2 yrs; Magistrate 1st-class for others) for speedy trial (§435). All such offences are triable exclusively by the court where the company’s RO sits; court may take cognizance **without committal** and try connected IPC offences jointly (§§436-438). Most Companies-Act offences are **non-cognisable** and need Registrar/SEBI/CG complaint (§439). Pending matters go to Sessions/Magistrate until Special Court formed (§440). **Offence compounding** (fine-only or fine+imprisonment) is handled by NCLT/Regional Director within monetary limits, disallowing cases under investigation or within three-year repeat window (§441). Chapter provides appellate/revision powers to High Court (§437), mediation-panel framework (§442), company prosecutors (§443-444) and graded penalty-setting (§446A) plus **half-penalty regime for OPC/small/start-up/Producer cos.** (§446B).\n**Quick-check →** CG notifications listing Special-Court designations and jurisdiction; Registrar/SEBI complaint files attached to charge-sheets; Sessions/Magistrate docket for pre-notification period; compounding orders with evidence of NCLT/RD monetary ceilings, three-year repeat check and Registrar intimation in seven days; mediation-panel roster and referral orders; half-penalty application on small-company dockets.\n**Flag-if →** prosecution filed in regular magistrate after Special Court notified, compounding approved while SFIO/ROC investigation live, repeat offence compounded as first-time, or small-company penalty not halved."
+              },
+ 
+          
+ 
+              {
+                "checklist_name": "Fraud & False-Statement Sanctions, Adjudication/Condonation Machinery, Dormant-Company Status & Central-Government Rule-Making",
+                "checklist_category": "Offences, Penalties & Administrative Residuals",
+                "checklist_ai_description": "Chapter XXIX (§§447-470):  • **Fraud & Misstatements**—§§447-449 impose jail (6 months-10 yrs) and up to 3× gain fine for fraud ≥ ₹ 10 lakh/1 % turnover (lower slabs for minor fraud) and link all false statements/evidence to §447 liability.  • **Default & Adjudication**—§§450-455 give baseline penalties where none specified, double fines for three-year repeats, ROC-based adjudicating-officer scheme (§454) with appeal to RD and **twice-penalty** regime for repeat defaults (§454A).  • **Dormant-company regime** (§455) – registration, compliance, strike-off.  • **Good-faith shields & non-disclosure** (§§456-457).  • **CG Delegations & Conditional Approvals** (§§458-460) – CG may delegate functions (not rule-making) and condone ROC/CG filing delays.  • **Annual CG Report & Exemptions** (§§461-462).  • **Court relief for honest officers** (§463).  • **Partnership-size cap** (§464).  • **Repeal & transitional savings** (§465) including CLB dissolution (§466).  • **Power to amend Schedules & make rules** (§§467-469) and five-year sunset ‘remove-difficulty’ power (§470).\n**Quick-check →** fraud-case tracking sheet (₹ value vs. §447 thresholds), adjudication orders with DSC-signed e-forms, repeat-default query on MCA; dormant-status register & annual fee; CG delegation orders and condonation approvals; latest notification of Act-wide exemptions; partnership head-count monitoring (≤ 100); evidence of CLB-to-NCLT transfer completion; schedule-amendment, rule and difficulty-removal notifications tabled before Parliament. \n**Flag-if →** fraud prosecuted in regular magistrate instead of Special Court, adjudicating-officer penalty unpaid > 90 days, dormant company failing annual compliance, delay condoned without CG order, or partnership > 100 persons unregistered."
+              },
+            
+        
+      
+    
+  }
+  

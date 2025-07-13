@@ -1,0 +1,44 @@
+# AWS Bedrock Configuration Template
+# Copy this to .env and fill in your actual values
+
+# Your AWS Access Key ID
+AWS_ACCESS_KEY_ID=your_access_key_here
+
+# Your AWS Secret Access Key  
+AWS_SECRET_ACCESS_KEY=your_secret_key_here
+
+# AWS Region where Bedrock is available (e.g., us-east-1, us-west-2)
+AWS_REGION=us-east-1
+
+# Bedrock Model ID - Use the latest Claude Sonnet 4 model for best results:
+# us.anthropic.claude-sonnet-4-20250514-v1:0 (latest, recommended)
+# anthropic.claude-3-sonnet-20240229-v1:0 (stable fallback)
+BEDROCK_MODEL_ID=us.anthropic.claude-sonnet-4-20250514-v1:0
+
+# Optional: Port for the API server
+PORT=8000
+
+# ============================================
+# WEB SEARCH API CONFIGURATION (Optional)
+# ============================================
+
+# Bing Search API Configuration
+# Get your API key from: https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/
+BING_API_KEY=your_bing_api_key_here
+BING_BASE_URL=https://api.bing.microsoft.com/v7.0/search
+
+# Google Custom Search API Configuration (Fallback)
+# Get your API key from: https://developers.google.com/custom-search/v1/overview
+# Create a Custom Search Engine at: https://cse.google.com/
+GOOGLE_API_KEY=your_google_api_key_here
+GOOGLE_SEARCH_ENGINE_ID=your_search_engine_id_here
+
+# ============================================
+# PROCESSING CONFIGURATION (Optional)
+# ============================================
+
+# Maximum content size before chunking and summarization (now set very high to avoid summarization)
+MAX_CONTENT_CHARS=10000000
+
+# Size of each chunk for summarization
+CHUNK_SIZE_CHARS=400000 
