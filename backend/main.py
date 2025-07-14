@@ -59,6 +59,14 @@ class ChecklistItem(BaseModel):
     checklist_name: str
     checklist_category: str
     checklist_ai_description: str
+    chapter_reference: Optional[str] = Field(None, description="Reference to specific chapter/section/regulation")
+    subcategory: Optional[str] = Field(None, description="Specific subcategory or domain")
+    non_compliance_flags: List[str] = Field(default_factory=list, description="Conditions that indicate non-compliance")
+    due_date: Optional[str] = Field(None, description="Due date for completion (relative or absolute)")
+    recurrence: str = Field("Monthly", description="How often this checklist should be performed")
+    priority: Optional[str] = Field("Medium", description="Priority level: High, Medium, Low")
+    estimated_duration: Optional[str] = Field(None, description="Estimated time to complete")
+    responsible_party: Optional[str] = Field(None, description="Who is responsible for this checklist")
     scheduled_runs: str = Field(..., description="Cron expression for scheduled execution")
 
 class ComplianceResponse(BaseModel):
@@ -156,12 +164,14 @@ def generate_checklist_with_bedrock(content: str, context: Dict[str, Any]) -> Li
 
 CRITICAL: You MUST respond with ONLY valid JSON in the exact format specified. NO other text, explanations, or formatting.
 
-Generate MINIMUM 15-20 comprehensive checklist items covering all major compliance areas. Each checklist item must be:
-- Complete with detailed numbered steps (minimum 5-8 steps per item)
-- Specific and actionable
-- Include measurable criteria and outcomes
-- Cover different compliance domains (technical, operational, documentation, monitoring, etc.)
-- Be comprehensive enough for enterprise-level compliance"""
+Generate as many comprehensive checklist items as needed for COMPLETE coverage of all compliance requirements. DO NOT limit the number - generate ALL necessary items for thorough compliance coverage. Each checklist item must be:
+- Complete with detailed numbered steps (minimum 5-10 steps per item)
+- Specific and actionable with measurable criteria
+- Include exact chapter/section references from the source material
+- Specify clear non-compliance indicators/red flags
+- Include realistic due dates and recurrence schedules
+- Cover ALL compliance domains (technical, operational, documentation, monitoring, reporting, training, etc.)
+- Be comprehensive enough for enterprise-level regulatory compliance"""
 
             prompt = f"""
             {system_prompt}
@@ -173,7 +183,7 @@ Generate MINIMUM 15-20 comprehensive checklist items covering all major complian
             Detail Level: {context.get('detail_level', 'comprehensive')}
 
             Content to analyze:
-            {content[:50000]}
+            {content[:75000]}
 
             Generate JSON response with this exact structure:
             {{
@@ -182,6 +192,14 @@ Generate MINIMUM 15-20 comprehensive checklist items covering all major complian
                         "checklist_name": "Clear, specific checklist name",
                         "checklist_category": "Category (e.g., Data Protection, Financial Reporting, etc.)",
                         "checklist_ai_description": "Detailed description with numbered steps:\\n1. Step one\\n2. Step two\\n3. Step three",
+                        "chapter_reference": "Chapter X.Y.Z or Section Reference from source material",
+                        "subcategory": "Specific subcategory or domain",
+                        "non_compliance_flags": ["Red flag 1", "Red flag 2", "Warning sign 3"],
+                        "due_date": "Within 30 days of implementation",
+                        "recurrence": "Monthly/Quarterly/Annual/Ongoing",
+                        "priority": "High/Medium/Low",
+                        "estimated_duration": "2-4 hours",
+                        "responsible_party": "Compliance Officer/IT Team/Legal Department",
                         "scheduled_runs": "0 0 * * *"
                     }}
                 ]
@@ -192,7 +210,7 @@ Generate MINIMUM 15-20 comprehensive checklist items covering all major complian
                 modelId="anthropic.claude-3-sonnet-20240229-v1:0",
                 body=json.dumps({
                     "anthropic_version": "bedrock-2023-05-31",
-                    "max_tokens": 8192,  # Increased from 4096
+                    "max_tokens": 16384,  # Increased for comprehensive generation
                     "temperature": 0.5,  # Increased from 0.3 for better variety
                     "messages": [
                         {
@@ -256,20 +274,58 @@ def create_fallback_checklist(content: str, context: Dict[str, Any]) -> List[Dic
         {
             "checklist_name": f"{industry} Data Protection Compliance Review",
             "checklist_category": "Data Protection",
-            "checklist_ai_description": "1. Review data collection practices and ensure explicit consent is obtained\n2. Verify data storage security measures including encryption at rest and in transit\n3. Audit data retention policies and implement automated deletion procedures\n4. Validate data subject rights implementation (access, rectification, deletion)\n5. Check cross-border data transfer compliance and adequacy decisions",
+            "checklist_ai_description": "1. Review data collection practices and ensure explicit consent is obtained\n2. Verify data storage security measures including encryption at rest and in transit\n3. Audit data retention policies and implement automated deletion procedures\n4. Validate data subject rights implementation (access, rectification, deletion)\n5. Check cross-border data transfer compliance and adequacy decisions\n6. Conduct privacy impact assessments for new data processing activities\n7. Verify third-party processor agreements and data sharing arrangements",
+            "chapter_reference": "GDPR Article 6, 7, 13-15, 17-20",
+            "subcategory": "Privacy Rights Management",
+            "non_compliance_flags": ["Missing consent records", "Unencrypted data storage", "Delayed data subject response", "Inadequate data retention policies"],
+            "due_date": "Within 30 days of new data processing",
+            "recurrence": "Monthly",
+            "priority": "High",
+            "estimated_duration": "4-6 hours",
+            "responsible_party": "Data Protection Officer",
             "scheduled_runs": "0 0 * * 1"
         },
         {
             "checklist_name": f"{framework} Security Assessment",
             "checklist_category": "Security",
-            "checklist_ai_description": "1. Conduct comprehensive vulnerability scans and penetration testing\n2. Review access controls and implement least privilege principles\n3. Test incident response procedures and business continuity plans\n4. Validate backup and recovery systems with regular restore tests\n5. Check security monitoring logs and SIEM alert configurations",
+            "checklist_ai_description": "1. Conduct comprehensive vulnerability scans and penetration testing\n2. Review access controls and implement least privilege principles\n3. Test incident response procedures and business continuity plans\n4. Validate backup and recovery systems with regular restore tests\n5. Check security monitoring logs and SIEM alert configurations\n6. Verify multi-factor authentication implementation across all systems\n7. Assess third-party security controls and vendor risk management",
+            "chapter_reference": "ISO 27001 A.12, A.13, A.16",
+            "subcategory": "Information Security Controls",
+            "non_compliance_flags": ["Failed vulnerability scan", "Weak access controls", "Untested backup systems", "Missing security monitoring"],
+            "due_date": "Quarterly assessment cycle",
+            "recurrence": "Quarterly",
+            "priority": "High",
+            "estimated_duration": "8-12 hours",
+            "responsible_party": "Information Security Team",
             "scheduled_runs": "0 0 * * *"
         },
         {
             "checklist_name": f"{industry} Financial Controls Review",
             "checklist_category": "Financial Reporting",
-            "checklist_ai_description": "1. Verify segregation of duties in financial processes\n2. Review approval workflows and authorization limits\n3. Audit reconciliation procedures and variance analysis\n4. Check internal controls testing and documentation\n5. Validate financial reporting accuracy and completeness",
+            "checklist_ai_description": "1. Verify segregation of duties in financial processes\n2. Review approval workflows and authorization limits\n3. Audit reconciliation procedures and variance analysis\n4. Check internal controls testing and documentation\n5. Validate financial reporting accuracy and completeness\n6. Assess revenue recognition processes and controls\n7. Review expense management and procurement controls",
+            "chapter_reference": "SOX Section 404, COSO Framework",
+            "subcategory": "Internal Controls",
+            "non_compliance_flags": ["Inadequate segregation of duties", "Missing approval documentation", "Reconciliation variances", "Control testing failures"],
+            "due_date": "Monthly close cycle",
+            "recurrence": "Monthly",
+            "priority": "Medium",
+            "estimated_duration": "6-8 hours",
+            "responsible_party": "Financial Controller",
             "scheduled_runs": "0 0 1 * *"
+        },
+        {
+            "checklist_name": f"{industry} Regulatory Compliance Monitoring",
+            "checklist_category": "Regulatory Compliance",
+            "checklist_ai_description": "1. Monitor regulatory changes and updates in applicable jurisdictions\n2. Assess impact of new regulations on business operations\n3. Update compliance policies and procedures accordingly\n4. Conduct compliance training for relevant personnel\n5. Perform compliance risk assessments and gap analyses\n6. Maintain regulatory correspondence and filing records\n7. Prepare compliance reports for management and regulators",
+            "chapter_reference": "Applicable regulatory requirements",
+            "subcategory": "Regulatory Monitoring",
+            "non_compliance_flags": ["Missed regulatory deadlines", "Outdated compliance policies", "Inadequate training records", "Regulatory filing errors"],
+            "due_date": "Ongoing monitoring",
+            "recurrence": "Ongoing",
+            "priority": "High",
+            "estimated_duration": "2-4 hours weekly",
+            "responsible_party": "Compliance Officer",
+            "scheduled_runs": "0 0 * * *"
         }
     ]
 

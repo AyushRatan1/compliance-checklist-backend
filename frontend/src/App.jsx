@@ -13,7 +13,7 @@ import './App.css'
 
 // Use environment variable for API URL, fallback to localhost for development
 const API_URL = import.meta.env.VITE_API_URL || 
-  (import.meta.env.MODE === 'development' ? 'http://localhost:8002' : '/api')
+  (import.meta.env.MODE === 'development' ? 'http://localhost:8002' : 'https://compliance-checklist-backend.onrender.com')
 
 function generateUUID() {
   return crypto.randomUUID ? crypto.randomUUID() : Math.random().toString(36).substring(2)+Date.now().toString(36)
@@ -124,21 +124,14 @@ function App() {
     setLogs([])
     toast.info('🚀 Starting compliance analysis...', { autoClose: 5000 })
 
-    // Start polling progress endpoint immediately
-    pollingRef.current = setInterval(async () => {
-      try {
-        const resp = await axios.get(`${API_URL}/progress/${reqId}`)
-        if (resp.data.progress !== undefined) {
-          setProgress(resp.data.progress)
-          setLogs(resp.data.logs)
-        }
-        if (resp.data.progress >= 1) {
-          stopPolling()
-        }
-      } catch (e) {
-        // ignore while backend not yet set
+    // Simulate progress for better UX
+    let progressValue = 0
+    pollingRef.current = setInterval(() => {
+      progressValue += 0.1
+      if (progressValue <= 0.9) {
+        setProgress(progressValue)
       }
-    }, 3000)
+    }, 2000)
 
     try {
       const requestData = {
@@ -163,6 +156,7 @@ function App() {
 
       setChecklists(response.data.checklists)
       setMetadata(response.data.metadata)
+      setProgress(1) // Complete progress
       toast.success('✅ Compliance checklist generated successfully!', { autoClose: 4000 })
     } catch (err) {
       const errorMessage = err.response?.data?.detail || 
@@ -201,10 +195,11 @@ function App() {
   }
 
   const downloadCSV = () => {
-    let csv = 'Category,Name,Priority,Frequency,Description\n'
+    let csv = 'Category,Subcategory,Name,Priority,Reference,Responsible Party,Recurrence,Due Date,Duration,Non-compliance Flags,Description\n'
     checklists.forEach(checklist => {
       const desc = checklist.checklist_ai_description.replace(/"/g, '""')
-      csv += `"${checklist.checklist_category}","${checklist.checklist_name}","${checklist.priority || 'N/A'}","${checklist.frequency || 'N/A'}","${desc}"\n`
+      const flags = checklist.non_compliance_flags ? checklist.non_compliance_flags.join('; ') : 'N/A'
+      csv += `"${checklist.checklist_category}","${checklist.subcategory || 'N/A'}","${checklist.checklist_name}","${checklist.priority || 'N/A'}","${checklist.chapter_reference || 'N/A'}","${checklist.responsible_party || 'N/A'}","${checklist.recurrence || 'N/A'}","${checklist.due_date || 'N/A'}","${checklist.estimated_duration || 'N/A'}","${flags}","${desc}"\n`
     })
     
     const blob = new Blob([csv], { type: 'text/csv' })
@@ -662,31 +657,97 @@ function App() {
                     <div className="card-header">
                       <div className="card-category">
                         {checklist.checklist_category}
+                        {checklist.subcategory && (
+                          <span className="subcategory">• {checklist.subcategory}</span>
+                        )}
                       </div>
-                      {checklist.priority && (
-                        <div className={`priority-badge priority-${checklist.priority}`}>
-                          {checklist.priority}
-                        </div>
-                      )}
+                      <div className="card-header-right">
+                        {checklist.priority && (
+                          <div className={`priority-badge priority-${checklist.priority?.toLowerCase()}`}>
+                            {checklist.priority}
+                          </div>
+                        )}
+                      </div>
                     </div>
+                    
                     <div className="card-content">
                       <h3 className="card-title">{checklist.checklist_name}</h3>
-                      {checklist.frequency && (
-                        <div className="card-frequency">
-                          <FiUsers />
-                          {checklist.frequency}
+                      
+                      {/* Reference and Chapter Info */}
+                      <div className="card-metadata">
+                        {checklist.chapter_reference && (
+                          <div className="metadata-item">
+                            <FiBookOpen />
+                            <span>Reference: {checklist.chapter_reference}</span>
+                          </div>
+                        )}
+                        {checklist.responsible_party && (
+                          <div className="metadata-item">
+                            <FiUsers />
+                            <span>Owner: {checklist.responsible_party}</span>
+                          </div>
+                        )}
+                        {checklist.estimated_duration && (
+                          <div className="metadata-item">
+                            <FiZap />
+                            <span>Duration: {checklist.estimated_duration}</span>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Recurrence and Due Date */}
+                      <div className="card-schedule">
+                        <div className="schedule-item">
+                          <FiTrendingUp />
+                          <span>Recurrence: {checklist.recurrence || 'Not specified'}</span>
+                        </div>
+                        {checklist.due_date && (
+                          <div className="schedule-item">
+                            <FiAlertCircle />
+                            <span>Due: {checklist.due_date}</span>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Non-compliance Flags */}
+                      {checklist.non_compliance_flags && checklist.non_compliance_flags.length > 0 && (
+                        <div className="card-flags">
+                          <div className="flags-header">
+                            <FiAlertCircle />
+                            <span>Non-compliance Indicators:</span>
+                          </div>
+                          <div className="flags-list">
+                            {checklist.non_compliance_flags.map((flag, flagIndex) => (
+                              <div key={flagIndex} className="flag-item">
+                                <FiX />
+                                <span>{flag}</span>
+                              </div>
+                            ))}
+                          </div>
                         </div>
                       )}
+
+                      {/* Description */}
                       <div className="card-description">
-                        {checklist.checklist_ai_description}
+                        <div className="description-header">
+                          <FiList />
+                          <span>Implementation Steps:</span>
+                        </div>
+                        <div className="description-content">
+                          {checklist.checklist_ai_description}
+                        </div>
                       </div>
                     </div>
+                    
                     <div className="card-actions">
-                      <button className="card-action-btn">
+                      <button className="card-action-btn" title="Mark as Complete">
                         <FiCheckCircle />
                       </button>
-                      <button className="card-action-btn">
+                      <button className="card-action-btn" title="Copy to Clipboard">
                         <FiCopy />
+                      </button>
+                      <button className="card-action-btn" title="More Details">
+                        <FiInfo />
                       </button>
                     </div>
                   </div>
