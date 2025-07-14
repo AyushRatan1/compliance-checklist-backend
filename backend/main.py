@@ -77,9 +77,9 @@ try:
             aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),
             aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY'),
             config=Config(
-                read_timeout=300,
-                connect_timeout=30,
-                retries={"max_attempts": 3}
+                read_timeout=600,  # Increased timeout for longer generation
+                connect_timeout=60,  # Increased connection timeout
+                retries={"max_attempts": 5}  # More retries for better reliability
             )
         )
         aws_configured = True
@@ -145,70 +145,107 @@ async def fetch_url_content(url: str) -> str:
         return ""
 
 def generate_checklist_with_bedrock(content: str, context: Dict[str, Any]) -> List[Dict]:
-    """Generate checklist using AWS Bedrock"""
-    try:
-        system_prompt = """You are an elite regulatory compliance expert with 20+ years of experience. Convert regulatory documents into comprehensive, actionable compliance checklists.
+    """Generate checklist using AWS Bedrock with retry mechanism"""
+    max_retries = 3
+    
+    for attempt in range(max_retries):
+        try:
+            logger.info(f"Attempting Bedrock generation (attempt {attempt + 1}/{max_retries})")
+            
+            system_prompt = """You are an elite regulatory compliance expert with 20+ years of experience. Convert regulatory documents into comprehensive, actionable compliance checklists.
 
 CRITICAL: You MUST respond with ONLY valid JSON in the exact format specified. NO other text, explanations, or formatting.
 
-Generate 10-20 comprehensive checklist items covering all major compliance areas. Each checklist item must be complete with numbered steps and specific criteria."""
+Generate MINIMUM 15-20 comprehensive checklist items covering all major compliance areas. Each checklist item must be:
+- Complete with detailed numbered steps (minimum 5-8 steps per item)
+- Specific and actionable
+- Include measurable criteria and outcomes
+- Cover different compliance domains (technical, operational, documentation, monitoring, etc.)
+- Be comprehensive enough for enterprise-level compliance"""
 
-        prompt = f"""
-        {system_prompt}
+            prompt = f"""
+            {system_prompt}
 
-        Industry: {context.get('industry', 'General')}
-        Jurisdiction: {context.get('jurisdiction', 'General')}
-        Framework: {context.get('compliance_framework', 'General')}
-        Audience: {context.get('audience', 'Compliance')}
-        Detail Level: {context.get('detail_level', 'comprehensive')}
+            Industry: {context.get('industry', 'General')}
+            Jurisdiction: {context.get('jurisdiction', 'General')}
+            Framework: {context.get('compliance_framework', 'General')}
+            Audience: {context.get('audience', 'Compliance')}
+            Detail Level: {context.get('detail_level', 'comprehensive')}
 
-        Content to analyze:
-        {content[:30000]}
+            Content to analyze:
+            {content[:50000]}
 
-        Generate JSON response with this exact structure:
-        {{
-            "checklists": [
-                {{
-                    "checklist_name": "Clear, specific checklist name",
-                    "checklist_category": "Category (e.g., Data Protection, Financial Reporting, etc.)",
-                    "checklist_ai_description": "Detailed description with numbered steps:\\n1. Step one\\n2. Step two\\n3. Step three",
-                    "scheduled_runs": "0 0 * * *"
-                }}
-            ]
-        }}
-        """
-
-        response = bedrock_runtime.invoke_model(
-            modelId="anthropic.claude-3-sonnet-20240229-v1:0",
-            body=json.dumps({
-                "anthropic_version": "bedrock-2023-05-31",
-                "max_tokens": 4096,
-                "temperature": 0.3,
-                "messages": [
-                    {
-                        "role": "user",
-                        "content": prompt
-                    }
+            Generate JSON response with this exact structure:
+            {{
+                "checklists": [
+                    {{
+                        "checklist_name": "Clear, specific checklist name",
+                        "checklist_category": "Category (e.g., Data Protection, Financial Reporting, etc.)",
+                        "checklist_ai_description": "Detailed description with numbered steps:\\n1. Step one\\n2. Step two\\n3. Step three",
+                        "scheduled_runs": "0 0 * * *"
+                    }}
                 ]
-            }),
-            contentType="application/json"
-        )
-        
-        response_body = json.loads(response['body'].read())
-        generated_text = response_body['content'][0]['text']
-        
-        json_match = re.search(r'\{.*\}', generated_text, re.DOTALL)
-        if json_match:
-            json_str = json_match.group()
-            result = json.loads(json_str)
-            return result.get('checklists', [])
-        else:
-            logger.error("No JSON found in Bedrock response")
-            return []
+            }}
+            """
+
+            response = bedrock_runtime.invoke_model(
+                modelId="anthropic.claude-3-sonnet-20240229-v1:0",
+                body=json.dumps({
+                    "anthropic_version": "bedrock-2023-05-31",
+                    "max_tokens": 8192,  # Increased from 4096
+                    "temperature": 0.5,  # Increased from 0.3 for better variety
+                    "messages": [
+                        {
+                            "role": "user",
+                            "content": prompt
+                        }
+                    ]
+                }),
+                contentType="application/json"
+            )
             
-    except Exception as e:
-        logger.error(f"Error generating checklist with Bedrock: {e}")
-        return []
+            response_body = json.loads(response['body'].read())
+            generated_text = response_body['content'][0]['text']
+            
+            logger.info(f"Bedrock response length: {len(generated_text)} characters")
+            logger.info(f"Bedrock response preview: {generated_text[:500]}...")
+            
+            # Try to find and parse JSON more robustly
+            json_patterns = [
+                r'\{[^{}]*"checklists"[^{}]*\[.*?\]\s*\}',  # Look for checklists array specifically
+                r'\{.*?"checklists".*?\}',  # More flexible pattern
+                r'\{.*\}',  # Fallback to original pattern
+            ]
+            
+            result = None
+            for pattern in json_patterns:
+                json_match = re.search(pattern, generated_text, re.DOTALL)
+                if json_match:
+                    try:
+                        json_str = json_match.group()
+                        result = json.loads(json_str)
+                        break
+                    except json.JSONDecodeError as e:
+                        logger.warning(f"JSON parsing failed for pattern {pattern}: {e}")
+                        continue
+            
+            if result and 'checklists' in result:
+                checklists = result['checklists']
+                logger.info(f"Successfully parsed {len(checklists)} checklist items")
+                return checklists
+            else:
+                logger.error(f"No valid JSON with checklists found in Bedrock response (attempt {attempt + 1})")
+                if attempt == max_retries - 1:  # Last attempt
+                    logger.error(f"Full response: {generated_text}")
+                continue
+                
+        except Exception as e:
+            logger.error(f"Error generating checklist with Bedrock (attempt {attempt + 1}): {e}")
+            if attempt == max_retries - 1:  # Last attempt
+                return []
+            continue
+    
+    return []
 
 def create_fallback_checklist(content: str, context: Dict[str, Any]) -> List[Dict]:
     """Create fallback checklist when Bedrock is not available"""
